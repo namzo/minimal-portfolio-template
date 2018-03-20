@@ -1,0 +1,31 @@
+<nav class="clearfix nav-down" id="top">
+  <div class="container">
+  <div class="row">
+    <ul class="pull-left">
+      <li>
+        <a href="/">
+          <strong class="name-text">Ernest Ojeh</strong>
+          <a class="m-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </a>
+      </li>
+    </ul>
+    <ul class="pull-right links">
+      <li class="{% if page.nav=='about' %}active{% endif %}">
+        <a href="/about/">About</a>
+      </li>
+      <li class="{% if page.nav=='writing' %}active{% endif %}{% if page.layout=='post' %}active{% endif %}">
+        <a href="/writing/">Writing</a>
+      </li>
+      <li class="{% if page.nav=='photos' %}active{% endif %}">
+        <a href="/photos/">Photos</a>
+      </li>
+      <li class="{% if page.nav=='contact' %}active{% endif %}">
+        <a href="/contact/">Contact</a>
+      </li>
+    </ul>
+  </div>
+  </div>
+</nav>

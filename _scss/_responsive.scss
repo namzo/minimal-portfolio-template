@@ -1,0 +1,246 @@
+@media screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 2dppx) {
+  body {
+      -moz-osx-font-smoothing: grayscale;
+      -webkit-font-smoothing: antialiased;
+  }
+}
+@media (min-width: 400px) {
+  .container {
+    max-width: 1200px;
+    width: 100%;
+  }
+}
+@media (min-width: 479px) and (max-width: 767px) {
+  nav a {
+    padding: 10px 0;
+  }
+  nav .pull-right {
+    text-align: right;
+    float: right;
+  }
+}
+@media (min-width: 768px) {
+  body {
+    font-size: 1.8rem;
+    line-height: 2;
+  }
+  nav {
+    padding-top: 1.5em;
+    li.active a {
+      color: #000;
+    }
+  }
+  .casestudy-body {
+    nav a.button.hollow:hover, nav a.button.hollow:hover:hover {
+      color: $white;
+      border-color: $white;
+    }
+    nav {
+      position: absolute;
+      width: 100%;
+      .button.hollow, .button.hollow:hover {
+        color: $white;
+      }
+      svg path {
+        fill: #fff !important;
+      }
+      a, strong.name-text {
+        color: $white;
+      }
+      .btn, .btn:hover, .btn:focus {
+        background: transparent;
+        border-color: $white;
+      }
+    }
+  }
+  .intro.casestudy-header {
+    height: auto;
+    padding-top: 8em;
+  }
+  .home-header.white {
+    background: #fff0e5 !important;
+  }
+  .modal-box-wrap .modal {
+    width: 600px;
+    margin: 0 auto;
+  }
+  .unit {
+    padding: 5em 0;
+  }
+  .case-device {
+    margin-top: -5em;
+  }
+  .hero {
+    height: 600px;
+  }
+  .home-box {
+    padding: 2em 0 2em;
+  }
+  .home-box p.lead {
+    font-size: 2rem;
+  }
+}
+@media only screen and (max-width: 767px) {
+  html {
+    font-size: 64%;
+  }
+  .intro.casestudy-header+section {
+      padding-top: 5em;
+  }
+  .photo-row {
+    column-count: 1;
+  }
+  h4 {
+    font-size: 2.1rem;
+  }
+  .modal-box-wrap {
+    margin: 0 auto;
+    padding: 0;
+    .modal {
+      width: 100%;
+      margin: 15px;
+    }
+  }
+  nav {
+    .container {
+      width: 100%;
+      margin: 0;
+    }
+  }
+  ul.social {
+    list-style-type: none;
+    li {
+      svg {
+        width: 24px;
+      }
+    }
+  }
+  .talks {
+    padding: 1em 0 2em;
+  }
+  a.overclose {
+    top: 5px;
+    right: 5px;
+  }
+  .sites-wrap {
+    display: none;
+  }
+  #aboutOverlay .container {
+    padding: 20px 20px 8em;
+  }
+  .helper, .img-src {
+    display: none;
+  }
+  .dribbble-shots {
+    display: none;
+  }
+  .intro.home {
+    height: auto;
+    padding: 2em 0 1em;
+  }
+  nav li {
+    margin: 0;
+  }
+  .unit {
+    padding: 3em 0;
+  }
+  .unit.page-top {
+    padding: 0;
+  }
+  .posts-wrap {
+    padding: 1em 0;
+  }
+  .m-design {
+    display: none;
+  }
+  .intro.casestudy-header {
+    height: auto;
+    min-height: 0;
+    padding-top: 10em;
+    padding: 1em 0 0;
+  }
+  .down-link {
+    display: none;
+  }
+  .intro.home::before {
+    display: none;
+    height: 100%;
+    top: 100px;
+    height: 600px;
+  }
+  .intro-profile {
+    width: 70%;
+  }
+  .intro-profile h1 {
+    font-size: 4rem;
+    margin-bottom: 30px;
+  }
+  .unit.value .container {
+    padding-top: 1em;
+    padding-bottom: 2em;
+  }
+  .unit.recognition .container {
+    border-bottom: none;
+    padding-top: 0;
+    padding-bottom: 2em;
+  }
+  em.tag {
+    width: 100%;
+  }
+  nav {
+    .pull-right {
+      text-align: left;
+      float: left;
+    }
+    .links li {
+      margin-left: 0;
+      margin-right: 20px;
+    }
+  }
+  .home-box {
+    padding: 1em 0 0;
+  }
+  .home-box p {
+    font-size: 1.8rem;
+  }
+  .blue-home {
+    padding: 2.4em 0 1em;
+  }
+  .blue-home:before {
+    opacity: 0.2;
+  }
+  .full-container {
+    padding: 0 20px;
+  }
+  .intro.home {
+    min-height: auto;
+  }
+  .about {
+    padding: 0;
+  }
+  h2 {
+    font-size: 2.8rem;
+    line-height: 1.5;
+  }
+  h3 {
+    font-size: 2.4rem;
+    line-height: 1.6;
+  }
+  .container {
+    max-width: 100%;
+  }
+  footer {
+    padding: 2em 0 3em;
+  }
+  p.lead {
+    font-size: 1.9rem;
+  }
+  .unit.contact .container {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  .unit.projects .three.columns {
+    width: 50%;
+    margin-left: 0;
+  }
+}

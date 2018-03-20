@@ -1,0 +1,30 @@
+---
+title: Photos
+layout: photos
+nav: photos
+---
+
+<div class="move-up">
+
+<section class="unit page-top">
+  <div class="full-container">
+    <div class="photos-wrap">
+    <div class="row">
+      <div class="twelve columns">
+        <div class="photo-row">
+          {% for image in site.static_files %}
+              {% if image.path contains 'img/photos' %}
+              <div>
+                <img src="{{ site.baseurl }}{{ image.path }}">
+              </div>
+              {% endif %}
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+    </div>
+
+  </div>
+</section>
+
+</div>

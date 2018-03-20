@@ -1,0 +1,23 @@
+---
+layout: default
+---
+
+<section class="unit move-up">
+  <div class="container">
+    <div class="row">
+      <div class="twelve columns">
+      <div class="post-wrap">
+	      <h4 class="article-title">{{ page.title }}</h4>
+		      <p class="date">Published on {{ page.date | date_to_string }} &middot; {% include reading-time.html %} read</p>
+	      <br>
+	      <div class="post-body">
+		      {{ content }}
+		     </div>
+	      </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+{% include share-links.html %}

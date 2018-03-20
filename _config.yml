@@ -1,0 +1,14 @@
+name: Ernest Ojeh
+title: Ernest Ojeh &middot; UX Designer
+tagline: The portfolio of Ernest Ojeh
+description: The portfolio of Ernest Ojeh
+url: https://ernestojeh.com
+baseurl: ''
+markdown: kramdown
+permalink: pretty
+highlighter: rouge
+sass:
+  sass_dir: _scss
+  style: compressed
+plugins:
+  - jekyll-feed

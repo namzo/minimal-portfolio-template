@@ -1,0 +1,41 @@
+@font-face {
+ font-family: 'EO-Calibre';
+ src: url('../fonts/calibre/eot/CalibreWeb-Light.eot');
+ src: url('../fonts/calibre/eot/CalibreWeb-Light.eot?#iefix') format('embedded-opentype'),
+ url('../fonts/calibre/woff2/CalibreWeb-Light.woff2') format('woff2'),
+ url('../fonts/calibre/woff/CalibreWeb-Light.woff') format('woff'),
+ url('../fonts/calibre/ttf/Calibre-Light.ttf') format('truetype');
+ font-weight: 300;
+ font-style: normal;
+}
+
+@font-face {
+ font-family: 'EO-Calibre';
+ src: url('../fonts/calibre/eot/CalibreWeb-Regular.eot');
+ src: url('../fonts/calibre/eot/CalibreWeb-Regular.eot?#iefix') format('embedded-opentype'),
+ url('../fonts/calibre/woff2/CalibreWeb-Regular.woff2') format('woff2'),
+ url('../fonts/calibre/woff/CalibreWeb-Regular.woff') format('woff'),
+ url('../fonts/calibre/ttf/Calibre-Regular.ttf') format('truetype');
+ font-weight: 400;
+ font-style: normal;
+}
+@font-face {
+ font-family: 'EO-Calibre';
+ src: url('../fonts/calibre/eot/CalibreWeb-Medium.eot');
+ src: url('../fonts/calibre/eot/CalibreWeb-Medium.eot?#iefix') format('embedded-opentype'),
+ url('../fonts/calibre/woff2/CalibreWeb-Medium.woff2') format('woff2'),
+ url('../fonts/calibre/woff/CalibreWeb-Medium.woff') format('woff'),
+ url('../fonts/calibre/ttf/Calibre-Medium.ttf') format('truetype');
+ font-weight: 600;
+ font-style: normal;
+}
+@font-face {
+ font-family: 'EO-Calibre';
+ src: url('../fonts/calibre/eot/CalibreWeb-Semibold.eot');
+ src: url('../fonts/calibre/eot/CalibreWeb-Semibold.eot?#iefix') format('embedded-opentype'),
+ url('../fonts/calibre/woff2/CalibreWeb-Semibold.woff2') format('woff2'),
+ url('../fonts/calibre/woff/CalibreWeb-Semibold.woff') format('woff'),
+ url('../fonts/calibre/ttf/Calibre-Semibold.ttf') format('truetype');
+ font-weight: 700;
+ font-style: normal;
+}
