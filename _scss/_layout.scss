@@ -1,5 +1,5 @@
 $blue: #0069ff;
-$text-color: #637a98;
+$text-color: #455A64;
 $white: #fff;
 $black: #000;
 $gray: #CFD8DC;
@@ -8,7 +8,7 @@ $bg-gray: #f9f9f9;
 $tw: #55acee;
 $fb: #48649f;
 $gplus: #db4437;
-$font: "EO-Calibre", sans-serif;
+$font: "eo-adelle", sans-serif;
 
 @mixin rounded-corners {
   $rounded-corner-radius: 4px;
@@ -23,7 +23,7 @@ $font: "EO-Calibre", sans-serif;
   box-sizing: inherit;
 }
 html {
-  font-size: 70%;
+  font-size: 65%;
 }
 body {
   background: $white;
@@ -579,7 +579,7 @@ section {
   h1 {
     position: relative;
     margin-bottom: 0;
-    font-size: 4.6rem;
+    font-size: 5.4rem;
     letter-spacing: -1px;
     line-height: 1;
     span {
@@ -599,7 +599,7 @@ section {
   &.projects a {
     color: $text-color;
     &:hover, &:focus {
-      border: none;
+      color: $blue;
     }
   }
   &.no-pad {
@@ -829,7 +829,7 @@ p.lead {
 .full-container {
   position: relative;
   width: 100%;
-  max-width: 100%;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 0 40px;
   -webkit-box-sizing: border-box;
@@ -915,7 +915,7 @@ img {
   line-height: 1.5;
 }
 .muted {
-  opacity: 0.5;
+  color: #F57C00;
 }
 .talks {
   padding: 4em 0 2em;
