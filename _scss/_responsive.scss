@@ -78,6 +78,7 @@
   }
   .home-box p.lead {
     font-size: 2rem;
+    margin-top: 1em;
   }
 }
 @media only screen and (max-width: 767px) {
@@ -86,9 +87,6 @@
   }
   .intro.casestudy-header+section {
       padding-top: 5em;
-  }
-  .photo-row {
-    column-count: 1;
   }
   h4 {
     font-size: 2.1rem;

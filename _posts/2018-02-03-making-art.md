@@ -15,4 +15,4 @@ Here's the completed piece:
 
 <img src="{{ site.baseurl }}/img/post/img_1251.jpg">
 
-I also made it into a wallpaper for your phone: <a href="https://d2ffutrenqvap3.cloudfront.net/items/1x2n2y1V3t2W423w1J3W/AbstractStrokesCool_Phone.jpg" download>Download it here</a>.
+I also made it into a wallpaper for your phone: <a href="https://d2ffutrenqvap3.cloudfront.net/items/1x2n2y1V3t2W423w1J3W/AbstractStrokesCool_Phone.jpg" download="AbstractStrokesCool_Phone.jpg">Download it here</a>.
