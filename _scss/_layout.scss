@@ -596,7 +596,7 @@ a.single-project {
   width: 100%;
   display: table;
   border-radius: 8px;
-  box-shadow: 0 10px 20px rgba(0,0,0,.1);
+  box-shadow: 0 1px 0 rgba(0,0,0,.05), 0 2px 6px rgba(0,0,0,.05), 0 10px 20px rgba(0,0,0,.05);
   margin: 0 0 20px;
   &:hover, &:focus, &:active {
     text-decoration: none;
@@ -1433,6 +1433,13 @@ code {
   display: none !important;
 }
 footer {
+  color: #78909C;
+  .smallcopy a {
+    color: #78909C !important;
+    &:hover, &:active, &:focus {
+      border-color: #78909C;
+    }
+  }
   .row {
     padding-top: 2em;
     border-top: 1px solid rgba(143, 161, 179, 0.3);
