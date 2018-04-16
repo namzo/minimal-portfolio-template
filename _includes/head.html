@@ -10,7 +10,7 @@
     {% endif %}
   </title>
 
-  <meta name="description" content="Ernest Ojeh is a UX designer. Currently based in Amsterdam.">
+  <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
   <meta name="author" content="Ernest Ojeh">
   <meta name="p:domain_verify" content="be7e85c6185cf0ea318dbd69b331bd60"/>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -19,34 +19,29 @@
   <meta name="twitter:site" content="@namzo">
   <meta name="twitter:creator" content="@namzo">
   {% if page.title %}
-    <meta name="twitter:title" content="{{ page.title }}">
+  <meta name="twitter:title" content="{{ page.title }}">
   {% else %}
-    <meta name="twitter:title" content="{{ site.title }}">
+  <meta name="twitter:title" content="{{ site.title }}">
   {% endif %}
   {% if page.url %}
-    <meta name="twitter:url" content="{{ site.url }}{{ page.url }}">
+  <meta name="twitter:url" content="{{ site.url }}{{ page.url }}">
   {% endif %}
   {% if page.description %}
-    <meta name="twitter:description" content="{{ page.description }}">
+  <meta name="twitter:description" content="{{ page.description }}">
   {% else %}
-    <meta name="twitter:description" content="Ernest Ojeh is a UX designer. Currently based in Amsterdam, The Netherlands.">
+  <meta name="twitter:description" content="{{ site.description }}">
   {% endif %}
   {% if page.image %}
-    <meta name="twitter:image" content="{{ site.url }}/img/{{ page.image }}">
+  <meta name="twitter:image" content="{{ site.url }}/img/{{ page.image }}">
   {% else %}
-    <meta name="twitter:image" content="{{ site.url }}/img/site-icon.png">
+  <meta name="twitter:image" content="{{ site.url }}/img/site-icon.png">
   {% endif %}
   
   <link rel="canonical" href="{{ site.url }}{{ page.url }}" />
-
   <link rel="stylesheet" href="{{ site.baseurl }}/css/style.css">
   
   {% feed_meta %}
   <link href='http://ernestojeh.com/feed.xml' rel='alternate' type='application/atom+xml'>
 
-  <!--[if lt IE 9]>
-    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-
-  {% include favicon.html %}
+{% include favicon.html %}
 </head>
