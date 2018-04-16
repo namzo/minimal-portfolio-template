@@ -7,7 +7,7 @@
 <!--<![endif]-->
 {% include head.html %}
 
-<body class="preload {% if page.nav=='home' %}home-body{% endif %}">
+<body class="{% if page.nav=='home' %}home-body{% endif %}">
 
   {{ content }}
 
