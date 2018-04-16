@@ -235,6 +235,15 @@
   }
   footer {
     padding: 2em 0 3em;
+    &.unit.projects {
+      .three.columns {
+        width: 100%;
+      }
+      .two.columns {
+        width: 50%;
+        margin-left: 0;
+      }
+    }
   }
   p.lead {
     font-size: 1.9rem;
@@ -242,10 +251,6 @@
   .unit.contact .container {
     padding-top: 0;
     padding-bottom: 0;
-  }
-  .unit.projects .three.columns {
-    width: 50%;
-    margin-left: 0;
   }
   a.single-project {
     height: 0;

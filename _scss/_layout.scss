@@ -1434,6 +1434,9 @@ code {
 }
 footer {
   color: #78909C;
+  ul {
+    margin-bottom: 1em;
+  }
   .smallcopy a {
     color: #78909C !important;
     &:hover, &:active, &:focus {
