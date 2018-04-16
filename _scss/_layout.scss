@@ -505,15 +505,15 @@ section {
       margin: 4em 0 3em;
     }
     &.kongapay {
-      background-color: #0288D1;
+      background-color: #1ba6ec;
       &+section:before {
-        background: #0288D1;
+        background: #1ba6ec;
       }
     }
     &.newthird {
-      background-color: #E65100;
+      background-color: #e24637;
       &+section:before {
-        background: #E65100;
+        background: #e24637;
       }
     }
     &.appscreens {
@@ -523,9 +523,9 @@ section {
       }
     }
     &.insidify {
-      background-color: #0097A7;
+      background-color: #1fa7cc;
         &+section:before {
-          background: #0097A7;
+          background: #1fa7cc;
       }
     }
     &:before {
@@ -561,18 +561,25 @@ section {
   padding-top: 1em;
 }
 .home-box {
-  padding: 0.5em 0 3em;
+  padding: 0.5em 0 0;
   position: relative;
+  p {
+    color: #607D8B;
+    strong {
+      color: #455A64;
+    }
+  }
 }
 .intro-profile {
   position: relative;
   z-index: 20;
   h1 {
     position: relative;
-    margin-bottom: 0;
-    font-size: 5.4rem;
+    margin-bottom: 3rem;
+    margin-top: 3rem;
+    font-size: 5rem;
     letter-spacing: -1px;
-    line-height: 1;
+    line-height: 1.2;
     span {
       color: lighten($text-color, 25%);
     }
@@ -583,6 +590,47 @@ section {
 }
 .list-unstyled {
   list-style-type: none;
+}
+a.single-project {
+  height: 320px;
+  width: 100%;
+  display: table;
+  border-radius: 8px;
+  box-shadow: 0 10px 20px rgba(0,0,0,.1);
+  margin: 0 0 20px;
+  &:hover, &:focus, &:active {
+    text-decoration: none;
+    border: none;
+  }
+  .proj-info {
+    color: $white;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+    h4 {
+      color: $white;
+      margin-bottom: 0;
+    }
+    p {
+      margin: 0;
+      padding: 0;
+    }
+  }
+  &.rideshare {
+    background: #72c1ca;
+  }
+  &.kongapay {
+    background: #1ba6ec url("../img/kongapay.jpg") no-repeat top;
+    background-size: cover;
+  }
+  &.newthird {
+    background: #e24637 url("../img/newthird.jpg") no-repeat top;
+    background-size: cover;
+  }
+  &.insidify {
+    background: #1fa7cc url("../img/insidify.jpg") no-repeat top;
+    background-size: cover;
+  }
 }
 .unit {
   padding: 4em 0;
@@ -993,9 +1041,6 @@ strong.name-text {
 .share-box {
   margin: 0 0 6em;
   text-align: center;
-  a {
-    margin: 0 3px;
-  }
   svg {
     fill: $white;
     margin: 11px 0 0;

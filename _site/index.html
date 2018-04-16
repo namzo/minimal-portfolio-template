@@ -66,8 +66,6 @@
 <meta name="msapplication-square150x150logo" content="http://localhost:4000/img/icons/mstile-150x150.png" />
 <meta name="msapplication-wide310x150logo" content="http://localhost:4000/img/icons/mstile-310x150.png" />
 <meta name="msapplication-square310x310logo" content="http://localhost:4000/img/icons/mstile-310x310.png" />
-
-  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 </head>
 
 
@@ -106,11 +104,54 @@
   <section class="intro home" id="home">
   <div class="container">
     <div class="row">
-      <div class="eight columns intro-profile">
+      <div class="seven columns intro-profile">
         <div class="home-box">
-          <h1 class="lead move-up">UX Designer. Passionate about simplifying people's lives.</h1>
-          <p class="lead">Currently working at <a href=="">Booking.com</a></p>
+          <p class="name"><strong>Ernest Ojeh</strong> / <a href="http://twitter.com/namzo" target="_blank">@namzo</a></p>
+          <h1 class="lead move-up">I design and develop solutions that solve users' problems.</h1>
+          <p class="lead"><strong>Currently:</strong> User Experience Designer at <a href="http://booking.com" target="_blank">Booking.com</a>, formerly at <a href="http://konga.com" target="_blank">Konga.com</a> and <a href="http://andela.com" target="_blank">Andela</a>.</p>
         </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="index-proj">
+  <div class="container">
+    <div class="row">
+      <div class="six columns">
+        <a href="/kongapay" class="single-project kongapay">
+          <div class="proj-info">
+            <h4>KongaPay</h4>
+            <p>UI/UX, Android, iOS, Web</p>
+          </div>
+        </a>
+      </div>
+      <div class="six columns">
+        <a href="#" class="single-project rideshare">
+          <div class="proj-info">
+            <h4>Pax</h4>
+            <p>...</p>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="row">
+      <div class="six columns">
+        <a href="/newthird" class="single-project newthird">
+          <div class="proj-info">
+            <h4>NewThird</h4>
+            <p>UI/UX, Web</p>
+          </div>
+        </a>
+      </div>
+
+      <div class="six columns">
+        <a href="/insidify" class="single-project insidify">
+          <div class="proj-info">
+            <h4>Insidify</h4>
+            <p>UI/UX, Web</p>
+          </div>
+        </a>
       </div>
     </div>
   </div>
@@ -153,18 +194,6 @@
 
 <script src="/js/jquery-3.3.1.min.js"></script>
 <script src="/js/script.js"></script>
-
-<script>
-  if (window.netlifyIdentity) {
-    window.netlifyIdentity.on("init", user => {
-      if (!user) {
-        window.netlifyIdentity.on("login", () => {
-          document.location.href = "/admin/";
-        });
-      }
-    });
-  }
-</script>
 
 
     

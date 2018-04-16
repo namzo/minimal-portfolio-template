@@ -75,10 +75,16 @@
   }
   .home-box {
     padding: 2em 0 2em;
+    p.name {
+      color: #455A64;
+    }
   }
   .home-box p.lead {
     font-size: 2rem;
     margin-top: 1em;
+  }
+  .index-proj {
+    padding: 0 0 1em;
   }
 }
 @media only screen and (max-width: 767px) {
@@ -240,5 +246,12 @@
   .unit.projects .three.columns {
     width: 50%;
     margin-left: 0;
+  }
+  a.single-project {
+    height: 0;
+    padding: 4em 0;
+  }
+  .index-proj {
+    padding: 1em 0;
   }
 }
