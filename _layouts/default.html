@@ -2,7 +2,7 @@
 <html lang="en">
 {% include head.html %}
 
-<body class="{% if page.nav=='home' %}home-body{% endif %}">
+<body{% if page.nav=='home' %} class="home-body"{% endif %}>
 
 {% include nav.html %}
 

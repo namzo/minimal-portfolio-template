@@ -1,45 +1,23 @@
 <head>
   <meta charset="utf-8">
-  <title>
-    {% if page.nav == "home" %}
-      {{ site.title }}
-    {% elsif page.active == "post" %}
-      {{ page.title }} by {{ site.title }}
-    {% else %}
-      {{ page.title }} &middot; {{ site.title }}
-    {% endif %}
-  </title>
-
+  <title>{% if page.nav == "home" %}{{ site.title }}{% elsif page.active == "post" %}{{ page.title }} by {{ site.title }}{% else %}{{ page.title }} &middot; {{ site.title }}{% endif %}</title>
   <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
   <meta name="author" content="Ernest Ojeh">
-  <meta name="p:domain_verify" content="be7e85c6185cf0ea318dbd69b331bd60"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  
+  <!-- CSS -->
+  <link rel="stylesheet" href="{{ site.baseurl }}/css/style.css">
 
+  <!-- Twitter -->
   <meta name="twitter:card" content="summary">
   <meta name="twitter:site" content="@namzo">
   <meta name="twitter:creator" content="@namzo">
-  {% if page.title %}
-  <meta name="twitter:title" content="{{ page.title }}">
-  {% else %}
-  <meta name="twitter:title" content="{{ site.title }}">
-  {% endif %}
-  {% if page.url %}
+  <meta name="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
   <meta name="twitter:url" content="{{ site.url }}{{ page.url }}">
-  {% endif %}
-  {% if page.description %}
-  <meta name="twitter:description" content="{{ page.description }}">
-  {% else %}
-  <meta name="twitter:description" content="{{ site.description }}">
-  {% endif %}
-  {% if page.image %}
-  <meta name="twitter:image" content="{{ site.url }}/img/{{ page.image }}">
-  {% else %}
-  <meta name="twitter:image" content="{{ site.url }}/img/site-icon.png">
-  {% endif %}
+  <meta name="twitter:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+  <meta name="twitter:image" content="{% if page.image %}{{ site.url }}/img/{{ page.image }}{% else %}{{ site.url }}/img/site-icon.png{% endif %}">
   
-  <link rel="canonical" href="{{ site.url }}{{ page.url }}" />
-  <link rel="stylesheet" href="{{ site.baseurl }}/css/style.css">
-  
+  <!-- Feed -->
   {% feed_meta %}
   <link href='http://ernestojeh.com/feed.xml' rel='alternate' type='application/atom+xml'>
 
