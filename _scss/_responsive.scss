@@ -25,9 +25,11 @@
     line-height: 2;
   }
   nav {
-    padding-top: 1.5em;
     li.active a {
       color: #000;
+    }
+    .container {
+      max-width: 100%;
     }
   }
   .casestudy-body {
@@ -140,7 +142,7 @@
   }
   .intro.home {
     height: auto;
-    padding: 2em 0 1em;
+    padding: 1em 0;
   }
   nav li {
     margin: 0;

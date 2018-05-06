@@ -10,6 +10,11 @@ $fb: #48649f;
 $gplus: #db4437;
 $font: "eo-adelle", sans-serif;
 
+/* Temp fix for weird contact page bug */
+*, *:before, *:after {
+ transition-property: none !important;
+}
+
 @mixin rounded-corners {
   $rounded-corner-radius: 4px;
   border-radius: $rounded-corner-radius;
@@ -246,6 +251,7 @@ nav {
     }
     &.active a {
       color: #000;
+      padding-bottom: 8px;
       border-bottom: 2px solid rgba(143, 161, 179, 0.3);
     }
   }
@@ -317,149 +323,17 @@ section {
 .item-unit {
   margin-bottom: 2em;
 }
-@-webkit-keyframes "float" {
-  0% {
-    -webkit-transform: translate(0, 0);
-    transform: translate(0, 0);
-    opacity: .6;
-  }
-  65% {
-    -webkit-transform: translate(0, 20px);
-    transform: translate(0, 20px);
-    opacity: .2;
-  }
-  100% {
-    -webkit-transform: translate(0, 0);
-    transform: translate(0, 0);
-    opacity: .6;
-  }
-}
-@keyframes "float" {
-  0% {
-    -webkit-transform: translate(0, 0);
-    transform: translate(0, 0);
-    opacity: .6;
-  }
-  65% {
-    -webkit-transform: translate(0, 20px);
-    transform: translate(0, 20px);
-    opacity: .2;
-  }
-  100% {
-    -webkit-transform: translate(0, 0);
-    transform: translate(0, 0);
-    opacity: .6;
-  }
-}
-.float {
-  -webkit-animation-duration: 4s;
-  animation-duration: 4s;
-  -webkit-animation-name: float;
-  animation-name: float;
-  -webkit-animation-iteration-count: infinite;
-  animation-iteration-count: infinite;
-  -webkit-animation-timing-function: ease-in-out;
-  animation-timing-function: ease-in-out;
-}
-@-webkit-keyframes "float2" {
-  0% {
-    -webkit-transform: translate(0, 10px);
-    transform: translate(0, 10px);
-    opacity: .6;
-  }
-  65% {
-    -webkit-transform: translate(0, 0);
-    transform: translate(0, 0);
-    opacity: .2;
-  }
-  100% {
-    -webkit-transform: translate(0, 10px);
-    transform: translate(0, 10px);
-    opacity: .6;
-  }
-}
-@keyframes "float2" {
-  0% {
-    -webkit-transform: translate(0, 10px);
-    transform: translate(0, 10px);
-    opacity: .6;
-  }
-  65% {
-    -webkit-transform: translate(0, 0);
-    transform: translate(0, 0);
-    opacity: .2;
-  }
-  100% {
-    -webkit-transform: translate(0, 10px);
-    transform: translate(0, 10px);
-    opacity: .6;
-  }
-}
-.float2 {
-  -webkit-animation-duration: 6s;
-  animation-duration: 6s;
-  -webkit-animation-name: float2;
-  animation-name: float2;
-  -webkit-animation-iteration-count: infinite;
-  animation-iteration-count: infinite;
-  -webkit-animation-timing-function: ease-in-out;
-  animation-timing-function: ease-in-out;
-}
-@-webkit-keyframes "float3" {
-  0% {
-    -webkit-transform: translate(0, 0);
-    transform: translate(0, 0);
-    opacity: .6;
-  }
-  65% {
-    -webkit-transform: translate(0, 5px);
-    transform: translate(0, 5px);
-    opacity: .2;
-  }
-  100% {
-    -webkit-transform: translate(0, 0);
-    transform: translate(0, 0);
-    opacity: .6;
-  }
-}
-@keyframes "float3" {
-  0% {
-    -webkit-transform: translate(0, 0);
-    transform: translate(0, 0);
-    opacity: .6;
-  }
-  65% {
-    -webkit-transform: translate(0, 5px);
-    transform: translate(0, 5px);
-    opacity: .2;
-  }
-  100% {
-    -webkit-transform: translate(0, 0);
-    transform: translate(0, 0);
-    opacity: .6;
-  }
-}
-.float3 {
-  -webkit-animation-duration: 8s;
-  animation-duration: 8s;
-  -webkit-animation-name: float3;
-  animation-name: float3;
-  -webkit-animation-iteration-count: infinite;
-  animation-iteration-count: infinite;
-  -webkit-animation-timing-function: ease-in-out;
-  animation-timing-function: ease-in-out;
-}
 .home-body {
   background: $white;
   color: #293239;
-  nav {
+  /*nav {
     display: none;
-  }
+  }*/
 }
 .intro {
   padding: 3em 0 6em;
   &.home {
-    padding: 5em 0 2em;
+    padding: 1em 0 2em;
     text-align: left;
     position: relative;
     -webkit-box-sizing: border-box;
@@ -595,8 +469,6 @@ a.single-project {
   height: 320px;
   width: 100%;
   display: table;
-  border-radius: 8px;
-  box-shadow: 0 1px 0 rgba(0,0,0,.05), 0 2px 6px rgba(0,0,0,.05), 0 10px 20px rgba(0,0,0,.05);
   margin: 0 0 20px;
   &:hover, &:focus, &:active {
     text-decoration: none;
