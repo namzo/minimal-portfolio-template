@@ -221,13 +221,14 @@ abbr, abbr[title] {
   box-shadow: 0 0 0 2px rgba(160, 209, 250, .8);
 }
 nav {
-  padding-top: 10px;
+  padding-top: 0;
   padding-bottom: 10px;
   width: 100%;
   position: relative;
   z-index: 600;
   .row {
     border-bottom: 1px solid rgba(143, 161, 179, 0.3);
+    box-shadow: 0 4px 2px -2px rgba(96, 125, 139, 0.09);
   }
   &.bgnav {
     background: $gray;
@@ -488,8 +489,9 @@ a.single-project {
       padding: 0;
     }
   }
-  &.rideshare {
-    background: #72c1ca;
+  &.three-dee {
+    background: #7432a0 url("../img/3d.jpg") no-repeat top;
+    background-size: cover;
   }
   &.kongapay {
     background: #1ba6ec url("../img/kongapay.jpg") no-repeat top;
