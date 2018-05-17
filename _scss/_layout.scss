@@ -440,6 +440,7 @@ section {
   position: relative;
   p {
     color: #607D8B;
+    animation-delay: 200ms;
     strong {
       color: #455A64;
     }
@@ -455,6 +456,7 @@ section {
     font-size: 5rem;
     letter-spacing: -1px;
     line-height: 1.2;
+    animation-delay: 20ms;
     span {
       color: lighten($text-color, 25%);
     }
@@ -1169,10 +1171,6 @@ code {
     background: rgba(0, 0, 0, 0.4);
   }
 }
-.move-up {
-  -webkit-animation: moving-up 800ms linear both;
-  animation: moving-up 800ms linear both;
-}
 .unit.move-up {
   padding-top: 0;
 }
@@ -1202,6 +1200,10 @@ code {
   text-transform: none;
   line-height: 30px;
   padding: 5px 18px 6px !important;
+}
+.move-up {
+  -webkit-animation: moving-up 600ms linear both;
+  animation: moving-up 600ms linear both;
 }
 @-webkit-keyframes moving-up {
   0% {
@@ -1276,6 +1278,47 @@ code {
     transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
     opacity: 1;
   }
+}
+
+.bounce-up {
+  -webkit-animation: bounce-up 600ms linear both;
+  animation: bounce-up 600ms linear both;
+}
+@-webkit-keyframes bounce-up {  
+  from { opacity:0; transform:translate3d( 0, 200px, 0); }
+  25%  { opacity:1; transform:translate3d( 0, -15.6px, 0); }
+  30%  { opacity:1; transform:translate3d( 0, -10.3px, 0); }
+  35%  { opacity:1; transform:translate3d( 0, 0, 0); }
+  40%  { opacity:1; transform:translate3d( 0, 4.5px, 0); }
+  45%  { opacity:1; transform:translate3d( 0, 2.9px, 0); }
+  50%  { opacity:1; transform:translate3d( 0, 0, 0); }
+  55%  { opacity:1; transform:translate3d( 0, -1.3px, 0); }
+  60%  { opacity:1; transform:translate3d( 0, -0.8px, 0); }
+  65%  { opacity:1; transform:translate3d( 0, 0, 0); }
+  70%  { opacity:1; transform:translate3d( 0, 0.4px, 0); }
+  75%  { opacity:1; transform:translate3d( 0, 0.2px, 0); }
+  80%  { opacity:1; transform:translate3d( 0, 0, 0); }
+  85%  { opacity:1; transform:translate3d( 0, -0.1px, 0); }
+  90%  { opacity:1; transform:translate3d( 0, -0.1px, 0); }
+  to   { opacity:1; transform:translate3d( 0, 0, 0); }
+}
+@keyframes bounce-up {
+  from { opacity:0; transform:translate3d( 0, 200px, 0); }
+  25%  { opacity:1; transform:translate3d( 0, -15.6px, 0); }
+  30%  { opacity:1; transform:translate3d( 0, -10.3px, 0); }
+  35%  { opacity:1; transform:translate3d( 0, 0, 0); }
+  40%  { opacity:1; transform:translate3d( 0, 4.5px, 0); }
+  45%  { opacity:1; transform:translate3d( 0, 2.9px, 0); }
+  50%  { opacity:1; transform:translate3d( 0, 0, 0); }
+  55%  { opacity:1; transform:translate3d( 0, -1.3px, 0); }
+  60%  { opacity:1; transform:translate3d( 0, -0.8px, 0); }
+  65%  { opacity:1; transform:translate3d( 0, 0, 0); }
+  70%  { opacity:1; transform:translate3d( 0, 0.4px, 0); }
+  75%  { opacity:1; transform:translate3d( 0, 0.2px, 0); }
+  80%  { opacity:1; transform:translate3d( 0, 0, 0); }
+  85%  { opacity:1; transform:translate3d( 0, -0.1px, 0); }
+  90%  { opacity:1; transform:translate3d( 0, -0.1px, 0); }
+  to   { opacity:1; transform:translate3d( 0, 0, 0); }
 }
 .chat-wrap {
   padding: 1.2em 0 0;
