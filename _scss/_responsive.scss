@@ -191,6 +191,7 @@
     width: 100%;
   }
   nav {
+    padding-bottom: 0;
     .pull-right {
       text-align: left;
       float: right;
@@ -257,6 +258,7 @@
   a.single-project {
     height: 0;
     padding: 4em 0;
+    margin: 0 0 20px;
   }
   .index-proj {
     padding: 1em 0;
