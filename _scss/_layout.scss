@@ -375,8 +375,6 @@ section {
       top: -4.5vw;
     }
     .intro-profile {
-      -webkit-animation: moving-up 800ms linear both;
-      animation: moving-up 800ms linear both;
       margin: 4em 0 3em;
     }
     &.kongapay {
@@ -440,7 +438,7 @@ section {
   position: relative;
   p {
     color: #607D8B;
-    animation-delay: 200ms;
+    animation-delay: 400ms;
     strong {
       color: #455A64;
     }
@@ -456,7 +454,7 @@ section {
     font-size: 5rem;
     letter-spacing: -1px;
     line-height: 1.2;
-    animation-delay: 20ms;
+    animation-duration: 900ms;
     span {
       color: lighten($text-color, 25%);
     }
@@ -491,21 +489,25 @@ a.single-project {
       padding: 0;
     }
   }
-  &.three-dee {
-    background: #7432a0 url("../img/3d.jpg") no-repeat top;
-    background-size: cover;
-  }
   &.kongapay {
     background: #1ba6ec url("../img/kongapay.jpg") no-repeat top;
     background-size: cover;
-  }
-  &.newthird {
-    background: #e24637 url("../img/newthird.jpg") no-repeat top;
-    background-size: cover;
+    animation-delay: 800ms;
   }
   &.insidify {
     background: #1fa7cc url("../img/insidify.jpg") no-repeat top;
     background-size: cover;
+    animation-delay: 840ms;
+  }
+  &.newthird {
+    background: #e24637 url("../img/newthird.jpg") no-repeat top;
+    background-size: cover;
+    animation-delay: 880ms;
+  }
+  &.three-dee {
+    background: #7432a0 url("../img/3d.jpg") no-repeat top;
+    background-size: cover;
+    animation-delay: 920ms;
   }
 }
 .unit {
@@ -1202,8 +1204,8 @@ code {
   padding: 5px 18px 6px !important;
 }
 .move-up {
-  -webkit-animation: moving-up 600ms linear both;
-  animation: moving-up 600ms linear both;
+  -webkit-animation: moving-up 900ms linear both;
+  animation: moving-up 900ms linear both;
 }
 @-webkit-keyframes moving-up {
   0% {
@@ -1285,7 +1287,7 @@ code {
   animation: bounce-up 600ms linear both;
 }
 @-webkit-keyframes bounce-up {  
-  from { opacity:0; transform:translate3d( 0, 200px, 0); }
+  from { opacity:0; transform:translate3d( 0, 30px, 0); }
   25%  { opacity:1; transform:translate3d( 0, -15.6px, 0); }
   30%  { opacity:1; transform:translate3d( 0, -10.3px, 0); }
   35%  { opacity:1; transform:translate3d( 0, 0, 0); }
@@ -1303,7 +1305,7 @@ code {
   to   { opacity:1; transform:translate3d( 0, 0, 0); }
 }
 @keyframes bounce-up {
-  from { opacity:0; transform:translate3d( 0, 200px, 0); }
+  from { opacity:0; transform:translate3d( 0, 30px, 0); }
   25%  { opacity:1; transform:translate3d( 0, -15.6px, 0); }
   30%  { opacity:1; transform:translate3d( 0, -10.3px, 0); }
   35%  { opacity:1; transform:translate3d( 0, 0, 0); }
