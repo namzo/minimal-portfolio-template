@@ -11,10 +11,11 @@ $gplus: #db4437;
 $font: "eo-adelle", sans-serif;
 
 /* Temp fix for weird contact page bug */
+/* 
 *, *:before, *:after {
  transition-property: none !important;
 }
-
+*/
 @mixin rounded-corners {
   $rounded-corner-radius: 4px;
   border-radius: $rounded-corner-radius;
@@ -476,10 +477,14 @@ a.single-project {
   margin: 0 0 40px;
   box-shadow: 0 14px 32px rgba(0, 0, 0, 0.2);
   border-radius: 10px;
+  transform: scale(1);
+  transition: all .3s ease-in-out;
   &:hover, &:focus, &:active {
     text-decoration: none;
     border-bottom: none;
     border-radius: 10px;
+    transform: scale(1.03);
+    transition: all .3s ease-in-out;
   }
   .proj-info {
     color: $white;
@@ -1204,6 +1209,7 @@ code {
     height: auto;
     margin: 0;
     box-shadow: 0 1px 1px rgba(84, 110, 122, 0.2) inset;
+    transition: all 400ms ease;
     &:focus {
       border: 1px solid $blue;
       box-shadow: 0 1px 1px rgba(84, 110, 122, 0.2) inset, 0 0px 3px rgba(0, 105, 255, 0.48);
