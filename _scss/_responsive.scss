@@ -113,6 +113,20 @@
       margin: 15px;
     }
   }
+  .index-proj {
+    .three.columns {
+      width: 25%;
+    }
+    .nine.columns {
+      width: 60%;
+    }
+    .ind-projects {
+      padding-left: 10px;
+      .article-title {
+        margin-top: 0;
+      }
+    }
+  }
   nav {
     .container {
       width: 100%;
