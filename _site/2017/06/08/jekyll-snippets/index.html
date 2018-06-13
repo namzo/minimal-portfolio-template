@@ -45,6 +45,7 @@
   <meta name="msapplication-square150x150logo" content="http://localhost:4000/img/icons/mstile-150x150.png" />
   <meta name="msapplication-wide310x150logo" content="http://localhost:4000/img/icons/mstile-310x150.png" />
   <meta name="msapplication-square310x310logo" content="http://localhost:4000/img/icons/mstile-310x310.png" />
+<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 </head>
 
 
@@ -243,6 +244,17 @@
 
 <script src="/js/jquery-3.3.1.min.js"> </script>
 <script src="/js/script.js"> </script>
+<script>
+  if (window.netlifyIdentity) {
+    window.netlifyIdentity.on("init", user => {
+      if (!user) {
+        window.netlifyIdentity.on("login", () => {
+          document.location.href = "/admin/";
+        });
+      }
+    });
+  }
+</script>
 
   
 

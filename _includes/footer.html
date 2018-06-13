@@ -46,3 +46,14 @@
 
 <script src="{{ site.baseurl }}/js/jquery-3.3.1.min.js"> </script>
 <script src="{{ site.baseurl }}/js/script.js"> </script>
+<script>
+  if (window.netlifyIdentity) {
+    window.netlifyIdentity.on("init", user => {
+      if (!user) {
+        window.netlifyIdentity.on("login", () => {
+          document.location.href = "/admin/";
+        });
+      }
+    });
+  }
+</script>
