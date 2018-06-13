@@ -3,7 +3,7 @@ backend:
   branch: master
 media_folder: "img/post"
 collections:
-  - name: "Writing" # Used in routes, e.g., /admin/collections/blog
+  - name: "writing" # Used in routes, e.g., /admin/collections/blog
     label: "Writing" # Used in the UI
     folder: "_posts" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
