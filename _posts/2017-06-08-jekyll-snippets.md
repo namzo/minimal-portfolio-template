@@ -1,6 +1,7 @@
 ---
-layout: post	
+layout: post  
 title: Jekyll snippets
+date: '2017-06-08 12:00pm'
 description: This is just a quick post listing a few of the jekyll snippets I'm using on this site.
 ---
 

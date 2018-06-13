@@ -1,6 +1,7 @@
 ---
-layout: post	
+layout: post
 title: Inspiration
+date: '2016-01-21 12:00pm'
 description: Sites I visit for insipiration
 ---
 

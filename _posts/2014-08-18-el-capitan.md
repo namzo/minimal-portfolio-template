@@ -1,6 +1,7 @@
 ---
 layout: post	
 title: El Capitan - First Impressions
+date: '2014-08-18 12:00pm'
 description: First Impressions of the OS - OS X El Capitan
 ---
 

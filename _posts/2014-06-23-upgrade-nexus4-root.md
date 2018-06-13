@@ -1,6 +1,7 @@
 ---
 layout: post	
 title: How I upgraded my Nexus to Android 4.4.4 without losing root, files (and Xposed Framework)
+date: '2014-06-23 12:00pm'
 ---
 
 I just got the OTA for Android 4.4.4 on my Nexus 4. It could have been as easy as installing the update and rebooting my device, but the problem was that my phone was rooted. If I had installed the OTA directly I could have ended up with a boot-loop or have to re-root and installed apps all over again . I've had a similar experience in the past.

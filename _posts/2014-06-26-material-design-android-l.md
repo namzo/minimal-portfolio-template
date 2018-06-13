@@ -1,6 +1,7 @@
 ---
 layout: post	
 title: Material Design & Android L
+date: '2014-06-26 12:00pm'
 description: Android looks good now
 ---
 

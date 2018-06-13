@@ -1,6 +1,7 @@
 ---
 layout: post	
 title: Curating Lagos
+date: '2015-12-02 12:00pm'
 description: A photo curation project
 ---
 

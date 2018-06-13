@@ -1,6 +1,7 @@
 ---
 layout: post	
 title: Procrastination
+date: '2016-01-03 12:00pm'
 description: How I stop procrastination
 ---
 
