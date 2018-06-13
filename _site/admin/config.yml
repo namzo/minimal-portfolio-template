@@ -1,5 +1,5 @@
 backend:
-  name: git-gateway
+  name: gitlab
   branch: master
 media_folder: "img/post"
 collections:
