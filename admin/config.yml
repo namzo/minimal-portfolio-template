@@ -1,6 +1,6 @@
 backend:
   name: gitlab
-  repo: namzo/ernestojeh.com
+  repo: "namzo/ernestojeh.com"
   branch: master
 media_folder: "img/post"
 collections:
