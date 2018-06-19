@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Ernest Ojeh</title>
-    <description>Ernest Ojeh is a UX designer. Currently based in Amsterdam.</description>
+    <description>Ernest Ojeh is a User Experience Designer. Currently based in Amsterdam.</description>
     <link>http://localhost:4000</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
     
