@@ -48,7 +48,7 @@ body {
   background: $white;
   height: 100%;
   font-family: $font;
-  font-size: 1.8rem;
+  font-size: 1.7rem;
   line-height: 1.6;
   font-weight: 400;
   z-index: 2;
@@ -406,7 +406,7 @@ section {
 .intro {
   padding: 3em 0 6em;
   &.home {
-    padding: 1em 0 2em;
+    padding: 1em 0 0;
     text-align: left;
     position: relative;
     box-sizing: border-box;
@@ -532,9 +532,9 @@ section {
   z-index: 20;
   h1 {
     position: relative;
-    margin-bottom: 3rem;
+    margin-bottom: 1rem;
     margin-top: 3rem;
-    font-size: 5rem;
+    font-size: 3.6rem;
     letter-spacing: -1px;
     line-height: 1.2;
     -webkit-animation-delay: 100ms;
@@ -555,7 +555,7 @@ section {
 }
 
 a.single-project {
-  height: 320px;
+  height: 220px;
   width: 100%;
   display: block;
   position: relative;
@@ -588,7 +588,7 @@ a.single-project {
     margin-right: -50%;
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-    h4 {
+    h4, h5 {
       color: $white;
       margin-bottom: 0;
     }
@@ -669,7 +669,8 @@ a.single-project {
 
 .ind-projects {
   .article-title {
-    margin: 0.6em 0 0;
+    margin: 0;
+    font-size: 1.7rem;
   }
 }
 
@@ -1003,14 +1004,21 @@ img {
 .avatar-img {
   border-radius: 12px;
   box-shadow: 0 14px 32px rgba(19, 83, 134, 0.32);
-  border: 2px solid #fff;
+  border: 4px solid #fff;
   margin: 0 0 15px 0;
+  transform: perspective(0) rotateY(0);
+  transition: ease all 0.3s;
+  &:hover {
+    transform: perspective(200px) rotateY(8deg);
+    border: 6px solid #fff;
+  }
 }
 
 .talks {
   padding: 4em 0 2em;
   h5 {
     margin-bottom: 0.7rem;
+    font-size: 1.7rem;
   }
   li {
     margin: 2em 0;

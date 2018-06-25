@@ -6,7 +6,7 @@
 }
 @media (min-width: 400px) {
   .container {
-    max-width: 1020px;
+    max-width: 1200px;
     width: 100%;
   }
 }
@@ -21,7 +21,7 @@
 }
 @media (min-width: 768px) {
   body {
-    font-size: 1.8rem;
+    font-size: 1.7rem;
     line-height: 2;
   }
   nav {
@@ -29,7 +29,7 @@
       color: #000;
     }
     .container {
-      max-width: 100%;
+      max-width: 1200px;
     }
   }
   .avatar-img {
@@ -79,13 +79,13 @@
     height: 600px;
   }
   .home-box {
-    padding: 2em 0 2em;
+    padding: 1em 0 2em;
     p.name {
       color: #455A64;
     }
   }
   .home-box p.lead {
-    font-size: 2rem;
+    font-size: 1.7rem;
     margin-top: 1em;
   }
   .index-proj {
@@ -115,6 +115,9 @@
   }
   .index-proj {
     .three.columns {
+      width: 25%;
+    }
+    .two.columns {
       width: 25%;
     }
     .nine.columns {
