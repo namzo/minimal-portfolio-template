@@ -1,7 +1,7 @@
 @media screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 2dppx) {
   body {
-      -moz-osx-font-smoothing: grayscale;
-      -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
   }
 }
 @media (min-width: 400px) {
@@ -29,7 +29,7 @@
       color: #000;
     }
     .container {
-      max-width: 1200px;
+      max-width: 100%;
     }
   }
   .avatar-img {
@@ -282,6 +282,19 @@
     height: 0;
     padding: 4em 0;
     margin: 0 0 20px;
+    .proj-info {
+      h4, h5 {
+        transform: translateY(0);
+      }
+      p {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    &:hover .proj-info p {
+      transform: translateY(0);
+      opacity: 1;
+    }
   }
   .index-proj {
     padding: 1em 0;
