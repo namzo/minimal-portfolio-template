@@ -91,6 +91,9 @@
   .index-proj {
     padding: 0 0 1em;
   }
+  .hidden-mobile {
+    display: block;
+  }
 }
 @media only screen and (max-width: 767px) {
   html {
@@ -191,6 +194,12 @@
   .down-link {
     display: none;
   }
+  .intro.home .home-box {
+    padding-top: 0;
+  }
+  .intro.home .lead {
+    margin-bottom: 20px;
+  }
   .intro.home::before {
     display: none;
     height: 100%;
@@ -198,8 +207,9 @@
     height: 600px;
   }
   .intro-profile h1 {
-    font-size: 4rem;
-    margin-bottom: 30px;
+    font-size: 3.2rem;
+    margin-top: 0;
+    margin-bottom: 20px;
   }
   .unit.value .container {
     padding-top: 1em;
@@ -298,5 +308,8 @@
   }
   .index-proj {
     padding: 1em 0;
+  }
+  .hidden-mobile {
+    display: none;
   }
 }

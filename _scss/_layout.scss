@@ -117,13 +117,15 @@ a {
   text-decoration: none;
   outline: none;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  &:hover {
+    border-bottom: 1px solid darken($blue, 5%);
+  }
   &:hover,
   &:focus,
   a:active {
     transition: ease all .3s;
-    color: darken($blue, 10%);
+    color: darken($blue, 5%);
     text-decoration: none;
-    border-bottom: 1px solid darken($blue, 10%);
   }
 }
 
@@ -303,17 +305,14 @@ abbr[title] {
   background: #E8EAF6;
   border-radius: 7px;
   padding: 6px 20px;
-  border: 1px solid rgba(149, 117, 205, 0.4);
-  // box-shadow: 0 3px 9px rgba(149, 117, 205, 0.21), 0 1px 0 #fff inset;
-  text-shadow: 0 1px rgba(255, 255, 255, 0.72);
+  border: 1px solid rgba(137, 92, 214, 0.2);
   a:hover, a:focus {
     text-decoration: none;
-    border: none;
   }
   p {
     font-size: 1.6rem;
     margin: 0;
-    color: #9575CD;
+    color: rgb(123, 89, 183);
   }
 }
 
@@ -572,7 +571,6 @@ section {
     margin-top: 3rem;
     font-size: 3.6rem;
     font-weight: 700;
-    letter-spacing: -1px;
     line-height: 1.2;
     -webkit-animation-delay: 100ms;
     animation-delay: 100ms;
@@ -592,22 +590,21 @@ section {
 }
 
 a.single-project {
-  height: 220px;
+  height: 180px;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
   margin: 0 0 40px;
-  // box-shadow: 0 14px 32px rgba(0, 0, 0, 0.2);
-  border-radius: 10px;
+  box-shadow: 0 14px 32px rgba(0, 0, 0, 0.2);
+  border-radius: 3px;
   transition: all .3s ease-in-out;
   &:hover,
   &:focus,
   &:active {
     text-decoration: none;
     border-bottom: none;
-    border-radius: 10px;
     transition: all .3s ease-in-out;
   }
   &:active,
@@ -668,6 +665,9 @@ a.single-project {
   }
 }
 
+.index-proj img {
+  border-radius: 4px;
+}
 .unit {
   padding: 4em 0;
   position: relative;
@@ -1120,8 +1120,7 @@ strong.name-text {
   position: relative;
   display: inline-block;
   font-family: $font;
-  font-weight: 800;
-  letter-spacing: -1px;
+  font-weight: 700;
 }
 
 .back-link-wrap {
@@ -1550,8 +1549,8 @@ input[type="button"] {
 }
 
 .fade-in {
-  -webkit-animation: fading 600ms linear both;
-  animation: fading 600ms linear both;
+  -webkit-animation: fading ease-in 600ms;
+  animation: fading ease-in 600ms;
 }
 
 @-webkit-keyframes fading {
