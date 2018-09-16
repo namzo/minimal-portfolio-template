@@ -1,59 +1,70 @@
 @font-face {
-  font-family: 'Inter UI';
-  font-style:  normal;
-  font-weight: 400;
-  src: url("Inter-UI-Regular.woff2") format("woff2"),
-       url("Inter-UI-Regular.woff") format("woff");
+  font-family: 'apercu';
+  src: url("../fonts/apercu/apercu-webfont.eot");
+  src: url("../fonts/apercu/apercu-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/apercu/apercu-webfont.woff2") format("woff2"), url("../fonts/apercu/apercu-webfont.woff") format("woff"), url("../fonts/apercu/apercu-webfont.ttf") format("truetype"), url("../fonts/apercu/apercu-webfont.svg#apercuregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
 }
 @font-face {
-  font-family: 'Inter UI';
-  font-style:  italic;
-  font-weight: 400;
-  src: url("Inter-UI-Italic.woff2") format("woff2"),
-       url("Inter-UI-Italic.woff") format("woff");
+  font-family: 'apercu';
+  src: url("../fonts/apercu/apercu-bold-webfont.eot");
+  src: url("../fonts/apercu/apercu-bold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/apercu/apercu-bold-webfont.woff2") format("woff2"), url("../fonts/apercu/apercu-bold-webfont.woff") format("woff"), url("../fonts/apercu/apercu-bold-webfont.ttf") format("truetype"), url("../fonts/apercu/apercu-bold-webfont.svg#apercubold") format("svg");
+  font-weight: bold;
+  font-style: normal;
 }
-
 @font-face {
-  font-family: 'Inter UI';
-  font-style:  normal;
+  font-family: 'Tiempos Text';
+  src: url("../fonts/TiemposText/TiemposText-Bold.eot");
+  src: url("../fonts/TiemposText/TiemposText-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/TiemposText/TiemposText-Bold.woff2") format("woff2"), url("../fonts/TiemposText/TiemposText-Bold.woff") format("woff"), url("../fonts/TiemposText/TiemposText-Bold.ttf") format("truetype"), url("../fonts/TiemposText/TiemposText-Bold.svg#TiemposText-Bold") format("svg");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Tiempos Text';
+  src: url("../fonts/TiemposText/TiemposText-Semibold.eot");
+  src: url("../fonts/TiemposText/TiemposText-Semibold.eot?#iefix") format("embedded-opentype"), url("../fonts/TiemposText/TiemposText-Semibold.woff2") format("woff2"), url("../fonts/TiemposText/TiemposText-Semibold.woff") format("woff"), url("../fonts/TiemposText/TiemposText-Semibold.ttf") format("truetype"), url("../fonts/TiemposText/TiemposText-Semibold.svg#TiemposText-Semibold") format("svg");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Tiempos Text';
+  src: url("../fonts/TiemposText/TiemposText-Regular.eot");
+  src: url("../fonts/TiemposText/TiemposText-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/TiemposText/TiemposText-Regular.woff2") format("woff2"), url("../fonts/TiemposText/TiemposText-Regular.woff") format("woff"), url("../fonts/TiemposText/TiemposText-Regular.ttf") format("truetype"), url("../fonts/TiemposText/TiemposText-Regular.svg#TiemposText-Regular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Tiempos Text';
+  src: url("../fonts/TiemposText/TiemposText-RegularItalic.eot");
+  src: url("../fonts/TiemposText/TiemposText-RegularItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/TiemposText/TiemposText-RegularItalic.woff2") format("woff2"), url("../fonts/TiemposText/TiemposText-RegularItalic.woff") format("woff"), url("../fonts/TiemposText/TiemposText-RegularItalic.ttf") format("truetype"), url("../fonts/TiemposText/TiemposText-RegularItalic.svg#TiemposText-RegularItalic") format("svg");
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Tiempos Text';
+  src: url("../fonts/TiemposText/TiemposText-BoldItalic.eot");
+  src: url("../fonts/TiemposText/TiemposText-BoldItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/TiemposText/TiemposText-BoldItalic.woff2") format("woff2"), url("../fonts/TiemposText/TiemposText-BoldItalic.woff") format("woff"), url("../fonts/TiemposText/TiemposText-BoldItalic.ttf") format("truetype"), url("../fonts/TiemposText/TiemposText-BoldItalic.svg#TiemposText-BoldItalic") format("svg");
+  font-weight: bold;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Tiempos Text';
+  src: url("../fonts/TiemposText/TiemposText-MediumItalic.eot");
+  src: url("../fonts/TiemposText/TiemposText-MediumItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/TiemposText/TiemposText-MediumItalic.woff2") format("woff2"), url("../fonts/TiemposText/TiemposText-MediumItalic.woff") format("woff"), url("../fonts/TiemposText/TiemposText-MediumItalic.ttf") format("truetype"), url("../fonts/TiemposText/TiemposText-MediumItalic.svg#TiemposText-MediumItalic") format("svg");
   font-weight: 500;
-  src: url("Inter-UI-Medium.woff2") format("woff2"),
-       url("Inter-UI-Medium.woff") format("woff");
+  font-style: italic;
 }
 @font-face {
-  font-family: 'Inter UI';
-  font-style:  italic;
+  font-family: 'Tiempos Text';
+  src: url("../fonts/TiemposText/TiemposText-SemiboldItalic.eot");
+  src: url("../fonts/TiemposText/TiemposText-SemiboldItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/TiemposText/TiemposText-SemiboldItalic.woff2") format("woff2"), url("../fonts/TiemposText/TiemposText-SemiboldItalic.woff") format("woff"), url("../fonts/TiemposText/TiemposText-SemiboldItalic.ttf") format("truetype"), url("../fonts/TiemposText/TiemposText-SemiboldItalic.svg#TiemposText-SemiboldItalic") format("svg");
+  font-weight: 600;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Tiempos Text';
+  src: url("../fonts/TiemposText/TiemposText-Medium.eot");
+  src: url("../fonts/TiemposText/TiemposText-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/TiemposText/TiemposText-Medium.woff2") format("woff2"), url("../fonts/TiemposText/TiemposText-Medium.woff") format("woff"), url("../fonts/TiemposText/TiemposText-Medium.ttf") format("truetype"), url("../fonts/TiemposText/TiemposText-Medium.svg#TiemposText-Medium") format("svg");
   font-weight: 500;
-  src: url("Inter-UI-MediumItalic.woff2") format("woff2"),
-       url("Inter-UI-MediumItalic.woff") format("woff");
-}
-
-@font-face {
-  font-family: 'Inter UI';
-  font-style:  normal;
-  font-weight: 700;
-  src: url("Inter-UI-Bold.woff2") format("woff2"),
-       url("Inter-UI-Bold.woff") format("woff");
-}
-@font-face {
-  font-family: 'Inter UI';
-  font-style:  italic;
-  font-weight: 700;
-  src: url("Inter-UI-BoldItalic.woff2") format("woff2"),
-       url("Inter-UI-BoldItalic.woff") format("woff");
-}
-
-@font-face {
-  font-family: 'Inter UI';
-  font-style:  normal;
-  font-weight: 900;
-  src: url("Inter-UI-Black.woff2") format("woff2"),
-       url("Inter-UI-Black.woff") format("woff");
-}
-@font-face {
-  font-family: 'Inter UI';
-  font-style:  italic;
-  font-weight: 900;
-  src: url("Inter-UI-BlackItalic.woff2") format("woff2"),
-       url("Inter-UI-BlackItalic.woff") format("woff");
+  font-style: normal;
 }
