@@ -95,17 +95,16 @@ h4 {
 }
 a {
   color: $blue;
-  border-bottom: 1px solid transparent;
   text-decoration: none;
   outline: none;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   &:hover {
-    border-bottom: 1px solid darken($blue, 5%);
+    text-decoration: underline;
   }
   &:hover, &:focus, a:active {
     transition: ease all .3s;
     color: darken($blue, 5%);
-    text-decoration: none;
+    text-decoration: underline;
   }
 }
 .hide-name {
@@ -178,7 +177,7 @@ header {
 }
 p {
   font-size: inherit;
-  line-height: 1.7;
+  line-height: 1.8;
   margin-bottom: 10px;
 }
 li {
@@ -246,7 +245,6 @@ abbr, abbr[title] {
     strong {
       color: $black;
       margin: 0;
-      font-weight: 600;
     }
   }
 }
@@ -272,9 +270,6 @@ nav {
   z-index: 600;
   font-family: $font;
   border-bottom: 1px solid rgba(143, 161, 179, 0.3);
-  .container {
-    // box-shadow: 0 6px 8px -2px rgba(96, 125, 139, 0.12);
-  }
   &.bgnav {
     background: $gray;
     width: auto;
@@ -936,7 +931,7 @@ img {
 .talks {
   padding: 4em 0 2em;
   h5 {
-    margin-bottom: 0;
+    margin-bottom: 10px;
   }
   li {
     margin: 2em 0;
@@ -983,7 +978,7 @@ strong.name-text {
   margin-right: 0;
   position: relative;
   display: inline-block;
-  font-family: $font;
+  font-family: $font-serif;
   font-weight: 700;
 }
 .back-link-wrap {
@@ -1416,14 +1411,14 @@ code {
 footer {
   color: #78909C;
   font-family: $font;
+  small {
+    font-size: 90%;
+  }
   ul {
     margin-bottom: 1em;
   }
   .smallcopy a {
     color: #78909C !important;
-    &:hover, &:active, &:focus {
-      border-color: #78909C;
-    }
   }
   .row:first-child {
     padding-top: 2em;
