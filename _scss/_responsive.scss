@@ -25,9 +25,6 @@
     line-height: 2;
   }
   nav {
-    li.active a {
-      color: #000;
-    }
     .container {
       max-width: 1400px;
     }
@@ -124,7 +121,7 @@
       width: 25%;
     }
     .nine.columns {
-      width: 60%;
+      width: 75%;
     }
     .ind-projects {
       padding-left: 10px;
@@ -280,9 +277,6 @@
         margin-left: 0;
       }
     }
-  }
-  p.lead {
-    font-size: 1.9rem;
   }
   .unit.contact .container {
     padding-top: 0;

@@ -5,6 +5,7 @@ $black: #263238;
 $gray: #CFD8DC;
 $light: #eff1f4;
 $bg-gray: #f9f9f9;
+$orange-text: #F57C00;
 $tw: #55acee;
 $fb: #48649f;
 $gplus: #db4437;
@@ -40,7 +41,7 @@ body {
   background: $white;
   height: 100%;
   font-family: $font-serif;
-  font-size: 2rem;
+  font-size: 1.7rem;
   line-height: 1.6;
   font-weight: 400;
   z-index: 2;
@@ -197,8 +198,9 @@ abbr, abbr[title] {
   transition: all .15s ease;
   display: inline-block;
   line-height: 28px;
+  font-family: $font;
   border: 1px solid rgba(12, 81, 181, 0.34);
-  box-shadow: 0 2px 4px rgba(0, 105, 255, 0.4);
+  // box-shadow: 0 2px 4px rgba(0, 105, 255, 0.4);
   transition: all 300ms ease;
   &.btn-hollow, &.btn-hollow:hover, &.btn-hollow:focus {
     background: transparent;
@@ -213,12 +215,12 @@ abbr, abbr[title] {
 }
 .btn:hover {
   background-color: lighten($blue, 5%);
-  box-shadow: 0 4px 12px rgba(0, 105, 255, 0.4);
+  // box-shadow: 0 4px 12px rgba(0, 105, 255, 0.4);
   border: 1px solid #0c51b5;
 }
 .btn:active, .btn:focus {
   background: #0c62dc;
-  box-shadow: 0 0 0 2px rgba(160, 209, 250, .8);
+  // box-shadow: 0 0 0 2px rgba(160, 209, 250, .8);
 }
 .jd-wrap {
   padding: 2.4em 0;
@@ -264,7 +266,7 @@ abbr, abbr[title] {
 }
 nav {
   padding-top: 0;
-  padding-bottom: 0; // padding-bottom: 10px;
+  padding-bottom: 0;
   width: 100%;
   position: relative;
   z-index: 600;
@@ -291,8 +293,7 @@ nav {
       padding-left: 3px;
     }
     &.active a {
-      color: #000;
-      padding-bottom: 8px;
+      color: lighten($text-color, 40%);
     }
   }
   .links li {
@@ -312,7 +313,7 @@ nav {
     &:hover, &:active {
       text-decoration: none;
       border-color: $gray;
-      color: $black;
+      color: $blue;
       border: none;
     }
     &:active {
@@ -580,6 +581,12 @@ a.single-project {
     -webkit-animation-delay: 920ms;
     animation-delay: 920ms;
   }
+  &.kongapay:hover,
+  &.insidify:hover,
+  &.newthird:hover,
+  &.three-dee:hover {
+    background-position: center top -5px;
+  }
 }
 .index-proj img {
   border-radius: 4px;
@@ -768,6 +775,7 @@ hr {
   background-color: $blue;
   border: none;
   color: $white;
+  font-family: $font;
   font-size: inherit;
   text-transform: inherit;
   padding: 0 20px;
@@ -915,7 +923,7 @@ img {
   line-height: 1.5;
 }
 .muted {
-  color: #F57C00;
+  color: $orange-text;
 }
 .avatar-img {
   border-radius: 12px;
@@ -934,7 +942,7 @@ img {
     margin-bottom: 10px;
   }
   li {
-    margin: 2em 0;
+    margin: 1.5em 0;
   }
 }
 .pull-left {
