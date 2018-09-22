@@ -293,7 +293,7 @@ nav {
       padding-left: 3px;
     }
     &.active a {
-      color: lighten($text-color, 40%);
+      color: $text-color;
     }
   }
   .links li {
@@ -303,7 +303,7 @@ nav {
     display: none !important;
   }
   a {
-    color: $text-color;
+    color: rgb(120, 141, 152);
     position: relative;
     display: inline-block;
     padding: 10px 0;
@@ -492,8 +492,9 @@ section {
     position: relative;
     margin-bottom: 1rem;
     margin-top: 3rem;
-    font-size: 3.6rem;
+    font-size: 4rem;
     font-weight: 700;
+    letter-spacing: -2px;
     line-height: 1.2;
     -webkit-animation-delay: 100ms;
     animation-delay: 100ms;
@@ -807,9 +808,6 @@ hr {
 }
 .no-padding-top {
   padding-top: 0 !important;
-}
-p.lead {
-  font-size: 2rem;
 }
 .article-title {
   margin: 0.1em 0 0;
