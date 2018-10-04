@@ -249,6 +249,9 @@ abbr, abbr[title] {
       margin: 0;
     }
   }
+  &.p-jobs .jd-title strong, &.p-jobs small {
+    color: #B0BEC5;
+  }
 }
 .drib-link {
   background: #E8EAF6;
