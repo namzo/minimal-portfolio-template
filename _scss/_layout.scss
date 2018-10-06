@@ -227,6 +227,17 @@ abbr, abbr[title] {
   border-left: 1px solid rgba(143, 161, 179, 0.3);
   position: relative;
   background: #fff;
+  .b1, .b2 {
+    transition: ease .3s color;
+  }
+  &:hover {
+    .b1 {
+      color: #003580;
+    }
+    .b2 {
+      color: #009fe2;
+    }
+  }
   &:before {
     content: '';
     position: absolute;
