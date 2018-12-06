@@ -21,7 +21,7 @@
 }
 @media (min-width: 768px) {
   body {
-    font-size: 1.7rem;
+    font-size: 1.6rem;
     line-height: 2;
   }
   nav {
@@ -40,6 +40,9 @@
     nav {
       position: absolute;
       width: 100%;
+      background: rgba(0, 0, 0, 0.16);
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.1);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.16);
       .button.hollow, .button.hollow:hover {
         color: $white;
       }
@@ -57,7 +60,7 @@
   }
   .intro.casestudy-header {
     height: auto;
-    padding-top: 8em;
+    padding-top: 4em;
   }
   .home-header.white {
     background: #fff0e5 !important;
