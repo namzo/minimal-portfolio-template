@@ -46,19 +46,8 @@ body {
   font-weight: 400;
   z-index: 2;
   color: $text-color;
-  padding-top: 0;
+  padding-top: 50px;
   text-rendering: optimizeLegibility;
-}
-.casestudy-body {
-  .nav {
-    background: rgba(0, 0, 0, 0.16);
-    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.1);
-    border-bottom: 1px solid rgba(0, 0, 0, 0.16);
-  }
-  nav .container {
-    border-bottom: none;
-    box-shadow: none;
-  }
 }
 .preload * {
   transition: none !important;
@@ -276,7 +265,8 @@ nav {
   padding-top: 0;
   padding-bottom: 0;
   width: 100%;
-  position: relative;
+  position: absolute;
+  top: 0;
   z-index: 600;
   font-family: $font;
   border-bottom: 1px solid #b7c0c6;
@@ -463,6 +453,33 @@ section {
     background: $white;
     h3, p, a {
       color: $black;
+    }
+  }
+}
+.casestudy-body {
+  padding-top: 0;
+  nav a.button.hollow:hover, nav a.button.hollow:hover:hover {
+    color: $white;
+    border-color: $white;
+  }
+  nav {
+    position: absolute;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.16);
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.1);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.16);
+    .button.hollow, .button.hollow:hover {
+      color: $white;
+    }
+    svg path {
+      fill: #fff !important;
+    }
+    a, strong.name-text {
+      color: $white;
+    }
+    .btn, .btn:hover, .btn:focus {
+      background: transparent;
+      border-color: $white;
     }
   }
 }

@@ -4,102 +4,22 @@
     -webkit-font-smoothing: antialiased;
   }
 }
-@media (min-width: 400px) {
-  .container {
-    max-width: 1200px;
-    width: 100%;
-  }
-}
-@media (min-width: 479px) and (max-width: 767px) {
-  nav a {
-    padding: 10px 0;
-  }
-  nav .pull-right {
-    text-align: right;
-    float: right;
-  }
-}
-@media (min-width: 768px) {
-  body {
-    font-size: 1.6rem;
-    line-height: 2;
-  }
-  nav {
-    .container {
-      max-width: 1400px;
-    }
-  }
-  .avatar-img {
-    width: 100%;
-  }
-  .casestudy-body {
-    nav a.button.hollow:hover, nav a.button.hollow:hover:hover {
-      color: $white;
-      border-color: $white;
-    }
-    nav {
-      position: absolute;
-      width: 100%;
-      background: rgba(0, 0, 0, 0.16);
-    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.1);
-    border-bottom: 1px solid rgba(0, 0, 0, 0.16);
-      .button.hollow, .button.hollow:hover {
-        color: $white;
-      }
-      svg path {
-        fill: #fff !important;
-      }
-      a, strong.name-text {
-        color: $white;
-      }
-      .btn, .btn:hover, .btn:focus {
-        background: transparent;
-        border-color: $white;
-      }
-    }
-  }
-  .intro.casestudy-header {
-    height: auto;
-    padding-top: 4em;
-  }
-  .home-header.white {
-    background: #fff0e5 !important;
-  }
-  .modal-box-wrap .modal {
-    width: 600px;
-    margin: 0 auto;
-  }
-  .unit {
-    padding: 5em 0;
-  }
-  .case-device {
-    margin-top: -5em;
-  }
-  .hero {
-    height: 600px;
-  }
-  .home-box {
-    padding: 1em 0 2em;
-    p.name {
-      color: #455A64;
-    }
-  }
-  .home-box p.lead {
-    margin-top: 1em;
-  }
-  .index-proj {
-    padding: 0 0 1em;
-  }
-  .hidden-mobile {
-    display: block;
-  }
-}
 @media only screen and (max-width: 767px) {
   html {
     font-size: 58%;
   }
   .intro.casestudy-header+section {
-    padding-top: 5em;
+    padding-top: 1.2em;
+  }
+  .intro.casestudy-header {
+    .intro-profile {
+      margin: 3.8em 0 0;
+    }
+  }
+  .intro-profile h1 {
+    font-size: 3.2rem;
+    margin-top: 0;
+    margin-bottom: 20px;
   }
   .avatar-img {
     width: 120px;
@@ -147,7 +67,10 @@
     }
   }
   .talks {
-    padding: 1em 0 2em;
+    padding: 1em 0;
+    li {
+      margin: 1em 0 1.4em;
+    }
   }
   a.overclose {
     top: 5px;
@@ -173,7 +96,7 @@
     margin: 0;
   }
   .unit {
-    padding: 3em 0;
+    padding: 3em 0 1em;
   }
   .unit.page-top {
     padding: 0;
@@ -205,11 +128,6 @@
     top: 100px;
     height: 600px;
   }
-  .intro-profile h1 {
-    font-size: 3.2rem;
-    margin-top: 0;
-    margin-bottom: 20px;
-  }
   .unit.value .container {
     padding-top: 1em;
     padding-bottom: 2em;
@@ -230,7 +148,7 @@
     }
     .links li {
       margin-left: 0;
-      margin-right: 20px;
+      margin-right: 10px;
       &:last-child {
         margin-right: 0;
       }
@@ -253,6 +171,11 @@
   }
   .intro.home {
     min-height: auto;
+    padding-bottom: 0;
+    padding-top: 1.8em;
+    .lead {
+      margin-bottom: 10px;
+    }
   }
   .about {
     padding: 0;
@@ -268,8 +191,11 @@
   .container {
     max-width: 100%;
   }
+  .share-box {
+    margin: 0;
+  }
   footer {
-    padding: 2em 0 3em;
+    padding: 0 0 2em !important;
     li {
       line-height: 1.7;
     }
@@ -306,9 +232,73 @@
     }
   }
   .index-proj {
-    padding: 1em 0;
+    padding: 0 0 1em;
   }
   .hidden-mobile {
     display: none;
+  }
+}
+@media (min-width: 400px) {
+  .container {
+    max-width: 1200px;
+    width: 100%;
+  }
+}
+@media (min-width: 479px) and (max-width: 767px) {
+  nav a {
+    padding: 10px 0;
+  }
+  nav .pull-right {
+    text-align: right;
+    float: right;
+  }
+}
+@media (min-width: 768px) {
+  body {
+    font-size: 1.6rem;
+    line-height: 2;
+  }
+  nav {
+    .container {
+      max-width: 1400px;
+    }
+  }
+  .avatar-img {
+    width: 100%;
+  }
+  .intro.casestudy-header {
+    height: auto;
+    padding-top: 4em;
+  }
+  .home-header.white {
+    background: #fff0e5 !important;
+  }
+  .modal-box-wrap .modal {
+    width: 600px;
+    margin: 0 auto;
+  }
+  .unit {
+    padding: 5em 0;
+  }
+  .case-device {
+    margin-top: -5em;
+  }
+  .hero {
+    height: 600px;
+  }
+  .home-box {
+    padding: 1em 0 2em;
+    p.name {
+      color: #455A64;
+    }
+  }
+  .home-box p.lead {
+    margin-top: 1em;
+  }
+  .index-proj {
+    padding: 0 0 1em;
+  }
+  .hidden-mobile {
+    display: block;
   }
 }
