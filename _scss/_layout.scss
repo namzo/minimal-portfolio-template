@@ -236,7 +236,7 @@ abbr, abbr[title] {
     }
   }
   &:before {
-    content: '';
+    content: "";
     position: absolute;
     z-index: -1;
     box-shadow: 0 0 30px rgba(0, 0, 0, 0.15);
@@ -648,7 +648,8 @@ blockquote {
   margin-top: 1.5em;
   margin-bottom: 1.5em;
   &:before {
-    content: "";
+    content: " ";
+    
     position: absolute;
     width: 4px;
     height: 100%;
