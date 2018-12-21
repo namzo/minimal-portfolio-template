@@ -4,7 +4,69 @@
     -webkit-font-smoothing: antialiased;
   }
 }
-@media only screen and (max-width: 767px) {
+@media (min-width: 400px) {
+  .container {
+    max-width: 1200px;
+    width: 100%;
+  }
+}
+@media (min-width: 768px) {
+  body {
+    font-size: 1.6rem;
+    line-height: 2;
+  }
+  nav {
+    .container {
+      max-width: 1400px;
+    }
+    a {
+      padding: 10px 0;
+    }
+    .pull-right {
+      text-align: right;
+      float: right;
+    }
+  }
+  .avatar-img {
+    width: 100%;
+  }
+  .intro.casestudy-header {
+    height: auto;
+    padding-top: 4em;
+  }
+  .home-header.white {
+    background: #fff0e5 !important;
+  }
+  .modal-box-wrap .modal {
+    width: 600px;
+    margin: 0 auto;
+  }
+  .unit {
+    padding: 5em 0;
+  }
+  .case-device {
+    margin-top: -5em;
+  }
+  .hero {
+    height: 600px;
+  }
+  .home-box {
+    padding: 1em 0 2em;
+    p.name {
+      color: #455A64;
+    }
+  }
+  .home-box p.lead {
+    margin-top: 1em;
+  }
+  .index-proj {
+    padding: 0 0 1em;
+  }
+  .hidden-mobile {
+    display: block;
+  }
+}
+@media (max-width: 767px) {
   html {
     font-size: 58%;
   }
@@ -22,7 +84,7 @@
     margin-bottom: 20px;
   }
   .avatar-img {
-    width: 120px;
+    width: 180px;
   }
   h4 {
     font-size: 2.1rem;
@@ -236,69 +298,5 @@
   }
   .hidden-mobile {
     display: none;
-  }
-}
-@media (min-width: 400px) {
-  .container {
-    max-width: 1200px;
-    width: 100%;
-  }
-}
-@media (min-width: 479px) and (max-width: 767px) {
-  nav a {
-    padding: 10px 0;
-  }
-  nav .pull-right {
-    text-align: right;
-    float: right;
-  }
-}
-@media (min-width: 768px) {
-  body {
-    font-size: 1.6rem;
-    line-height: 2;
-  }
-  nav {
-    .container {
-      max-width: 1400px;
-    }
-  }
-  .avatar-img {
-    width: 100%;
-  }
-  .intro.casestudy-header {
-    height: auto;
-    padding-top: 4em;
-  }
-  .home-header.white {
-    background: #fff0e5 !important;
-  }
-  .modal-box-wrap .modal {
-    width: 600px;
-    margin: 0 auto;
-  }
-  .unit {
-    padding: 5em 0;
-  }
-  .case-device {
-    margin-top: -5em;
-  }
-  .hero {
-    height: 600px;
-  }
-  .home-box {
-    padding: 1em 0 2em;
-    p.name {
-      color: #455A64;
-    }
-  }
-  .home-box p.lead {
-    margin-top: 1em;
-  }
-  .index-proj {
-    padding: 0 0 1em;
-  }
-  .hidden-mobile {
-    display: block;
   }
 }
