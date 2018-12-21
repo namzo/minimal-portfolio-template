@@ -16,7 +16,9 @@
   <meta name="twitter:url" content="{{ site.url }}{{ page.url }}">
   <meta name="twitter:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
   <meta name="twitter:image" content="{% if page.image %}{{ site.url }}/img/{{ page.image }}{% else %}{{ site.url }}/img/site-icon.png{% endif %}">
-  
+  {% if layout.post-external %}
+    <meta http-equiv="refresh" content="0;url={{ page.external_url }}">
+  {% endif %}
   <!-- Feed -->
   {% feed_meta %}
   <link href='{{ site.url }}/feed.xml' rel='alternate' type='application/atom+xml'>
