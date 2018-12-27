@@ -12,4 +12,6 @@ sass:
   style: compressed
 plugins:
   - jekyll-feed
+  - jekyll-redirect-from
 permalink: /:title.html
+  
