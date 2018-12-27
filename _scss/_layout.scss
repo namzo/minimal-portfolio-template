@@ -529,7 +529,7 @@ section {
 
 }
 /* external links */
-.article-title a[href*="//"]:not([href*="ernestojeh.com"]) {
+.posts-wrap .article-title a[href*="//"]:not([href*="ernestojeh.com"]) {
     &::after {
       content: "";
       display: inline-block;
