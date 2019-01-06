@@ -1,5 +1,5 @@
 backend:
-  name: gitlab
+  name: github
   repo: namzo/ernestojeh.com
   branch: master
   site_domain: ernestojeh.com
