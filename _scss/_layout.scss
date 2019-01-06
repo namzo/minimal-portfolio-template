@@ -492,7 +492,7 @@ section {
 .home-box {
   padding: 0.5em 0 0;
   position: relative;
-  p {
+  p.lead {
     color: $text-color;
     -webkit-animation-delay: 400ms;
     animation-delay: 400ms;
