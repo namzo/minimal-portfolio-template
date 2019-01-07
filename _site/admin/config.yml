@@ -4,6 +4,7 @@ backend:
   branch: master
   site_domain: ernestojeh.com
 
+publish_mode: editorial_workflow
 display_url: https://ernestojeh.com
 media_folder: "img/post" # Media files will be stored in the repo under images/uploads
 
@@ -19,4 +20,4 @@ collections:
       - {label: "Publish Date", name: "date", widget: "datetime"}
       - {label: "Body", name: "body", widget: "markdown"}
 editor:
-     preview: false
+     preview: true
