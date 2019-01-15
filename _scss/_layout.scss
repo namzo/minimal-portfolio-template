@@ -5,7 +5,7 @@ $black: #222;
 $gray: #CFD8DC;
 $light: #eff1f4;
 $bg-gray: #f9f9f9;
-$orange-text: #F57C00;
+$orange-text: #f26421;
 $tw: #55acee;
 $fb: #48649f;
 $gplus: #db4437;
@@ -140,6 +140,11 @@ a.overclose {
 .overclose img {
   width: 100%;
 }
+.row-flex {
+  display:flex;
+  flex-wrap:wrap;
+  justify-content: center;
+}
 .pace {
   -webkit-pointer-events: none;
   pointer-events: none;
@@ -269,9 +274,6 @@ nav {
   top: 0;
   z-index: 600;
   font-family: $font;
-  // border-bottom: 1px solid #b7c0c6;
-  border-bottom: 2px solid #1eadda;
-  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.1);
   &.bgnav {
     background: $gray;
     width: auto;
@@ -466,9 +468,6 @@ section {
   nav {
     position: absolute;
     width: 100%;
-    background: rgba(0, 0, 0, 0.16);
-    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.1);
-    border-bottom: 1px solid rgba(0, 0, 0, 0.16);
     .button.hollow, .button.hollow:hover {
       color: $white;
     }
@@ -494,10 +493,14 @@ section {
   padding: 0.5em 0 0;
   position: relative;
   p.lead {
-    color: $text-color;
+    color: #79745d;
     -webkit-animation-delay: 400ms;
     animation-delay: 400ms;
     font-size: 1.8rem;
+    a {
+      color: #1174c3;
+      font-weight: 700;
+    }
     strong {
       color: #455A64;
     }
@@ -508,6 +511,7 @@ section {
   z-index: 20;
   h1 {
     position: relative;
+    color: $orange-text;
     margin-bottom: 1rem;
     margin-top: 3rem;
     font-size: 3.4rem;
