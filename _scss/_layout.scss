@@ -398,14 +398,14 @@ section {
   &.casestudy-header {
     height: auto;
     padding: 0;
-    padding-bottom: 4em;
+    padding-bottom: 0;
     position: relative;
     color: $white;
     display: flex;
     align-items: center;
     justify-content: center;
     .intro-profile {
-      margin: 4em 0 3em;
+      margin: 2.6em 0 3em;
     }
     &.kongapay {
       background-color: #1c4dd8;
@@ -1392,4 +1392,9 @@ footer {
   .foot-site {
     margin-top: 1.5em;
   }
+}
+.project-desc {
+  font-size: 1.8rem;
+  margin-top: 1.2em;
+  font-weight: 700;
 }
