@@ -1,1 +1,1 @@
-{"/rss":"http://localhost:4000/feed.xml","/feed":"http://localhost:4000/feed.xml","/about":"http://localhost:4000/profile"}
+{"/rss":"http://localhost:4000/feed.xml","/feed":"http://localhost:4000/feed.xml","/writing":"http://localhost:4000/posts","/about":"http://localhost:4000/profile"}

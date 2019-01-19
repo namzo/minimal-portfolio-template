@@ -56,6 +56,7 @@
 
   gtag('config', 'UA-130311233-1');
 </script>
+<script type="module" src="/js/script.js"></script>
 </head>
 
 
@@ -76,7 +77,7 @@
         <a href="/profile/">Profile</a>
       </li>
       <li class="active">
-        <a href="/writing/">Posts</a>
+        <a href="/posts/">Posts</a>
       </li>
       <li class="">
         <a href="/contact/">Contact</a>
@@ -86,6 +87,8 @@
   </div>
 </nav>
 
+
+<div class="animate-wrap"> <!-- closes in footer -->
 
 <section class="unit move-up">
   <div class="container">
@@ -196,8 +199,8 @@ of building on the idea &amp; see where it takes me. I’ve registered the domai
       <div class="two columns">
         <ul class="list-unstyled">
           <li><small>Links</small></li>
-          <li><a href="/about">About</a></li>
-          <li><a href="/writing">Writing</a></li>
+          <li><a href="/profile">Profile</a></li>
+          <li><a href="/posts">Posts</a></li>
           <li><a href="https://namzo.vsco.co" target="_blank">Photos</a></li>
           <li><a href="/contact">Contact</a></li>
         </ul>
@@ -235,8 +238,8 @@ of building on the idea &amp; see where it takes me. I’ve registered the domai
   </div> 
 </footer>
 
-<script src="/js/jquery-3.3.1.min.js"> </script>
-<script src="/js/script.js"> </script>
+</div> <!-- /animate-wrap -->
+
 <script>
   if (window.netlifyIdentity) {
     window.netlifyIdentity.on("init", user => {
@@ -249,7 +252,6 @@ of building on the idea &amp; see where it takes me. I’ve registered the domai
   }
 </script>
 
-  
 
 </body>
 
