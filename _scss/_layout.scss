@@ -10,7 +10,8 @@ $tw: #55acee;
 $fb: #48649f;
 $gplus: #db4437;
 
-$font: "Graphik Web", BlinkMacSystemFont,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+$font: "Inter UI", BlinkMacSystemFont,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+
 @mixin rounded-corners {
   $rounded-corner-radius: 4px;
   border-radius: $rounded-corner-radius;
@@ -41,8 +42,8 @@ body {
   background: $white;
   height: 100%;
   font-family: $font;
-  font-size: 1.8rem;
-  line-height: 1.6;
+  font-size: 1.7rem;
+  line-height: 1.7;
   font-weight: 400;
   z-index: 2;
   color: $text-color;
@@ -202,7 +203,6 @@ abbr, abbr[title] {
   font-family: $font;
   text-decoration: none;
   border: 1px solid rgba(12, 81, 181, 0.34);
-  // box-shadow: 0 2px 4px rgba(0, 105, 255, 0.4);
   transition: all 300ms ease;
   &.btn-hollow, &.btn-hollow:hover, &.btn-hollow:focus {
     background: transparent;
@@ -217,12 +217,10 @@ abbr, abbr[title] {
 }
 .btn:hover {
   background-color: lighten($blue, 5%);
-  // box-shadow: 0 4px 12px rgba(0, 105, 255, 0.4);
   border: 1px solid #0c51b5;
 }
 .btn:active, .btn:focus {
   background: #0c62dc;
-  // box-shadow: 0 0 0 2px rgba(160, 209, 250, .8);
 }
 .jd-wrap {
   padding: 2.4em 0;
@@ -381,7 +379,7 @@ section {
 .intro {
   padding: 3em 0 6em;
   &.home {
-    padding: 0; // padding: 1em 0 0;
+    padding: 0;
     text-align: left;
     position: relative;
     box-sizing: border-box;
@@ -491,7 +489,6 @@ section {
   padding: 0.5em 0 0;
   position: relative;
   p.lead {
-    color: #79745d;
     -webkit-animation-delay: 400ms;
     animation-delay: 400ms;
     font-size: 1.8rem;
@@ -512,8 +509,8 @@ section {
     color: $orange-text;
     margin-bottom: 1rem;
     margin-top: 3rem;
-    font-size: 3.4rem;
-    font-weight: 600;
+    font-size: 3.6rem;
+    font-weight: 800;
     letter-spacing: -1px;
     line-height: 1.2;
     -webkit-animation-delay: 100ms;
@@ -685,6 +682,10 @@ a.single-project {
 .ind-projects {
   .article-title {
     margin: 0;
+  }
+  p {
+    font-size: 1.6rem;
+    line-height: 1.6;
   }
 }
 .superscript {
@@ -1395,7 +1396,7 @@ footer {
   li small {
     text-transform: uppercase;
     color: $black;
-    font-weight: 600;
+    font-weight: 700;
   }
   .smallcopy {
     color: #455A64;
@@ -1412,7 +1413,6 @@ footer {
   }
   a {
     color: #607682;
-    font-weight: 500;
     position: relative;
   }
   a:hover {
