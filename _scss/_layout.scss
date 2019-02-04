@@ -1,11 +1,11 @@
-$blue: #0069ff;
+$blue: #1174c3;
 $text-color: #465055;
 $white: #fff;
 $black: #222;
 $gray: #CFD8DC;
 $light: #eff1f4;
 $bg-gray: #f9f9f9;
-$orange-text: #f26421;
+$orange-text: #f36407;
 $tw: #55acee;
 $fb: #48649f;
 $gplus: #db4437;
@@ -226,7 +226,7 @@ abbr, abbr[title] {
   padding: 2.4em 0;
   border-left: 1px solid rgba(143, 161, 179, 0.3);
   position: relative;
-  background: #fff;
+  background: $white;
   .b1, .b2 {
     transition: ease .3s color;
   }
@@ -468,7 +468,7 @@ section {
       color: $white;
     }
     svg path {
-      fill: #fff !important;
+      fill: $white !important;
     }
     a, strong.name-text {
       color: $white;
@@ -493,7 +493,7 @@ section {
     animation-delay: 400ms;
     font-size: 1.8rem;
     a {
-      color: #1174c3;
+      color: $blue;
       font-weight: 700;
     }
     strong {
@@ -1036,7 +1036,7 @@ strong.name-text {
   position: relative;
   display: inline-block;
   font-family: $font;
-  font-weight: 700;
+  font-weight: 800;
 }
 .back-link-wrap {
   margin: 0 0 40px;
