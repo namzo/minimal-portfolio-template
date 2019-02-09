@@ -934,6 +934,9 @@ hr {
 }
 .post-wrap {
   padding: 3em 0;
+  .article-title {
+    font-weight: 800;
+  }
 }
 .post-body {
   p {
@@ -1065,19 +1068,14 @@ strong.name-text {
   margin: 0 0 6em;
   text-align: center;
   a, a:hover {
-    padding: 4px 12px !important;
-    line-height: 28px;
-    height: 44px;
+    padding: 4px 16px !important;
+    border-radius: 4px;
+    font-size: 16px;
+    text-decoration: none;
   }
   svg {
     fill: $white;
-    margin: 11px 0 0;
-  }
-  a.gplus {
-    background: $gplus;
-    &:hover {
-      background: darken($gplus, 10%);
-    }
+    margin: 6px 8px 0 0;
   }
   a.fb {
     background: $fb;
