@@ -984,7 +984,8 @@ img {
 }
 .avatar-img {
   margin: 0 0 15px 0;
-  border-radius: 4px;
+  border-radius: 12px;
+  box-shadow: 0 2px 7px rgba(0, 0, 0, 0.2);
   transition: ease all 0.3s;
 }
 .talks {
@@ -1427,5 +1428,5 @@ footer {
 .project-desc {
   font-size: 1.8rem;
   margin-top: 1.2em;
-  font-weight: 700;
+  font-weight: 500;
 }
