@@ -28,7 +28,7 @@ nav: photos
                 {% for image in site.static_files %}
                     {% if image.path contains 'img/photos' %}
                       <div class="single-photo_wrap">
-                        <img src="{{ site.baseurl }}{{ image.path }}?nf_resize=fit&w=1000" alt="image" />
+                        <img src="{{ site.baseurl }}{{ image.path }}?nf_resize=fit&w=2400" alt="image" />
                       </div>
                     {% endif %}
                 {% endfor %}
