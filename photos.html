@@ -28,7 +28,11 @@ nav: photos
                 {% for image in site.static_files %}
                     {% if image.path contains 'img/photos' %}
                       <div class="single-photo_wrap">
-                        <img src="{{ site.baseurl }}{{ image.path }}?nf_resize=fit&w=2400" alt="image" />
+                        <img srcset="{{ site.baseurl }}{{ image.path }}?nf_resize=fit&w=800 480w,
+                                     {{ site.baseurl }}{{ image.path }}?nf_resize=fit&w=1200 767w"
+                             sizes="(max-width: 480px) 280px,
+                                    (max-width: 767px) 440px"
+                             src="{{ site.baseurl }}{{ image.path }}?nf_resize=fit&w=2400" alt="Image">
                       </div>
                     {% endif %}
                 {% endfor %}
