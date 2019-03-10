@@ -376,9 +376,35 @@ section {
   background: $white;
   color: $text-color;
 }
+
+/* Photos page */
 .photos-body {
   background: $dark;
-  color: $text-color;
+  color: rgba(255, 255, 255, 0.64);
+  .article-title, .article-title a, a {
+    color: $white;
+  }
+  a {
+    text-decoration: underline;
+  }
+  nav {
+    a {
+      color: rgba( $white, .4 );
+      text-decoration: none;
+    }
+    li.active a {
+      color: rgba( $white, .7 );
+    }
+    .name-text {
+      color: $white;
+    }
+  }
+  .single-photo_wrap {
+    margin-bottom: 2em;
+    img {
+      border-radius: 3px;
+    }
+  }
 }
 .intro {
   padding: 3em 0 6em;
