@@ -1,0 +1,64 @@
+---
+title: Photos
+layout: photos
+nav: photos
+---
+
+<div class="animate-wrap"> <!-- closes in footer -->
+
+<div class="page-wrap">
+
+<section class="unit page-top">
+  <div class="container">
+    <div class="row">
+      <div class="ten columns offset-by-one">
+        <div class="wrap-page">
+          <div class="row">
+            <div class="eight columns">
+              <div class="posts-wrap">
+
+                {% for post in site.posts  %}
+                    {% capture url_to_use %}{{ post.url }}{% endcapture %}
+                      {% if post.external_url %}
+                        {% capture url_to_use %}{{ post.external_url }}{% endcapture %}
+                      {% endif %}
+                    {% capture this_year %}{{ post.date | date: "%Y" }}{% endcapture %}
+                    {% capture next_year %}{{ post.previous.date | date: "%Y" }}{% endcapture %}
+                    
+
+                    {% if forloop.first %}
+                    <h6 class="muted">{{this_year}}</h6>
+                    {% endif %}
+
+                    <div class="post-row">
+                      <h4 class="article-title">
+                        <a href="{{ url_to_use }}" 
+                          {% if post.external_url %} target="_blank" class="external-link"{% endif %}
+                        >
+                          {{ post.title }}
+                        </a>
+                      </h4>
+                      <p class="date">{{ post.date | date_to_string }}</p>
+                      <p class="">{{ post.excerpt }}</p>
+                    </div>
+
+                    {% if forloop.last %}
+
+                    {% else %}
+                        {% if this_year != next_year %}
+                        <br>
+                        <h6 class="muted">{{next_year}}</h6>
+                        {% endif %}
+                    {% endif %}
+                {% endfor %}
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</div>

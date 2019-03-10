@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Posts &middot; Ernest Ojeh &middot; UX Designer</title>
+  <title>Photos &middot; Ernest Ojeh &middot; UX Designer</title>
   <meta name="description" content="Ernest Ojeh is a User Experience Designer. Currently based in Amsterdam.">
   <meta name="author" content="Ernest Ojeh">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -14,8 +14,8 @@
   <meta name="twitter:card" content="summary">
   <meta name="twitter:site" content="@namzo">
   <meta name="twitter:creator" content="@namzo">
-  <meta name="twitter:title" content="Posts">
-  <meta name="twitter:url" content="http://localhost:4000/posts">
+  <meta name="twitter:title" content="Photos">
+  <meta name="twitter:url" content="http://localhost:4000/photos">
   <meta name="twitter:description" content="Ernest Ojeh is a User Experience Designer. Currently based in Amsterdam.">
   <meta name="twitter:image" content="http://localhost:4000/img/site-icon.png">
   
@@ -60,7 +60,7 @@
 </head>
 
 
-<body>
+<body class="photos-body">
 
 <nav class="clearfix" id="top">
   <div class="container">
@@ -76,10 +76,10 @@
       <li class="">
         <a href="/profile/">Profile</a>
       </li>
-      <li class="active">
+      <li class="">
         <a href="/posts/">Posts</a>
       </li>
-      <li class="">
+      <li class="activeactive">
         <a href="/photos/">Posts</a>
         <!-- <a href="http://namzo.vsco.co" target="_blank">Photos</a> -->
       </li>
@@ -475,71 +475,6 @@ pull out my phone and take a picture — Pretty straightforward.</p>
 </section>
 
 </div>
-
-
-
-  <footer class="unit ">
-  <div class="container">
-    <div class="row">
-      <div class="three columns">
-        <ul class="list-unstyled">
-          <li class="smallcopy"><small>&copy; 2019 Ernest Ojeh &middot; <a href="http://localhost:4000/feed.xml">RSS</a></small></li>
-        </ul>
-      </div>
-      <div class="two columns">
-        <ul class="list-unstyled">
-          <li><small>Links</small></li>
-          <li><a href="/profile">Profile</a></li>
-          <li><a href="/posts">Posts</a></li>
-          <li><a href="https://namzo.vsco.co" target="_blank">Photos</a></li>
-        </ul>
-      </div>
-      <div class="two columns">
-        <ul class="list-unstyled">
-          <li><small>Connect</small></li>
-          <li><a href="http://twitter.com/namzo" target="_blank">Twitter</a></li>
-          <li><a href="https://www.linkedin.com/in/namzo" target="_blank">LinkedIn</a></li>
-          <li><a href="http://dribbble.com/namzo" target="_blank">Dribbble</a></li>
-          <li><a href="https://open.spotify.com/user/ernestojeh" target="_blank">Spotify</a></li>
-        </ul>
-      </div>
-      <div class="two columns">
-        <ul class="list-unstyled">
-          <li><small>Projects</small></li>
-          <li><a href="/kongapay">KongaPay</a></li>
-          <li><a href="/newthird">NewThird</a></li>
-          <li><a href="/insidify">Insidify</a></li>
-          <li><a href="/appscreens">Appscreens</a></li>
-        </ul>
-      </div>
-      <div class="two columns">
-        <ul class="list-unstyled">
-          <li><small>&nbsp;</small></li>
-          <li><a href="/3d">Learning 3D</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="row">
-      <div class="text-center foot-site">
-        <small>This site was built with <a href="https://jekyllrb.com" target="_blank">Jekyll</a> & <a href="http://getskeleton.com/" target="_blank">Skeleton</a>. It's hosted on <a href="https://github.com/namzo/ernestojeh.com" target="_blank">Github</a> and served by <a href="http://netlify.com" target="_blank">Netlify</a>.</small>
-      </div>
-    </div>
-  </div> 
-</footer>
-
-</div> <!-- /animate-wrap -->
-
-<script>
-  if (window.netlifyIdentity) {
-    window.netlifyIdentity.on("init", user => {
-      if (!user) {
-        window.netlifyIdentity.on("login", () => {
-          document.location.href = "/admin/";
-        });
-      }
-    });
-  }
-</script>
 
 
 </body>

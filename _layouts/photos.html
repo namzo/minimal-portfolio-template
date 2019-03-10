@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+{% include head.html %}
+
+<body{% if page.nav=='photos' %} class="photos-body"{% endif %}>
+
+{% include nav.html %}
+
+{{ content }}
+
+</body>
+
+</html>
