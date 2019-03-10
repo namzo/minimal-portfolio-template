@@ -28,11 +28,13 @@ nav: photos
                 {% for image in site.static_files %}
                     {% if image.path contains 'img/photos' %}
                       <div class="single-photo_wrap">
-                        <img srcset="{{ site.baseurl }}{{ image.path }}?nf_resize=fit&w=800 480w,
-                                     {{ site.baseurl }}{{ image.path }}?nf_resize=fit&w=1200 767w"
-                             sizes="(max-width: 480px) 280px,
-                                    (max-width: 767px) 440px"
-                             src="{{ site.baseurl }}{{ image.path }}?nf_resize=fit&w=2400" alt="Image">
+                        <img src="{{ site.baseurl }}{{ image.path }}?nf_resize=fit&w=2400" alt="Image"
+                             srcset="{{ site.baseurl }}{{ image.path }}?nf_resize=fit&w=800 800w,
+                                     {{ site.baseurl }}{{ image.path }}?nf_resize=fit&w=1200 1200w,
+                                     {{ site.baseurl }}{{ image.path }}?nf_resize=fit&w=2400 2400w"
+                             sizes="(max-width: 480px) 800px,
+                                    (max-width: 767px) 1200px,
+                                    (min-width: 768px) 2400px">
                       </div>
                     {% endif %}
                 {% endfor %}
