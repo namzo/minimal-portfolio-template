@@ -9,7 +9,7 @@ $orange-text: #f36407;
 $tw: #55acee;
 $fb: #48649f;
 $gplus: #db4437;
-$dark: #222;
+$dark: #202124;
 
 $font: "Inter", BlinkMacSystemFont,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
 
@@ -377,15 +377,14 @@ section {
   color: $text-color;
 }
 
-/* Photos page */
+/* Photos page - dark */
 .photos-body {
-  background: $dark;
+  background: #15171b;
   color: rgba(255, 255, 255, 0.64);
+  ::-moz-selection { background: rgba(106, 128, 148, 0.9); color: $dark; }
+  ::selection { background:rgba(106, 128, 148, 0.9); color: $dark; }
   .article-title, .article-title a, a {
     color: $white;
-  }
-  a {
-    text-decoration: underline;
   }
   nav {
     a {
@@ -405,7 +404,27 @@ section {
       border-radius: 3px;
     }
   }
+  footer {
+    a[href*="//"]:not([href*="ernestojeh.com"])::after {
+      border-color: transparent rgba(92, 124, 140, 0.4) transparent transparent;
+    }
+    a, a:hover {
+      color: #737c98;
+      text-decoration: none;
+    }
+    .foot-site a {
+      color: $white;
+    }
+    li {
+      small {
+        color: #a6adc1;
+      }
+    }
+  }
 }
+/* End Photos page */
+
+
 .intro {
   padding: 3em 0 6em;
   &.home {
@@ -1453,6 +1472,9 @@ footer {
     border-top: 1px solid rgba(143, 161, 179, 0.3);
   }
   .foot-site {
+    a {
+      color: $blue;
+    }
     margin-top: 1.5em;
   }
 }

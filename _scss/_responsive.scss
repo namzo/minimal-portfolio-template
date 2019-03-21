@@ -14,7 +14,12 @@
   body {
     font-size: 1.6rem;
   }
+  .photo-page-info {
+    border-right: 1px solid rgba(124, 144, 185, 0.2);
+    padding: 2em 0;
+  }
   nav {
+    padding-top: 0.6em;
     .container {
       max-width: 1400px;
     }
@@ -63,6 +68,9 @@
   }
   .hidden-mobile {
     display: block;
+  }
+  footer.unit {
+    padding-bottom: 6em;
   }
 }
 @media (max-width: 549px) {
@@ -315,4 +323,7 @@
   .hidden-mobile {
     display: none;
   }
+}
+.photo-page-info {
+  font-size: 1.4rem;
 }

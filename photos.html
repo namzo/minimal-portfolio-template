@@ -15,18 +15,21 @@ nav: photos
         <div class="wrap-page">
           <div class="row">
             <div class="three columns">
-              <div>
-                <p>I have a passion for photography and share some of my favorite photos here.</p>
+              <div class="photo-page-info">
+                <div>
+                  <p>I have a passion for photography and share some of my favorite photos here.</p>
+                  <p>I current shoot with a Canon EOS M50 Mirrorless Camera.</p>
+                </div>
+                <div>Free-to-use photos on Unsplash: <a href="http://unsplash.com/namzo" target="_blank">unsplash.com/namzo</a>.</div>
+                <div>VSCO (Personal): <a href="http://vsco.co/namzo" target="_blank">vsco.co/namzo</a>.</div>
+                <div><br>You can also follow me on <a href="http://twitter.com/namzo" target="_blank">Twitter</a>.</div>
               </div>
-              <div>Unsplash: <a href="http://unsplash.com/namzo" target="_blank">unsplash.com/namzo</a></div>
-              <div>VSCO: <a href="http://vsco.co/namzo" target="_blank">vsco.co/namzo</a></div>
-              <div><br>You can also follow me on <a href="http://twitter.com/namzo" target="_blank">Twitter</a></div>
             </div>
             <div class="nine columns">
               <div class="posts-wrap">
-
+                
                 {% for image in site.static_files %}
-                    {% if image.path contains 'img/photos' %}
+                    {% if image.path contains 'photos' %}
                       <div class="single-photo_wrap">
                         <img src="{{ site.baseurl }}{{ image.path }}?nf_resize=fit&w=2400" alt="Image"
                              srcset="{{ site.baseurl }}{{ image.path }}?nf_resize=fit&w=800 800w,
@@ -35,6 +38,7 @@ nav: photos
                              sizes="(max-width: 480px) 800px,
                                     (max-width: 767px) 1200px,
                                     (min-width: 768px) 2400px">
+                        <!-- <p>{% exiftag model, photos, IMG_0536.jpg %} sdf</p> -->
                       </div>
                     {% endif %}
                 {% endfor %}
