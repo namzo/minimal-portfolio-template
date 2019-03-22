@@ -9,14 +9,17 @@
     max-width: 1200px;
     width: 100%;
   }
+  .photos-body .container {
+    max-width: 100%;
+  }
 }
 @media (min-width: 768px) {
   body {
     font-size: 1.6rem;
   }
   .photo-page-info {
-    border-right: 1px solid rgba(124, 144, 185, 0.2);
-    padding: 2em 0;
+    padding: 2em 2em 0 0;
+    font-size: 1.5rem;
   }
   nav {
     padding-top: 0.6em;
@@ -323,7 +326,4 @@
   .hidden-mobile {
     display: none;
   }
-}
-.photo-page-info {
-  font-size: 1.4rem;
 }
