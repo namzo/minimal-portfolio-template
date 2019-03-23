@@ -42,7 +42,9 @@ nav: photos
                             (min-width: 768px) 2400px">
                   <div class="sub-photo-title">
                     <small>{{ photos.title }}</small>
-                    <small> &middot; {{ photos.photo-count }} Photos</small>
+                    {% if photos.photo-count %}
+                      <small> &middot; {{ photos.photo-count }} Photos</small>
+                    {% endif %}
                   </div>
               </a>
             </div>
