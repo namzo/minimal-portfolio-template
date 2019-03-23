@@ -39,9 +39,5 @@ collections:
     output: true
 
 # Autopages 
-# autopages:
-  # enabled: true
-  # collections:
-    
-    # layouts: 
-      # - 'photos.html'
+autopages:
+  enabled: false
