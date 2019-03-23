@@ -188,13 +188,22 @@
     margin: 0;
   }
   .unit {
-    padding: 3em 0 1em;
+    padding: 1em 0;
+  }
+  .post-body {
+    padding-top: 1em;
   }
   .unit.page-top {
     padding: 0;
   }
   .posts-wrap {
     padding: 1em 0;
+  }
+  .post-wrap {
+    padding: 0;
+  }
+  .post-row {
+    padding: 0.5em 0;
   }
   .m-design {
     display: none;

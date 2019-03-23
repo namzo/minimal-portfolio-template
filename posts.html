@@ -43,7 +43,7 @@ pagination:
                         </a>
                       </h4>
                       <p class="date">{{ post.date | date_to_string }}</p>
-                      <p class="">{{ post.excerpt }}</p>
+                      <div class="excerpt">{{ post.excerpt }}</div>
                     </div>
 
                     {% if forloop.last %}

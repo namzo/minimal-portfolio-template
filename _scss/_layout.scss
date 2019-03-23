@@ -72,6 +72,7 @@ body {
 .post-row {
   padding: 1em 0;
 }
+
 a.zoom-image {
   border: none;
   cursor: zoom-in;
@@ -182,6 +183,7 @@ header {
 p {
   font-size: inherit;
   line-height: 1.6;
+  margin-bottom: 1.5rem;
 }
 li {
   line-height: 30px;
@@ -992,6 +994,7 @@ hr {
   }
 }
 .post-body {
+  padding-top: 2em;
   p {
     line-height: 2;
   }

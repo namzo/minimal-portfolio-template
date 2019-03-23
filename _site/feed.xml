@@ -68,8 +68,6 @@
         <title>Jekyll snippets</title>
         <description>&lt;p&gt;This is just a quick post listing a few of the jekyll snippets I’m using on this site. I’ve been running this site on github pages for a few years now, and I love how simple it is to setup and how lightweight it is.&lt;/p&gt;
 
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
 &lt;h4 id=&quot;1-show-reading-time&quot;&gt;1. Show reading time&lt;/h4&gt;
 &lt;p&gt;This shows how much time in minutes it would take to complete reading a post, in the format “3 min read”.&lt;/p&gt;
 
@@ -81,8 +79,6 @@
 &lt;span class=&quot;p&quot;&gt;{%&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;kr&quot;&gt;endif&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;%}&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
 &lt;h4 id=&quot;2-auto-load-minified-sass-files-inline&quot;&gt;2. Auto-load minified sass files inline&lt;/h4&gt;
 &lt;p&gt;So, I came across this snippet when I was trying to find a way to dynamically detect critical above-the-fold css in order to optimize page speed. It doesn’t exactly do that, but close. I don’t have so much css on this site, so I basically load a combined version of my minified sass files inline.&lt;/p&gt;
 
@@ -93,8 +89,6 @@
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;Also, it was one of the things I did to get a perfect score on &lt;a href=&quot;https://developers.google.com/speed/pagespeed/insights/?url=ernestojeh.com&amp;amp;tab=desktop&quot; target=&quot;_blank&quot;&gt;Google Pagespeed Insights&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h4 id=&quot;3-show-latest-post-on-home-page&quot;&gt;3. Show latest post on home page&lt;/h4&gt;
 &lt;p&gt;Yesterday, I added a section on the homepage that shows the latest post published on this site. I wasn’t sure this was going to be possible but a quick search got me this;&lt;/p&gt;
@@ -114,8 +108,6 @@
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;Note, I added a “truncatewords:18” to limit the text excerpt. Take it out if you don’t need it.&lt;/p&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h4 id=&quot;4-show-recent-posts-on-post-page&quot;&gt;4. Show recent posts on post page&lt;/h4&gt;
 &lt;p&gt;This basically shows the recently published posts on your site. You can change the limit to modify the number of posts shown.&lt;/p&gt;
