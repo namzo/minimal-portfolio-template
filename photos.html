@@ -41,13 +41,16 @@ pagination:
                       sizes="(max-width: 480px) 800px,
                             (max-width: 767px) 1200px,
                             (min-width: 768px) 2400px">
-                  <div class="sub-photo-title">
-                    <small>{{ photos.title }}</small>
-                    {% if photos.photo-count %}
-                      <small> &middot; {{ photos.photo-count }} Photos</small>
-                    {% endif %}
-                  </div>
+                  {% if photos.photo-count %}
+                    <span class="album-count"><h5>{{ photos.photo-count }} Photos</h5></span>
+                  {% endif %}
               </a>
+              <div class="sub-photo-title">
+                <small>{{ photos.title }}</small>
+                {% if photos.photo-count %}
+                  <small class="tiny-album-count"> &middot; {{ photos.photo-count }} Photos</small>
+                {% endif %}
+              </div>
             </div>
 
       {% endfor %}

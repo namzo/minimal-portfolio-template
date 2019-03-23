@@ -37,7 +37,7 @@ $font: "Inter", BlinkMacSystemFont,-apple-system,Segoe UI,Roboto,Helvetica,Arial
   color: #B0BEC5;
 }
 html {
-  font-size: 65%;
+  font-size: 64%;
 }
 body {
   background: $white;
@@ -295,6 +295,7 @@ nav {
       padding-left: 3px;
     }
     &.active a {
+      font-weight: 500;
       color: $black;
     }
   }
@@ -382,7 +383,7 @@ section {
 /* Photos page - dark */
 .photos-body {
   background: #15171b;
-  color: rgba(255, 255, 255, 0.64);
+  color: #737c98;
   ::-moz-selection { background: rgba(106, 128, 148, 0.9); color: $dark; }
   ::selection { background:rgba(106, 128, 148, 0.9); color: $dark; }
   .article-title, .article-title a, a {
@@ -390,11 +391,11 @@ section {
   }
   nav {
     a {
-      color: rgba($white, .4);
+      color: #a6adc1;
       text-decoration: none;
     }
     li.active a {
-      color: rgba($white, .7);
+      color: #a6adc1;
     }
     .name-text {
       color: $white;
@@ -403,14 +404,62 @@ section {
   .single-photo_wrap {
     margin-bottom: 2em;
     a, a:hover {
+      position: relative;
+      display: block;
       text-decoration: none;
       color: rgba($gray, .5);
     }
+    .album-count {
+      background: $blue;
+      color: $white;
+      display: inline-block;
+      position: absolute;
+      bottom: 30px;
+      left: 20px;
+      font-weight: 700;
+      padding: 6px 14px;
+      border-radius: 10px;
+      transform: translateY(20px);
+      transition: all cubic-bezier(0.455, 0.03, 0.515, 0.955) 0.3s;
+      visibility: hidden;
+      opacity: 0;
+      h5 {
+        color: $white;
+        margin: 0;
+        transform: translateY(10px);
+        transition: all cubic-bezier(0.455, 0.03, 0.515, 0.955) 0.3s;
+        visibility: hidden;
+      }
+    }
+    a:hover .album-count {
+      visibility: visible;
+      transform: translateY(0);
+      opacity: 1;
+      h5 {
+        visibility: visible;
+        transform: translateY(0);
+      }
+    }
+    .tiny-album-count {
+      display: inline-block;
+      transform: translateY(0);
+      visibility: visible;
+      opacity: 1;
+      transition: all ease 0.3s;
+    }
+    &:hover .tiny-album-count {
+      transform: translateY(-10px);
+      visibility: hidden;
+      opacity: 0;
+      transition: all ease 0.3s;
+    }
     img {
-      border-radius: 3px;
+      border-radius: 6px;
+      box-shadow: 0 3px 14px 1px rgba(0, 0, 0, 0.5);
     }
   }
   footer {
+    color: #737c98;
     a[href*="//"]:not([href*="ernestojeh.com"])::after {
       border-color: transparent rgba(92, 124, 140, 0.4) transparent transparent;
     }
@@ -419,7 +468,7 @@ section {
       text-decoration: none;
     }
     .foot-site a {
-      color: $white;
+      color: #a6adc1;
     }
     li {
       small {
@@ -1097,7 +1146,11 @@ strong.name-text {
   display: inline-block;
   font-family: $font;
   font-weight: 800;
+  // &.photo-name-text {
+  //   text-transform: uppercase;
+  // }
 }
+
 .back-link-wrap {
   margin: 0 0 40px;
 }
@@ -1458,7 +1511,7 @@ footer {
     font-weight: 600;
   }
   small {
-    font-size: 80%;
+    font-size: 90%;
     a {
       font-weight: 500;
     }

@@ -4,7 +4,12 @@
     <ul class="pull-left">
       <li>
         <a href="/">
-          <strong class="name-text">Ernest Ojeh</strong>
+          <strong class="name-text
+            {% if page.layout=='photos' %}photo-name-text{% endif %}
+          ">
+            Ernest Ojeh 
+            <!-- {% if page.layout=='photos' %}<span> - Photos</span>{% endif %} -->
+          </strong>
         </a>
       </li>
     </ul>
@@ -17,7 +22,6 @@
       </li>
       <li class="{% if page.nav=='photos' %}active{% endif %}">
         <a href="/photos/">Photos</a>
-        <!-- <a href="http://namzo.vsco.co" target="_blank">Photos</a> -->
       </li>
     </ul>
   </div>
