@@ -2,54 +2,74 @@
 title: Photos
 layout: photos
 nav: photos
+<!-- pagination: 
+  enabled: true -->
 ---
 
-<div class="animate-wrap"> <!-- closes in footer -->
-
-<div class="page-wrap">
-
-<section class="unit page-top">
-  <div class="container">
-    <div class="row">
-      <div class="twelve columns">
-        <div class="wrap-page">
-          <div class="row">
-            <div class="three columns">
-              <div class="photo-page-info">
-                <div>
-                  <p>I have a passion for photography and share some of my favorite photos here.</p>
-                  <p>I currently shoot with a Canon EOS M50 Mirrorless Camera.</p>
-                </div>
-                <div>Free-to-use photos on Unsplash: <a href="http://unsplash.com/namzo" target="_blank">unsplash.com/namzo</a>.</div>
-                <div>VSCO (Personal): <a href="http://vsco.co/namzo" target="_blank">vsco.co/namzo</a>.</div>
-                <div><br>You can also follow me on <a href="http://twitter.com/namzo" target="_blank">Twitter</a>.</div>
-              </div>
-            </div>
-            <div class="nine columns">
-              <div class="posts-wrap">
-                
-                {% for image in site.static_files %}
-                    {% if image.path contains 'photos' %}
-                      <div class="single-photo_wrap">
-                        <img src="{{ site.baseurl }}{{ image.path }}?nf_resize=fit&w=2400" alt="Image"
-                             srcset="{{ site.baseurl }}{{ image.path }}?nf_resize=fit&w=800 800w,
-                                     {{ site.baseurl }}{{ image.path }}?nf_resize=fit&w=1200 1200w,
-                                     {{ site.baseurl }}{{ image.path }}?nf_resize=fit&w=2400 2400w"
-                             sizes="(max-width: 480px) 800px,
-                                    (max-width: 767px) 1200px,
-                                    (min-width: 768px) 2400px">
-                        <!-- <p>{% exiftag model, photos, IMG_0536.jpg %} sdf</p> -->
-                      </div>
-                    {% endif %}
-                {% endfor %}
-
-              </div>
-            </div>
-          </div>
+<div class="wrap-page">
+  <div class="row">
+    <div class="three columns">
+      <div class="photo-page-info">
+        <div>
+          <p>I have a passion for photography and share some of my favorite photos here.</p>
+          <p>I currently shoot with a Canon EOS M50 Mirrorless Camera.</p>
         </div>
+        <div class="link-ext">
+          <small>Free-to-use photos on Unsplash:</small>
+          <br><a href="http://unsplash.com/namzo" target="_blank">unsplash.com/namzo</a>.
+        </div>
+        <div class="link-ext">
+          <small>VSCO (Personal):</small><br>
+          <a href="http://vsco.co/namzo" target="_blank">vsco.co/namzo</a>.
+        </div>
+        <div><br>You can also follow me on <a href="http://twitter.com/namzo" target="_blank">Twitter</a>.</div>
+      </div>
+    </div>
+    <div class="nine columns">
+      <div class="posts-wrap">
+
+
+      {% for photos in site.photos %}
+
+            <div class="single-photo_wrap">
+              <a href="{{ photos.url }}">
+                <img src="{{ site.baseurl }}/photos/{{photos.photo1}}?nf_resize=fit&w=2400" alt="Image"
+                      srcset="{{ site.baseurl }}/photos/{{photos.photo1}}?nf_resize=fit&w=800 800w,
+                              {{ site.baseurl }}/photos/{{photos.photo1}}?nf_resize=fit&w=1200 1200w,
+                              {{ site.baseurl }}/photos/{{photos.photo1}}?nf_resize=fit&w=2400 2400w"
+                      sizes="(max-width: 480px) 800px,
+                            (max-width: 767px) 1200px,
+                            (min-width: 768px) 2400px">
+                  <div class="sub-photo-title">
+                    <small>{{ photos.title }}</small>
+                    <small> &middot; {{ photos.photo-count }} Photos</small>
+                  </div>
+              </a>
+            </div>
+
+      {% endfor %}
+
+
+        <!-- <div class="pagination">
+          {% if paginator.previous_page %}
+            <a href="{{ paginator.previous_page_path }}" class="previous">
+              Previous
+            </a>
+          {% else %}
+            <span class="previous">Previous</span>
+          {% endif %}
+          <span class="page_number ">
+            Page: {{ paginator.page }} of {{ paginator.total_pages }}
+          </span>
+          {% if paginator.next_page %}
+            <a href="{{ paginator.next_page_path }}" class="next">Next</a>
+          {% else %}
+            <span class="next ">Next</span>
+          {% endif %}
+        </div> -->
+
       </div>
     </div>
   </div>
-</section>
-
 </div>
+

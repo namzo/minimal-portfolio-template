@@ -388,11 +388,11 @@ section {
   }
   nav {
     a {
-      color: rgba( $white, .4 );
+      color: rgba($white, .4);
       text-decoration: none;
     }
     li.active a {
-      color: rgba( $white, .7 );
+      color: rgba($white, .7);
     }
     .name-text {
       color: $white;
@@ -400,6 +400,10 @@ section {
   }
   .single-photo_wrap {
     margin-bottom: 2em;
+    a, a:hover {
+      text-decoration: none;
+      color: rgba($gray, .5);
+    }
     img {
       border-radius: 3px;
     }

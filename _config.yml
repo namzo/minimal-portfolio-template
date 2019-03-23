@@ -1,3 +1,4 @@
+# Site details
 name: Ernest Ojeh
 title: Ernest Ojeh &middot; UX Designer
 tagline: The portfolio of Ernest Ojeh
@@ -7,13 +8,40 @@ baseurl: ''
 markdown: kramdown
 permalink: pretty
 highlighter: rouge
+
+# Sass
 sass:
   sass_dir: _scss
   style: compressed
+
+# Plugins
 plugins:
   - jekyll-feed
   - jekyll-redirect-from
-permalink: /:title.html
-exiftag:
- sources:
-   - photos
+  - jekyll-paginate-v2
+
+# permalink: /:title.html
+
+# Pagination Settings
+pagination:
+  enabled: true
+  per_page: 6
+  offset: 2
+  permalink: '/:num/'
+  title: ':title - page :num of :max'
+  limit: 0
+  sort_field: 'date'
+  sort_reverse: true
+
+# Collections
+collections:
+  photos:
+    output: true
+
+# Autopages 
+# autopages:
+  # enabled: true
+  # collections:
+    
+    # layouts: 
+      # - 'photos.html'

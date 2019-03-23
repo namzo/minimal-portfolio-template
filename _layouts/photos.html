@@ -2,11 +2,25 @@
 <html lang="en">
 {% include head.html %}
 
-<body{% if page.nav=='photos' %} class="photos-body"{% endif %}>
+<body class="photos-body">
 
 {% include nav.html %}
 
-{{ content }}
+<div class="animate-wrap"> <!-- closes in footer -->
+
+  <div class="page-wrap">
+
+    <section class="unit page-top">
+      <div class="container">
+        <div class="row">
+          <div class="twelve columns">
+            {{ content }}
+          </div>
+        </div>
+      </section>
+    </section>
+
+  </div>
 
 {% include footer.html %}
 

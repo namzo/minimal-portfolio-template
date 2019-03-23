@@ -4,6 +4,8 @@ layout: default
 nav: posts
 redirect_from:
   - /writing
+pagination: 
+  enabled: true
 ---
 
 <div class="animate-wrap"> <!-- closes in footer -->
@@ -19,7 +21,7 @@ redirect_from:
             <div class="eight columns">
               <div class="posts-wrap">
 
-                {% for post in site.posts  %}
+                {% for post in paginator.posts  %}
                     {% capture url_to_use %}{{ post.url }}{% endcapture %}
                       {% if post.external_url %}
                         {% capture url_to_use %}{{ post.external_url }}{% endcapture %}
@@ -53,6 +55,25 @@ redirect_from:
                         {% endif %}
                     {% endif %}
                 {% endfor %}
+
+                <!-- Pagination -->
+                <div class="pagination">
+                  {% if paginator.previous_page %}
+                    <a href="{{ paginator.previous_page_path }}" class="previous">
+                      Previous
+                    </a>
+                  {% else %}
+                    <span class="previous">Previous</span>
+                  {% endif %}
+                  <span class="page_number ">
+                    Page: {{ paginator.page }} of {{ paginator.total_pages }}
+                  </span>
+                  {% if paginator.next_page %}
+                    <a href="{{ paginator.next_page_path }}" class="next">Next</a>
+                  {% else %}
+                    <span class="next ">Next</span>
+                  {% endif %}
+                </div>
 
               </div>
             </div>

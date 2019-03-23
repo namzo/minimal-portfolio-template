@@ -9,8 +9,8 @@
     max-width: 1200px;
     width: 100%;
   }
-  .photos-body .container {
-    max-width: 100%;
+  .photos-body .page-wrap .container {
+    max-width: 1260px;
   }
 }
 @media (min-width: 768px) {
@@ -20,6 +20,9 @@
   .photo-page-info {
     padding: 2em 2em 0 0;
     font-size: 1.5rem;
+    .link-ext {
+      margin-top: 8px;
+    }
   }
   nav {
     padding-top: 0.6em;

@@ -1,0 +1,16 @@
+---
+layout: photos
+title: Clean Blue
+date: '2013-12-31'
+photo1: clean-blue.jpg
+---
+
+<div class="single-photo_wrap">
+    <img src="{{ site.baseurl }}/photos/{{page.photo1}}?nf_resize=fit&w=2400" alt="Image"
+          srcset="{{ site.baseurl }}/photos/{{page.photo1}}?nf_resize=fit&w=800 800w,
+                  {{ site.baseurl }}/photos/{{page.photo1}}?nf_resize=fit&w=1200 1200w,
+                  {{ site.baseurl }}/photos/{{page.photo1}}?nf_resize=fit&w=2400 2400w"
+          sizes="(max-width: 480px) 800px,
+                (max-width: 767px) 1200px,
+                (min-width: 768px) 2400px">
+</div>
