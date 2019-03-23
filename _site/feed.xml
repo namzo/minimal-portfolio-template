@@ -16,6 +16,15 @@
       </item>
     
       <item>
+        <title>The State of UX in 2019</title>
+        <description>
+</description>
+        <pubDate>Fri, 21 Dec 2018 21:59:00 +0100</pubDate>
+        <link>http://localhost:4000/2018/12/21/my-camera-setup/</link>
+        <guid isPermaLink="true">http://localhost:4000/2018/12/21/my-camera-setup/</guid>
+      </item>
+    
+      <item>
         <title>Making Art</title>
         <description>&lt;p&gt;I recently started painting, and I made my first canvas painting. I live-shared the process on twitter.&lt;/p&gt;
 
@@ -341,32 +350,6 @@ of building on the idea &amp;amp; see where it takes me. I’ve registered the d
         <pubDate>Thu, 26 Jun 2014 12:00:00 +0200</pubDate>
         <link>http://localhost:4000/2014/06/26/material-design-android-l/</link>
         <guid isPermaLink="true">http://localhost:4000/2014/06/26/material-design-android-l/</guid>
-      </item>
-    
-      <item>
-        <title>How I upgraded my Nexus to Android 4.4.4 without losing root, files (and Xposed Framework)</title>
-        <description>&lt;p&gt;I just got the OTA for Android 4.4.4 on my Nexus 4. It could have been as easy as installing the update and rebooting my device, but the problem was that my phone was rooted. If I had installed the OTA directly I could have ended up with a boot-loop or have to re-root and installed apps all over again . I’ve had a similar experience in the past.&lt;/p&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;h4 id=&quot;so-what-did-i-do&quot;&gt;So what did I do?&lt;/h4&gt;
-
-&lt;p&gt;Here are the steps I took to retain root after the OTA update;&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;Open SuperSU, tap on Settings &amp;amp; Enable Survival Mode.&lt;/li&gt;
-  &lt;li&gt;Open Xposed Installer, tap on Framework &amp;amp; tap Uninstall &amp;amp; Reboot&lt;/li&gt;
-  &lt;li&gt;Install the OTA &amp;amp; Reboot&lt;/li&gt;
-  &lt;li&gt;Enable Xposed Installer &amp;amp; Reboot&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://68.media.tumblr.com/2fdc21d54e558dc14c7e67876024dfd9/tumblr_inline_n7n6paunRA1qzu4ed.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;You should have all your files, root intact and your OTA installed.&lt;/p&gt;
-</description>
-        <pubDate>Mon, 23 Jun 2014 12:00:00 +0200</pubDate>
-        <link>http://localhost:4000/2014/06/23/upgrade-nexus4-root/</link>
-        <guid isPermaLink="true">http://localhost:4000/2014/06/23/upgrade-nexus4-root/</guid>
       </item>
     
   </channel>

@@ -89,6 +89,9 @@
   .flex-column-2 {
     order: 1;
   }
+  footer .two.columns {
+    width: 50%;
+  }
 }
 @media (max-width: 767px) {
   html {
