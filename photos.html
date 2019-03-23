@@ -11,7 +11,7 @@ nav: photos
     <div class="three columns">
       <div class="photo-page-info">
         <div>
-          <p>I have a passion for photography and share some of my favorite photos here.</p>
+          <p>I'm a Designer with a passion for photography and share some of my favorite photos here.</p>
           <p>I currently shoot with a Canon EOS M50 Mirrorless Camera.</p>
         </div>
         <div class="link-ext">
@@ -28,8 +28,8 @@ nav: photos
     <div class="nine columns">
       <div class="posts-wrap">
 
-
-      {% for photos in site.photos %}
+      {% assign sorted-photos = site.photos | sort: 'date' | reverse %}
+      {% for photos in sorted-photos %}
 
             <div class="single-photo_wrap">
               <a href="{{ photos.url }}">
