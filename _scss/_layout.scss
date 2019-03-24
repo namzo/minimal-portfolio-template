@@ -395,7 +395,7 @@ section {
       text-decoration: none;
     }
     li.active a {
-      color: #a6adc1;
+      color: $white;
     }
     .name-text {
       color: $white;
@@ -445,13 +445,13 @@ section {
       transform: translateY(0);
       visibility: visible;
       opacity: 1;
-      transition: all ease 0.3s;
+      transition: all cubic-bezier(0.455, 0.03, 0.515, 0.955) 0.3s;
     }
     &:hover .tiny-album-count {
       transform: translateY(-10px);
       visibility: hidden;
       opacity: 0;
-      transition: all ease 0.3s;
+      transition: all cubic-bezier(0.455, 0.03, 0.515, 0.955) 0.3s;
     }
     img {
       border-radius: 6px;
