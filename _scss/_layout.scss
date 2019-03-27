@@ -83,12 +83,11 @@ img {
 h1, h2, h3, h4, h5, h6 {
   font-family: $font;
   color: $black;
-  font-weight: 700;
+  font-weight: 800;
   letter-spacing: 0;
 }
 h5 {
   font-size: 1.8rem;
-  font-weight: 700;
 }
 h4 {
   font-size: 2.4rem;
@@ -538,7 +537,7 @@ section {
     }
     h1 {
       margin: 0 0 10px;
-      font-size: 4rem;
+      font-size: 3.4rem;
     }
     h1, h2, h3, h4 {
       color: $white;
@@ -613,7 +612,7 @@ section {
     color: $orange-text;
     margin-bottom: 1rem;
     margin-top: 3rem;
-    font-size: 3.6rem;
+    font-size: 3.8rem;
     font-weight: 800;
     letter-spacing: -1px;
     line-height: 1.2;
@@ -1504,7 +1503,7 @@ footer {
   li small {
     text-transform: uppercase;
     color: $black;
-    font-weight: 700;
+    font-weight: 800;
   }
   .smallcopy {
     color: #455A64;
