@@ -612,7 +612,7 @@ section {
     color: $orange-text;
     margin-bottom: 1rem;
     margin-top: 3rem;
-    font-size: 3.8rem;
+    font-size: 3.4rem;
     font-weight: 800;
     letter-spacing: -1px;
     line-height: 1.2;
@@ -1541,4 +1541,39 @@ footer {
   font-size: 1.8rem;
   margin-top: 1.2em;
   font-weight: 500;
+}
+.pagination {
+  box-shadow: 0 0px 2px #71828a inset;
+  margin: 1em 0 0;
+  display: inline-block;
+  border-radius: 6px;
+  a {
+    font-weight: 600;
+    &:hover {
+      background: $blue;
+      color: $white;
+    }
+    &:hover, &:focus {
+      text-decoration: none;
+    }
+  }
+  .next {
+    border-radius: 0 6px 6px 0;
+    border-left: 1px solid $gray;
+  }
+  .previous {
+    border-radius: 6px 0 0 6px;
+    border-right: 1px solid $gray;
+  }
+  a, span {
+    display: inline-block;
+    padding: 10px 20px;
+  }
+  .page_number {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .disabled {
+    color: $gray;
+  }
 }
