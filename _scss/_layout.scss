@@ -1039,10 +1039,15 @@ hr {
   padding: 3em 0;
   .article-title {
     font-weight: 800;
+    font-size: 3rem;
   }
 }
 .post-body {
   padding-top: 2em;
+  font-size: 1.8rem;
+  h4 {
+    margin-top: 1.8em;
+  }
   p {
     line-height: 2;
   }
@@ -1176,6 +1181,9 @@ strong.name-text {
 .share-box {
   margin: 0 0 6em;
   text-align: center;
+  p {
+    margin-bottom: 0.5em;
+  }
   a, a:hover {
     padding: 4px 16px !important;
     border-radius: 4px;
@@ -1395,6 +1403,10 @@ code {
   border: none;
   background: transparent;
   font-size: 80%;
+}
+pre>code {
+  padding-top: 1em;
+  padding-bottom: 1em;
 }
 .highlight {
   border-radius: 4px;
