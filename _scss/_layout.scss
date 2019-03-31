@@ -402,11 +402,16 @@ section {
       color: $white;
     }
   }
-  .single-photo_wrap {
-    .sub-photo-title__photo-page {
-      margin-bottom: 2em;
-      font-size: 14px;
+  .photo-page-single-wrap {
+    .single-photo_wrap {
+      margin-bottom: 0;
     }
+    .sub-photo-title {
+      margin-bottom: 2em;
+    }
+  }
+  .single-photo_wrap {
+      margin-bottom: 2em;
     a, a:hover {
       position: relative;
       display: block;
@@ -1605,7 +1610,7 @@ footer {
   }
   .column, .columns {
     width: auto !important;
-    padding-right: 32px !important;
+    padding-right: 38px !important;
     flex: 0 0 auto;
   }
   h6 {
