@@ -26,7 +26,6 @@ plugins:
 pagination:
   enabled: true
   per_page: 6
-  offset: 2
   permalink: '/:num/'
   title: ':title - page :num of :max'
   limit: 0

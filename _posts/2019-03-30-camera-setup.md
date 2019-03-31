@@ -1,7 +1,8 @@
 ---
 layout: post
-title: Making Art
-date: '2018-02-03 12:49pm'
+title: My Camera Setup
+date: '2019-03-30 12:49pm'
+published: false
 ---
 I recently started painting, and I made my first canvas painting. I live-shared the process on twitter.
 

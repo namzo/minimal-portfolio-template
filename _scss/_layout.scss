@@ -1568,10 +1568,6 @@ footer {
   border-radius: 6px;
   a {
     font-weight: 600;
-    &:hover {
-      background: $blue;
-      color: $white;
-    }
     &:hover, &:focus {
       text-decoration: none;
     }
@@ -1582,7 +1578,6 @@ footer {
   }
   .previous {
     border-radius: 6px 0 0 6px;
-    border-right: 1px solid $gray;
   }
   a, span {
     display: inline-block;
@@ -1591,6 +1586,7 @@ footer {
   .page_number {
     padding-left: 20px;
     padding-right: 20px;
+    border-left: 1px solid $gray;
   }
   .disabled {
     color: $gray;
