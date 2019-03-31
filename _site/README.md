@@ -1,4 +1,4 @@
-# ernestojeh.com
+# Hello
 
 Website URL: [ernestojeh.com](http://ernestojeh.com/)
 
@@ -8,6 +8,8 @@ Website URL: [ernestojeh.com](http://ernestojeh.com/)
 - [Jekyll](https://jekyllrb.com/)
 - [Gems](http://rubygems.org/)
 
-## Preview
-- Run `jekyll serve` to view the site locally
+## Installation
+- Git clone this repo
+- Install [Jekyll](https://jekyllrb.com/)
+- Run `jekyll serve` from site's root to view the site locally
 - View it by going to `http://localhost:4000`
