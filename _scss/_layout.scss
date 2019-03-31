@@ -36,8 +36,8 @@ $font: "Inter", BlinkMacSystemFont,-apple-system,Segoe UI,Roboto,Helvetica,Arial
 :-moz-placeholder {
   color: #B0BEC5;
 }
-::-moz-selection { background: yellow; }
-::selection { background: yellow; }
+::-moz-selection { background: $gray; }
+::selection { background: $gray; }
 html {
   font-size: 64%;
 }
