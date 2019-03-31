@@ -10,8 +10,9 @@ layout: default
       <div class="ten columns offset-by-one">
       <div class="post-wrap">
 	      <h4 class="article-title">{{ page.title }}</h4>
-        <a href="https://github.com/namzo/ernestojeh.com/tree/master/{{ page.relative_path }}">Edit</a>
 		      <p class="date">Published on {{ page.date | date_to_string }} &middot; {% include reading-time.html %} read</p>
+          <small><a href="https://github.com/namzo/ernestojeh.com/tree/master/{{ page.relative_path }}" target=_blank">Edit this page</a></small>
+          
 	      <div class="post-body">
 		      {{ content }}
 		     </div>

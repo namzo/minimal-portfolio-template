@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+{% include head.html %}
+
+<body class="photos-body">
+
+{% include nav.html %}
+
+<div class="animate-wrap"> <!-- closes in footer -->
+
+  <div class="page-wrap">
+
+    <section class="unit page-top">
+      <div class="container">
+        <div class="row">
+          <div class="twelve columns">
+            
+          {% if page.focal-length %}
+            <div class="photo-info row">
+              <div class="two columns">
+                <h6>Focal Length</h5>
+                <p>{{ page.focal-length }}</p>
+              </div>
+              <div class="two columns">
+                <h6>Aperture</h5>
+                <p>{{ page.aperture }}</p>
+              </div>
+              <div class="two columns">
+                <h6>Shutter speed</h5>
+                <p>{{ page.shutter-speed }}</p>
+              </div>
+              <div class="two columns">
+                <h6>ISO</h5>
+                <p>{{ page.iso }}</p>
+              </div>
+            </div>
+          {% endif %}
+
+            {{ content }}
+
+            <div class="sub-photo-title sub-photo-title__photo-page">
+              <small>{{ page.title }}</small>
+            </div>
+
+          </div>
+        </div>
+      </section>
+    </section>
+
+  </div>
+
+{% include footer.html %}
+
+</body>
+
+</html>

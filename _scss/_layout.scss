@@ -36,6 +36,8 @@ $font: "Inter", BlinkMacSystemFont,-apple-system,Segoe UI,Roboto,Helvetica,Arial
 :-moz-placeholder {
   color: #B0BEC5;
 }
+::-moz-selection { background: yellow; }
+::selection { background: yellow; }
 html {
   font-size: 64%;
 }
@@ -310,7 +312,7 @@ nav {
     display: inline-block;
     padding: 10px 0;
     border: none;
-    font-weight: 400;
+    font-weight: 500;
     transition: .3s all ease;
     &:hover, &:active {
       border-color: $gray;
@@ -401,7 +403,10 @@ section {
     }
   }
   .single-photo_wrap {
-    margin-bottom: 2em;
+    .sub-photo-title__photo-page {
+      margin-bottom: 2em;
+      font-size: 14px;
+    }
     a, a:hover {
       position: relative;
       display: block;
@@ -1149,10 +1154,7 @@ strong.name-text {
   position: relative;
   display: inline-block;
   font-family: $font;
-  font-weight: 800;
-  // &.photo-name-text {
-  //   text-transform: uppercase;
-  // }
+  font-weight: 900;
 }
 
 .back-link-wrap {
@@ -1588,4 +1590,34 @@ footer {
   .disabled {
     color: $gray;
   }
+}
+.photo-info {
+  padding: 2em 0 0;
+  border-bottom: 1px solid rgba(118, 126, 165, 0.1);
+  margin-bottom: 2em;
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  margin-right: -20px;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  .column, .columns {
+    width: auto !important;
+    padding-right: 32px !important;
+    flex: 0 0 auto;
+  }
+  h6 {
+    color: rgba(118, 126, 165, 0.68);
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 12px;
+  }
+  p {
+    color: #8189b1;
+  }
+}
+.photo-info h6 {
+  margin-bottom: 0;
 }
