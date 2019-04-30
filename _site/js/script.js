@@ -8,6 +8,8 @@ animate({
   opacity: [0, 1]
 });
 
+window.onload=getExif;
+
 function getExif() {
   var image = document.querySelector(".single-photo_wrap img");
   EXIF.getData(image, function() {
