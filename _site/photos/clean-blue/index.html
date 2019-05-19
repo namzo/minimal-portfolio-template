@@ -106,19 +106,19 @@
             <div class="photo-info row">
               <div class="two columns">
                 <h6>Focal Length</h5>
-                <p>39mm</p>
+                <p class="focal-length">39mm</p>
               </div>
               <div class="two columns">
                 <h6>Aperture</h5>
-                <p>ƒ/8.0</p>
+                <p class="aperture">ƒ/8.0</p>
               </div>
               <div class="two columns">
                 <h6>Shutter speed</h5>
-                <p>1/320s</p>
+                <p class="shutter-speed">1/320s</p>
               </div>
               <div class="two columns">
                 <h6>ISO</h5>
-                <p>1000</p>
+                <p class="iso">1000</p>
               </div>
             </div>
           
@@ -196,6 +196,7 @@
 
 </div> <!-- /animate-wrap -->
 
+<script src="/js/exif-js.js"></script>
 <script>
   if (window.netlifyIdentity) {
     window.netlifyIdentity.on("init", user => {

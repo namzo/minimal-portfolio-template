@@ -56,7 +56,6 @@
 
   gtag('config', 'UA-130311233-1');
 </script>
-<script src="https://cdn.jsdelivr.net/npm/exif-js"></script>
 <script type="module" src="/js/script.js"></script>
 </head>
 
@@ -107,7 +106,7 @@
             <div class="photo-info row">
               <div class="two columns">
                 <h6>Focal Length</h5>
-                <p class="focal-length">300.00mm</p>
+                <p class="focal-length">300.0mm</p>
               </div>
               <div class="two columns">
                 <h6>Aperture</h5>
@@ -207,6 +206,7 @@
 
 </div> <!-- /animate-wrap -->
 
+<script src="/js/exif-js.js"></script>
 <script>
   if (window.netlifyIdentity) {
     window.netlifyIdentity.on("init", user => {
