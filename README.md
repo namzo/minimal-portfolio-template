@@ -9,7 +9,13 @@ Website URL: [ernestojeh.com](http://ernestojeh.com/)
 - [Gems](http://rubygems.org/)
 
 ## Installation
+- Install [Jekyll](https://jekyllrb.com/) by running:
+```bash
+$ gem install jekyll
+```
 - Git clone this repo
-- Install [Jekyll](https://jekyllrb.com/)
-- Run `jekyll serve` from site's root to view the site locally
-- View it by going to `http://localhost:4000`
+
+## Build
+- Run `jekyll serve` from site's root to start the jekyll server
+- View it by going to `http://localhost:4000` in your browser
+- Website will get auto compiled to the `_sites` folder
