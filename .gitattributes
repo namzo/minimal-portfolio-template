@@ -1,2 +1,2 @@
-img/photos/** filter=lfs diff=lfs merge=lfs -text
 photos/** filter=lfs diff=lfs merge=lfs -text
+img/post/art/** filter=lfs diff=lfs merge=lfs -text
