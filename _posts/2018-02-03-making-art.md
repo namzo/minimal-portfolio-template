@@ -6,6 +6,7 @@ date: '2018-02-03 12:49pm'
 I recently started painting, and I made my first canvas painting. I live-shared the process on twitter.
 
 <img src="{{ site.baseurl }}/img/post/art/IMG_1205.jpg">
+
 <img src="{{ site.baseurl }}/img/post/art/IMG_1207.jpg">
 <img src="{{ site.baseurl }}/img/post/art/IMG_1209.jpg">
 
