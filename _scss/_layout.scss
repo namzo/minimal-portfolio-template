@@ -602,8 +602,6 @@ section {
   padding: 0.5em 0 0;
   position: relative;
   p.lead {
-    -webkit-animation-delay: 400ms;
-    animation-delay: 400ms;
     font-size: 1.8rem;
     a {
       color: $blue;
@@ -626,10 +624,6 @@ section {
     font-weight: 800;
     letter-spacing: -1px;
     line-height: 1.2;
-    -webkit-animation-delay: 100ms;
-    animation-delay: 100ms;
-    -webkit-animation-duration: 900ms;
-    animation-duration: 900ms;
     span {
       color: lighten($text-color, 25%);
     }
@@ -1292,6 +1286,9 @@ button, .button {
 .page-title {
   margin-bottom: 0.5em;
 }
+.full-photo {
+  width: 100%;
+}
 .app-screenshot {
   img {
     margin-bottom: 40px;
@@ -1459,29 +1456,6 @@ pre>code {
   text-transform: none;
   line-height: 30px;
   padding: 6px 18px !important;
-}
-.fade-in {
-  -webkit-animation: fading ease-in 600ms;
-  animation: fading ease-in 600ms;
-}
-@-webkit-keyframes fading {
-  0% {
-    opacity: 0
-  }
-  100% {
-    opacity: 1
-  }
-}
-@keyframes fading {
-  0% {
-    opacity: 0
-  }
-  100% {
-    opacity: 1
-  }
-}
-.animate-wrap {
-    opacity: 0;
 }
 .chat-wrap {
   padding: 1.2em 0 0;
