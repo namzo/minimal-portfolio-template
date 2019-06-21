@@ -16,6 +16,6 @@ $ gem install jekyll
 - Git clone this repo
 
 ## Build
-- Run `jekyll serve` from site's root to start the jekyll server
+- Run `bundle exec jekyll serve` from site's root to start the jekyll server
 - View it by going to `http://localhost:4000` in your browser
 - Website will get auto compiled to the `_sites` folder

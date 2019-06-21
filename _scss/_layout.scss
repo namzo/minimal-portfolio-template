@@ -45,12 +45,11 @@ body {
   background: $white;
   height: 100%;
   font-family: $font;
-  font-size: 1.6rem;
-  line-height: 1.6;
+  font-size: 1.7rem;
+  line-height: 1.7;
   font-weight: 400;
   z-index: 2;
   color: $text-color;
-  padding-top: 50px;
   text-rendering: optimizeLegibility;
 }
 .preload * {
@@ -183,7 +182,6 @@ header {
 }
 p {
   font-size: inherit;
-  line-height: 1.6;
   margin-bottom: 1.5rem;
 }
 li {
@@ -268,12 +266,7 @@ abbr, abbr[title] {
   }
 }
 nav {
-  padding-top: 0;
-  padding-bottom: 0;
-  width: 100%;
-  position: absolute;
-  top: 0;
-  z-index: 600;
+  position: relative;
   font-family: $font;
   &.bgnav {
     background: $gray;
@@ -297,7 +290,7 @@ nav {
     }
     &.active a {
       font-weight: 500;
-      color: $black;
+      color: $blue;
     }
   }
   .links li {
@@ -315,8 +308,7 @@ nav {
     font-weight: 500;
     transition: .3s all ease;
     &:hover, &:active {
-      border-color: $gray;
-      color: $blue;
+      color: $black;
       border: none;
       text-decoration: none;
     }
@@ -596,7 +588,7 @@ section {
   padding-top: 0;
 }
 .unit.page-top {
-  padding-top: 1em;
+  padding-top: 2em;
 }
 .home-box {
   padding: 0.5em 0 0;
@@ -1097,9 +1089,11 @@ img {
   color: $orange-text;
 }
 .avatar-img {
+  width: 90%;
   margin: 0 0 15px 0;
   border-radius: 10px;
   transition: ease all 0.3s;
+  box-shadow: 8px 8px rgba(220, 230, 234, 1), 0 4px 8px rgba(17,35,56,.04), 0 0 8px rgba(17,35,56,.04), 0 18px 27px rgba(17,35,56,.11);
 }
 .talks {
   padding: 4em 0 2em;
@@ -1153,6 +1147,7 @@ strong.name-text {
   display: inline-block;
   font-family: $font;
   font-weight: 900;
+  font-size: 20px;
 }
 
 .back-link-wrap {
