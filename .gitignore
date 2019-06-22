@@ -3,6 +3,5 @@ _drafts/
 .sass-cache/
 .jekyll-cache/
 .bundle/
-.jekyll-metadata
-.vscode
-.netlify
+.vscode/
+.netlify/
