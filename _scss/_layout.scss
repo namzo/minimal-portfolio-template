@@ -569,6 +569,7 @@ section {
   nav {
     position: absolute;
     width: 100%;
+    z-index: 99;
     .button.hollow, .button.hollow:hover {
       color: $white;
     }
