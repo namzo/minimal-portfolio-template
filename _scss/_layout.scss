@@ -289,7 +289,7 @@ nav {
       padding-left: 3px;
     }
     &.active a {
-      font-weight: 500;
+      font-weight: 700;
       color: $blue;
     }
   }
@@ -381,6 +381,9 @@ section {
   ::selection { background:rgba(106, 128, 148, 0.9); color: $dark; }
   .article-title, .article-title a, a {
     color: $white;
+  }
+  footer .row:first-child {
+    border-top:1px solid rgba(245, 245, 245, 0.1)
   }
   nav {
     a {
@@ -1517,7 +1520,7 @@ footer {
   }
   .row:first-child {
     padding-top: 2em;
-    border-top: 1px solid rgba(143, 161, 179, 0.3);
+    border-top: 1px solid #f5f5f5;
   }
   .foot-site {
     a {
