@@ -99,6 +99,10 @@
   .intro-profile img {
     width: 100%;
   }
+  ul.links {
+    clear: both;
+    float: left !important;
+  }
 }
 @media (max-width: 767px) {
   html {
