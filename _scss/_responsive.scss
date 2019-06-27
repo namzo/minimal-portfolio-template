@@ -96,8 +96,11 @@
   footer .two.columns {
     width: 50%;
   }
-  .intro-profile img {
-    width: 100%;
+  .intro-profile.flex-column-2 {
+    text-align: center;
+    img {
+      width: 100%;
+    }
   }
   ul.links {
     clear: both;
@@ -357,5 +360,8 @@
   }
   .hidden-mobile {
     display: none;
+  }
+  .photo-page-info {
+
   }
 }
