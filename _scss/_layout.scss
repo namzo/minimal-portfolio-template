@@ -45,8 +45,8 @@ body {
   background: $white;
   height: 100%;
   font-family: $font;
-  font-size: 1.7rem;
-  line-height: 1.7;
+  font-size: 1.6rem;
+  line-height: 1.6;
   font-weight: 400;
   z-index: 2;
   color: $text-color;
@@ -506,36 +506,11 @@ section {
     padding: 0;
     padding-bottom: 0;
     position: relative;
-    color: $white;
     display: flex;
     align-items: center;
     justify-content: center;
     .intro-profile {
       margin: 2.6em 0 3em;
-    }
-    &.kongapay {
-      background-color: #1c4dd8;
-      &+section:before {
-        background: #1c4dd8;
-      }
-    }
-    &.newthird {
-      background-color: #e24637;
-      &+section:before {
-        background: #e24637;
-      }
-    }
-    &.appscreens {
-      background-color: #311B92;
-      &+section:before {
-        background: #311B92;
-      }
-    }
-    &.insidify {
-      background-color: #0e8bbb;
-      &+section:before {
-        background: #0e8bbb;
-      }
     }
     &:before {
       display: none;
@@ -543,17 +518,6 @@ section {
     h1 {
       margin: 0 0 10px;
       font-size: 3.4rem;
-    }
-    h1, h2, h3, h4 {
-      color: $white;
-    }
-    a {
-      color: $white;
-      text-decoration: none;
-      border-bottom: 1px solid rgba(255, 255, 255, 0.22);
-      &:hover, &:focus {
-        border-color: $white;
-      }
     }
   }
   &.white {
@@ -568,24 +532,6 @@ section {
   nav a.button.hollow:hover, nav a.button.hollow:hover:hover {
     color: $white;
     border-color: $white;
-  }
-  nav {
-    position: absolute;
-    width: 100%;
-    z-index: 99;
-    .button.hollow, .button.hollow:hover {
-      color: $white;
-    }
-    svg path {
-      fill: $white !important;
-    }
-    a, strong.name-text {
-      color: $white;
-    }
-    .btn, .btn:hover, .btn:focus {
-      background: transparent;
-      border-color: $white;
-    }
   }
 }
 .unit.unit-case {
@@ -1040,12 +986,11 @@ hr {
   padding: 3em 0;
   .article-title {
     font-weight: 800;
-    font-size: 3rem;
+    font-size: 2.8rem;
   }
 }
 .post-body {
   padding-top: 2em;
-  font-size: 1.8rem;
   h4 {
     margin-top: 1.8em;
   }
@@ -1594,4 +1539,18 @@ footer {
 }
 .photo-info h6 {
   margin-bottom: 0;
+}
+.photo-footnote {
+  margin-bottom: 20px;
+  a {
+    display: block;
+    padding: 5px 15px;
+    background: #17313e;
+    border-radius: 25px;
+    font-size: 1.4rem;
+    text-align: center;
+    &:hover {
+      text-decoration: none;
+    }
+  }
 }

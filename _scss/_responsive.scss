@@ -47,6 +47,9 @@
   .intro.casestudy-header {
     height: auto;
     padding-top: 7em;
+    h1 {
+      margin-top:28px
+    }
   }
   .home-header.white {
     background: #fff0e5 !important;
@@ -77,7 +80,10 @@
     padding: 0 0 1em;
   }
   .hidden-mobile {
-    display: block;
+    display: block !important;
+  }
+  .show-mobile {
+    display: none !important;
   }
   footer.unit {
     padding-bottom: 6em;
@@ -235,7 +241,7 @@
     height: auto;
     min-height: 0;
     padding-top: 10em;
-    padding: 1em 0 0;
+    padding: 4em 0 0;
   }
   .down-link {
     display: none;
@@ -359,7 +365,10 @@
     padding: 0 0 1em;
   }
   .hidden-mobile {
-    display: none;
+    display: none !important;
+  }
+  .show-mobile {
+    display: block !important;
   }
   .photo-page-info {
 
