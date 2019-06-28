@@ -10,7 +10,7 @@
     width: 100%;
   }
   .photos-body .page-wrap .container {
-    max-width: 1260px;
+    max-width: 1100px;
   }
 }
 @media (min-width: 768px) {
@@ -18,7 +18,7 @@
     font-size: 1.6rem;
   }
   .photo-page-info {
-    padding: 2em 2em 0 0;
+    padding: 0 2em 0 0;
     font-size: 1.5rem;
     .link-ext {
       margin-top: 8px;
@@ -31,7 +31,7 @@
   nav {
     padding-top: 1.4em;
     .container {
-      max-width: 1300px;
+      max-width: 1100px;
     }
     a {
       padding: 10px 0;
@@ -326,6 +326,9 @@
   }
   footer {
     padding: 0 0 2em !important;
+    .foot-site {
+      text-align: left !important;
+    }
     li {
       line-height: 1.7;
     }
