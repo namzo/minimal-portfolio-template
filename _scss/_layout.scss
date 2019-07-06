@@ -11,7 +11,8 @@ $fb: #48649f;
 $gplus: #db4437;
 $dark: #202124;
 
-$font: "Inter", BlinkMacSystemFont,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+$font-inter: "Inter", BlinkMacSystemFont,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+$font-acumin: "Acumin Pro", BlinkMacSystemFont,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
 
 @mixin rounded-corners {
   $rounded-corner-radius: 4px;
@@ -44,9 +45,9 @@ html {
 body {
   background: $white;
   height: 100%;
-  font-family: $font;
+  font-family: $font-acumin;
   font-size: 1.7rem;
-  line-height: 1.7;
+  line-height: 1.6;
   font-weight: 400;
   z-index: 2;
   color: $text-color;
@@ -85,7 +86,7 @@ img {
   max-width: 100%;
 }
 h1, h2, h3, h4, h5, h6 {
-  font-family: $font;
+  font-family: $font-acumin;
   color: $black;
   font-weight: 700;
   letter-spacing: 0;
@@ -188,7 +189,7 @@ p {
   margin-bottom: 1.5rem;
 }
 li {
-  line-height: 30px;
+  line-height: inherit;
   margin-bottom: 2px;
 }
 abbr, abbr[title] {
@@ -204,7 +205,7 @@ abbr, abbr[title] {
   transition: all .15s ease;
   display: inline-block;
   line-height: 28px;
-  font-family: $font;
+  font-family: $font-acumin;
   text-decoration: none;
   border: 1px solid rgba(12, 81, 181, 0.34);
   transition: all 300ms ease;
@@ -270,14 +271,14 @@ abbr, abbr[title] {
 }
 nav {
   position: relative;
-  font-family: $font;
+  font-family: $font-acumin;
   &.bgnav {
     background: $gray;
     width: auto;
     padding: 0;
   }
   .row:first-child {
-    border-bottom: 2px solid $black;
+    border-bottom: 2px solid $gray;
   }
   ul {
     list-style-type: none;
@@ -297,6 +298,15 @@ nav {
     &.active a {
       font-weight: 700;
       color: $black;
+      &:after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        display: block;
+        bottom: -2px;
+        background: $black;
+      }
     }
   }
   .links li {
@@ -306,7 +316,7 @@ nav {
     display: none !important;
   }
   a {
-    color: #607682;
+    color: #496371;
     position: relative;
     display: inline-block;
     padding: 10px 0;
@@ -395,6 +405,15 @@ section {
     }
     li.active a {
       color: $white;
+      &:after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        display: block;
+        bottom: -2px;
+        background: $white;
+      }
     }
     .name-text {
       color: $white;
@@ -495,11 +514,10 @@ section {
 }
 /* End Photos page */
 
-
 .intro {
   padding: 3em 0 6em;
   &.home {
-    padding: 0;
+    padding: 1.2em 0 0;
     text-align: left;
     position: relative;
     box-sizing: border-box;
@@ -553,14 +571,14 @@ section {
   padding-top: 2em;
 }
 p.lead {
-  font-size: 2rem;
+  font-size: 2.2rem;
   color: $text-color;
 }
 .home-box {
   padding: 0.5em 0 0;
   position: relative;
   p.lead {
-    font-size: 2rem;
+    font-size: 2.2rem;
     a {
       color: $blue;
       font-weight: 700;
@@ -588,6 +606,11 @@ p.lead {
     em {
       font-style: normal;
     }
+  }
+}
+
+.profile-page-wrap {
+  .profile-photo-wrap {
   }
 }
 
@@ -890,7 +913,7 @@ hr {
   background-color: $blue;
   border: none;
   color: $white;
-  font-family: $font;
+  font-family: $font-acumin;
   font-size: inherit;
   text-transform: inherit;
   padding: 0 20px;
@@ -1101,13 +1124,17 @@ time {
 .pull-right {
   float: right;
 }
+.nt-wrap {
+  padding: 0;
+}
 strong.name-text {
   color: $black;
   margin-right: 0;
   position: relative;
   display: inline-block;
-  font-family: $font;
+  font-family: $font-acumin;
   font-weight: 900;
+  text-transform: uppercase;
   font-size: 20px;
 }
 
@@ -1447,7 +1474,7 @@ pre>code {
 }
 footer {
   color: #78909C;
-  font-family: $font;
+  font-family: $font-acumin;
   li small {
     text-transform: uppercase;
     color: $black;
