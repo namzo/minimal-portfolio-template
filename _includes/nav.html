@@ -23,7 +23,7 @@
       <li class="{% if page.nav=='posts' %}active{% endif %}{% if page.layout=='post' %}active{% endif %}">
         <a href="/posts/">Posts</a>
       </li>
-      <li class="{% if page.nav=='photos' %}active{% endif %}">
+      <li class="{% if page.nav=='photos' or page.layout=='photo' %}active{% endif %}">
         <a href="/photos/">Photos</a>
       </li>
     </ul>

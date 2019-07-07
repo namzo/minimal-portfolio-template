@@ -22,3 +22,9 @@ function getExif() {
       iso.innerHTML = `${ISOSpeedVal}`;
     });
 }
+
+$(window).bind("pageshow", function(event) {
+if (event.originalEvent.persisted) {
+window.location.reload()
+}
+});

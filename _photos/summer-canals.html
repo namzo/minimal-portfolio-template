@@ -4,18 +4,20 @@ title: Boats in summer
 date: 2019-06-30
 photo1: boats-in-summer.jpg
 
-focal-length: 0
-aperture: 0
-shutter-speed: 0
-iso: 0
+focal-length: 22mm
+aperture: ƒ/5.3
+shutter-speed: 1/8.96s
+iso: 100
 ---
 
 <div class="single-photo_wrap">
-    <img src="{{ site.baseurl }}/photos/{{page.photo1}}?nf_resize=fit&w=2400" alt="Image"
-          srcset="{{ site.baseurl }}/photos/{{page.photo1}}?nf_resize=fit&w=800 800w,
-                  {{ site.baseurl }}/photos/{{page.photo1}}?nf_resize=fit&w=1200 1200w,
-                  {{ site.baseurl }}/photos/{{page.photo1}}?nf_resize=fit&w=2400 2400w"
-          sizes="(max-width: 480px) 800px,
-                (max-width: 767px) 1200px,
-                (min-width: 768px) 2400px">
+    <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+      data-src="{{ site.baseurl }}/photos/{{page.photo1}}?nf_resize=fit&w=2400" alt="{{ page.title }}"
+      srcset="{{ site.baseurl }}/photos/{{page.photo1}}?nf_resize=fit&w=800 800w,
+            {{ site.baseurl }}/photos/{{page.photo1}}?nf_resize=fit&w=1200 1200w,
+            {{ site.baseurl }}/photos/{{page.photo1}}?nf_resize=fit&w=2400 2400w"
+      sizes="(max-width: 480px) 800px,
+            (max-width: 767px) 1200px,
+            (min-width: 768px) 2400px"
+      class="b-lazy">
 </div>

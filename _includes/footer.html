@@ -48,7 +48,19 @@
 
 </div> <!-- /animate-wrap -->
 
+<script src="{{ site.baseurl }}/js/blazy.min.js"></script>
 <script src="{{ site.baseurl }}/js/exif-js.js"></script>
+
+<script>
+  ;(function() {
+  // Initialize
+    var bLazy = new Blazy();
+  // Fix image not loaidng
+    blazy = new Blazy();
+      setTimeout(blazy.revalidate, 100);
+    })();
+</script>
+
 <script>
   if (window.netlifyIdentity) {
     window.netlifyIdentity.on("init", user => {

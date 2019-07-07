@@ -34,13 +34,17 @@ pagination:
 
             <div class="single-photo_wrap">
               <a href="{{ photos.url }}">
-                <img src="{{ site.baseurl }}/photos/{{photos.photo1}}?nf_resize=fit&w=2400" alt="Image"
-                      srcset="{{ site.baseurl }}/photos/{{photos.photo1}}?nf_resize=fit&w=800 800w,
-                              {{ site.baseurl }}/photos/{{photos.photo1}}?nf_resize=fit&w=1200 1200w,
-                              {{ site.baseurl }}/photos/{{photos.photo1}}?nf_resize=fit&w=2400 2400w"
-                      sizes="(max-width: 480px) 800px,
-                            (max-width: 767px) 1200px,
-                            (min-width: 768px) 2400px">
+                <div class="image-wrapper">
+                  <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" 
+                        data-src="{{ site.baseurl }}/photos/{{photos.photo1}}?nf_resize=fit&w=2400" alt="{{ photos.title }}"
+                        srcset="{{ site.baseurl }}/photos/{{photos.photo1}}?nf_resize=fit&w=800 800w,
+                                {{ site.baseurl }}/photos/{{photos.photo1}}?nf_resize=fit&w=1200 1200w,
+                                {{ site.baseurl }}/photos/{{photos.photo1}}?nf_resize=fit&w=2400 2400w"
+                        sizes="(max-width: 480px) 800px,
+                              (max-width: 767px) 1200px,
+                              (min-width: 768px) 2400px"
+                        class="b-lazy">
+                  </div>
                   {% if photos.photo-count %}
                     <span class="album-count"><h5>{{ photos.photo-count }} Photos</h5></span>
                   {% endif %}
