@@ -100,10 +100,13 @@ h4 {
 a {
   color: $blue;
   text-decoration: none;
-  outline: none;
+  // outline: none;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   &:hover {
     text-decoration: underline;
+  }
+  &:focus {
+    // outline: #003580
   }
   &:hover, &:focus, a:active {
     transition: ease all .3s;
@@ -1471,6 +1474,9 @@ pre>code {
 }
 .proj-img {
   margin-bottom: 24px;
+  > a {
+    display: flex;
+  }
 }
 footer {
   color: #78909C;
