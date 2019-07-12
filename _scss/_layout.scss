@@ -1598,20 +1598,11 @@ footer {
     }
   }
 }
-
-.b-lazy {
-transition: opacity 500ms ease-in-out;
-max-width: 100%;
-opacity: 0;
-display: block;
-}
-.b-lazy.b-loaded {
-  opacity: 1;
-}
 .image-wrapper {
-// Adding a loader and background color. The user will see it
-// if the image is loading slow.
   background: #01070a;
-  // url('../img/loader.gif') center center no-repeat
-  width: 100%
+  width: 100%;
+  overflow: hidden;
+  img {
+    display: block;
+  }
 }
