@@ -87,6 +87,9 @@
   }
 }
 @media (max-width: 549px) {
+  .home-box p.lead {
+    font-size: 2rem !important;
+  }
   .row-flex {
     justify-content: space-between;
   }
@@ -102,7 +105,7 @@
   .intro-profile.flex-column-2 {
     text-align: center;
     img {
-      width: 100%;
+      width: 68%;
     }
   }
   ul.links {
@@ -134,9 +137,9 @@
     font-size: 1.6rem;
   }
   .intro-profile h1 {
-    font-size: 3.2rem;
     margin-top: 0;
     margin-bottom: 20px;
+    font-size: 2.8rem;
   }
   .avatar-img {
     width: 180px;

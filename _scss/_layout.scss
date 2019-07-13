@@ -1474,8 +1474,8 @@ pre>code {
 }
 .proj-img {
   margin-bottom: 24px;
-  > a {
-    display: flex;
+  > a, img {
+    display: block;
   }
 }
 footer {
