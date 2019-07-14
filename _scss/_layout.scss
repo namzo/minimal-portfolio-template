@@ -1618,10 +1618,28 @@ footer {
   transition: all .2s ease;
   box-shadow: 0 0 2px 0 rgba(0,0,0,0.3);
   transform: translateY(0);
+
   @keyframes fadein {
-    0%   { opacity: 0; }
-    100% { opacity: 1; }
+      from { opacity: 0; }
+      to   { opacity: 1; }
   }
+  @-moz-keyframes fadein {
+      from { opacity: 0; }
+      to   { opacity: 1; }
+  }
+  @-webkit-keyframes fadein {
+      from { opacity: 0; }
+      to   { opacity: 1; }
+  }
+  @-ms-keyframes fadein {
+      from { opacity: 0; }
+      to   { opacity: 1; }
+  }
+  @-o-keyframes fadein {
+      from { opacity: 0; }
+      to   { opacity: 1; }
+  }
+  
   .photo-page-info {
     display: none;
     animation: fadein .8s;
