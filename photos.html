@@ -9,22 +9,8 @@ pagination:
 
 <div class="wrap-page">
   <div class="row">
-    <div class="three columns">
-      <div class="photo-page-info hidden-mobile">
-        <div>
-          <p>I'm a Designer with a passion for photography and share some of my favorite photos here.</p>
-          <p>I currently shoot with a Canon EOS M50 Mirrorless Camera.</p>
-        </div>
-        <div class="link-ext">
-          <small>Free-to-use photos on Unsplash:</small>
-          <br><a href="http://unsplash.com/namzo" target="_blank">unsplash.com/namzo</a>.
-        </div>
-        <div class="link-ext">
-          <small>VSCO (Personal):</small><br>
-          <a href="http://vsco.co/namzo" target="_blank">vsco.co/namzo</a>.
-        </div>
-        <div><br>You can also follow me on <a href="http://twitter.com/namzo" target="_blank">Twitter</a>.</div>
-      </div>
+    <div class="three columns hidden-mobile">
+      {% include photo_page_info.html %}
     </div>
     <div class="nine columns">
       <div class="posts-wrap">
@@ -100,5 +86,13 @@ pagination:
       
     </div>
   </div>
+</div>
+
+<div class="about-photos_link show-mobile">
+  <div class="photo_about_bottom">
+    {% include photo_page_info.html %}
+  </div>
+  <div class="anchor-text_open">About this page</div>
+  <div class="anchor-text_close"><hr>Close</div>
 </div>
 

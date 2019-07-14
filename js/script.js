@@ -23,8 +23,17 @@ function getExif() {
     });
 }
 
-$(window).bind("pageshow", function(event) {
-if (event.originalEvent.persisted) {
-window.location.reload()
-}
+// $(".anchor-text_open").click(function() {
+//   $(".about-photos_link").addClass("clicked");
+// });
+// $(".anchor-text_close").click(function() {
+//   $(".about-photos_link").removeClass("clicked");
+// });
+
+$(".anchor-text_open").on("tap",function(){
+  e.preventDefault();
+  
+  alert('1'); 
+  $(this).hide();
 });
+

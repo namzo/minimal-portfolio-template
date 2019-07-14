@@ -1606,3 +1606,44 @@ footer {
     display: block;
   }
 }
+.about-photos_link {
+  position: fixed;
+  bottom: 30px;
+  left: 10px;
+  background: $blue;
+  font-size: 1.4rem;
+  color: $white;
+  border-radius: 8px 8px 8px 0;
+  z-index: 999;
+  .anchor-text_open {
+    padding: 6px 12px;
+    height: 32px;
+  }
+  a {
+    font-weight: 600;
+    text-decoration: underline;
+  }
+  .link-ext {
+    small {
+      color: rgba($white, .7);
+    }
+  }
+  .photo_about_bottom, .anchor-text_close {
+    display: none;
+  }
+  &.clicked {
+    width: calc(100% - 20px);
+    max-width: 320px;
+    height: auto;
+    padding: 20px 20px 12px;
+    .anchor-text_open {
+      display: none;
+    }
+    .photo_about_bottom, .anchor-text_close {
+      display: block;
+      hr {
+        border-color: rgba($white, .2);
+      }
+    }
+  }
+}
