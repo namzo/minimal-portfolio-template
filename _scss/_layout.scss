@@ -1615,6 +1615,17 @@ footer {
   color: $white;
   border-radius: 8px 8px 8px 0;
   z-index: 999;
+  transition: all .2s ease;
+  box-shadow: 0 0 2px 0 rgba(0,0,0,0.3);
+  transform: translateY(0);
+  @keyframes fadein {
+    0%   { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  .photo-page-info {
+    display: none;
+    animation: fadein .6s;
+  }
   .anchor-text_open {
     padding: 10px 12px 8px;
   }
@@ -1630,11 +1641,18 @@ footer {
   .photo_about_bottom, .anchor-text_close {
     display: none;
   }
+  .anchor-text_close, .anchor-text_open {
+    animation: fadein .6s;
+  }
   &.clicked {
     width: calc(100% - 20px);
     max-width: 320px;
     height: auto;
     padding: 20px 20px 12px;
+    transform: translateY(-10px);
+    .photo-page-info {
+      display: block;
+    }
     .anchor-text_open {
       display: none;
     }
