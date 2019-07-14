@@ -446,11 +446,10 @@ section {
       color: $white;
       display: inline-block;
       position: absolute;
-      bottom: 30px;
-      left: 20px;
-      font-weight: 700;
-      padding: 6px 14px;
-      border-radius: 10px;
+      bottom: 10px;
+      left: 10px;
+      padding: 4px 10px;
+      border-radius: 6px;
       transform: translateY(20px);
       transition: all cubic-bezier(0.455, 0.03, 0.515, 0.955) 0.3s;
       visibility: hidden;
@@ -462,6 +461,7 @@ section {
         transition: all cubic-bezier(0.455, 0.03, 0.515, 0.955) 0.3s;
         visibility: hidden;
         font-size: 1.5rem;
+        font-weight: 400;
       }
     }
     a:hover .album-count {
