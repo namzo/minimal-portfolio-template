@@ -23,17 +23,9 @@ function getExif() {
     });
 }
 
-// $(".anchor-text_open").click(function() {
-//   $(".about-photos_link").addClass("clicked");
-// });
-// $(".anchor-text_close").click(function() {
-//   $(".about-photos_link").removeClass("clicked");
-// });
-
-$(".anchor-text_open").on("tap",function(){
-  e.preventDefault();
-  
-  alert('1'); 
-  $(this).hide();
+$(".anchor-text_open").on('click touch', function() {
+  $(".about-photos_link").addClass("clicked");
 });
-
+$(".anchor-text_close").on('click touch', function() {
+  $(".about-photos_link").removeClass("clicked");
+});
