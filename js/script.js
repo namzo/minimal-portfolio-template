@@ -23,9 +23,21 @@ function getExif() {
     });
 }
 
+// Photo page info on mobile
 $(".anchor-text_open").on('click touch', function() {
   $(".about-photos_link").addClass("clicked");
+  $(".trans-overlay").addClass("show");
 });
 $(".anchor-text_close").on('click touch', function() {
   $(".about-photos_link").removeClass("clicked");
+  $(".trans-overlay").removeClass("show");
+});
+
+// Close popup when click on body
+$(document).click(function(event) {
+  // Close modal if you click on anything except the panel
+  if (!$(event.target).closest(".about-photos_link").length) {
+    $("body").find(".about-photos_link").removeClass("clicked");
+    $("body").find(".trans-overlay").removeClass("show");
+  }
 });
