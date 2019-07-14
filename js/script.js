@@ -41,3 +41,11 @@ $(document).click(function(event) {
     $("body").find(".trans-overlay").removeClass("show");
   }
 });
+
+// Close popup on scroll
+$(window).scroll(function() {
+  if ($(window).scrollTop()>50 && $(".about-photos_link").hasClass("clicked")){
+    $(".about-photos_link").removeClass("clicked");
+    $(".trans-overlay").removeClass("show");
+  }
+});
