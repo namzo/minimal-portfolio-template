@@ -301,7 +301,7 @@ nav {
     &.active a {
       font-weight: 700;
       color: $black;
-      &:after {
+     &:after {
         content: "";
         position: absolute;
         width: 100%;
@@ -1133,6 +1133,7 @@ time {
 strong.name-text {
   color: $black;
   margin-right: 0;
+  margin-top: 6px;
   position: relative;
   display: inline-block;
   font-family: $font-acumin;
@@ -1694,4 +1695,38 @@ footer {
   &.show {
     display: block !important;
   }
+}
+
+// Swup Animation
+
+html.is-animating {
+  .transition-fade, .transition-drop-in {
+    opacity: 0;
+  }
+  .transition-drop-in {
+    transform: translateX(-10px);
+    transition-delay: 300ms;
+  }
+}
+
+.transition-fade {
+  transition: 0.4s;
+  opacity: 1;
+}
+
+.transition-drop-in {
+  transition: 0.6s;
+  transform: translateX(0);
+  opacity: 1;
+}
+
+@for $i from 1 through 4 {
+  .links li:nth-child(#{$i}) {
+    -webkit-transition-delay:(#{$i*0.1s}); 
+    transition-delay:(#{$i*0.1s}); 
+  }
+}
+
+.sucess-sent-icon {
+  margin-bottom: 10px;
 }

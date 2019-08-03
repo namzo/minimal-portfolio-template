@@ -48,13 +48,61 @@
 
 </div> <!-- /animate-wrap -->
 
+</div> <!-- /swup -->
+
+{% if page.nav=='photos' or page.layout=='photo' %}
 <!-- For photo page info -->
-<div class="trans-overlay"></div>
+  <div class="trans-overlay"></div>
+{% endif %}
 
 <script src="{{ site.baseurl }}/js/jquery-3.4.1.min.js"></script>
 <script src="{{ site.baseurl }}/js/script.js"></script>
 <script src="{{ site.baseurl }}/js/exif-js.js"></script>
 
+<script type="module" src="{{ site.baseurl }}/js/script.js"></script>
+
+<script src="{{ site.baseurl }}/js/swup.min.js"></script>
+<script src="{{ site.baseurl }}/js/SwupPreloadPlugin.min.js"></script>
+<script src="{{ site.baseurl }}/js/SwupBodyClassPlugin.min.js"></script>
+<script src="{{ site.baseurl }}/js/SwupScrollPlugin.min.js"></script>
+<script src="{{ site.baseurl }}/js/SwupScriptsPlugin.min.js"></script>
+
+
+<script>
+  const options = {
+    containers: ["#swup"]
+  };
+  const swup = new Swup({
+    plugins: [
+      new SwupBodyClassPlugin(),
+      new SwupPreloadPlugin(),
+      new SwupScrollPlugin({
+        doScrollingRightAway: false,
+        animateScroll: false,
+        scrollFriction: 0.3,
+        scrollAcceleration: 0.04,
+      }),
+      new SwupScriptsPlugin({
+        head: true,
+        body: true
+      })
+    ],
+  });
+  document.addEventListener('swup:contentReplaced', event => {
+    // 1. remove active class from all links
+      $( "nav li" ).removeClass( "active" );
+
+    // 2. go through all links and add active class if href == current URL
+      $(function($) {
+        let url = window.location.href;
+        $('nav ul.links li a').each(function() {
+          if (this.href === url) {
+            $(this).closest('li').addClass('active');
+          }
+        });
+      });
+});
+</script>
 
 <script>
   if (window.netlifyIdentity) {
