@@ -1617,7 +1617,12 @@ footer {
   to   { opacity: 1; }
 }
 .about-photos_link {
-  position: fixed;
+  position: sticky;
+  position: -webkit-sticky;
+  position: -moz-sticky;
+  position: -ms-sticky;
+  position: -o-sticky;
+  float: left;
   bottom: 16px;
   left: 10px;
   background: $blue;
@@ -1626,8 +1631,10 @@ footer {
   border-radius: 8px 8px 8px 0;
   z-index: 999;
   box-shadow: 0 0 2px 0 rgba(0,0,0,0.3);
-  transition: all .2s ease;
-  transform: translateY(0);
+  transition: all .3s ease;
+  -webkit-backface-visibility: hidden;
+	-webkit-perspective: 1000;
+
   .photo-page-info {
     display: none;
     animation: fadeIn .8s;
@@ -1661,7 +1668,7 @@ footer {
   }
   &.clicked {
     width: calc(100% - 20px);
-    max-width: 320px;
+    max-width: 280px;
     height: auto;
     padding: 20px 20px 0;
     transform: translateY(-10px);
