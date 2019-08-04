@@ -93,6 +93,8 @@
 <script src="{{ site.baseurl }}/js/SwupBodyClassPlugin.min.js"></script>
 <script src="{{ site.baseurl }}/js/SwupScrollPlugin.min.js"></script>
 <script src="{{ site.baseurl }}/js/SwupScriptsPlugin.min.js"></script>
+<script src="{{ site.baseurl }}/js/SwupGaPlugin.min.js"></script>
+<script src="{{ site.baseurl }}/js/SwupFormsPlugin.min.js"></script>
 
 
 <script>
@@ -103,6 +105,8 @@
     plugins: [
       new SwupBodyClassPlugin(),
       new SwupPreloadPlugin(),
+      new SwupGaPlugin(),
+      new SwupFormsPlugin({formSelector: 'form[data-swup-form]'}),
       new SwupScrollPlugin({
         doScrollingRightAway: false,
         animateScroll: false,
