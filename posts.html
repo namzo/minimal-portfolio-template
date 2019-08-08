@@ -18,7 +18,7 @@ pagination:
       <div class="twelve columns">
         <div class="wrap-page">
           <div class="row">
-            <div class="six columns">
+            <div class="nine columns">
               <div class="posts-wrap">
 
                 {% for post in paginator.posts  %}
@@ -34,16 +34,30 @@ pagination:
                     <h6 class="muted">{{this_year}}</h6>
                     {% endif %}
 
-                    <div class="post-row">
-                      <h4 class="article-title">
-                        <a href="{{ url_to_use }}" 
-                          {% if post.external_url %} target="_blank" class="external-link"{% endif %}
-                        >
-                          {{ post.title }}
-                        </a>
-                      </h4>
-                      <p class="date">{{ post.date | date_to_string }}</p>
-                      <div class="excerpt">{{ post.excerpt }}</div>
+                    <div class="post-row row">
+
+                        <div class="eight columns">
+                          <h4 class="article-title">
+                            <a href="{{ url_to_use }}" 
+                              {% if post.external_url %} target="_blank" class="external-link"{% endif %}
+                            >
+                              {{ post.title }}
+                            </a>
+                          </h4>
+                          <p class="date">{{ post.date | date_to_string }}</p>
+                          <div class="excerpt">{{ post.excerpt }}</div>
+                        </div>
+
+                      {% if post.image %}
+                        <div class="four columns post-img_preview">
+                          <a href="{{ url_to_use }}" 
+                              {% if post.external_url %} target="_blank" class="external-link"{% endif %}
+                            >
+                            <img src="{{ site.baseurl }}/img/post/{{ post.image }}">
+                          </a>
+                        </div>
+                      {% endif %}
+
                     </div>
 
                     {% if forloop.last %}

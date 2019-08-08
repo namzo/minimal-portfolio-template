@@ -32,7 +32,9 @@ pagination:
                               (max-width: 767px) 1200px,
                               (min-width: 768px) 2400px"
 
-                        alt="{{ photos.title }}">
+                        alt="{{ photos.title }}"
+                        
+                        loading="lazy">
                   </div>
                   {% if photos.photo-count %}
                     <span class="album-count"><h5>{{ photos.photo-count }} Photos</h5></span>

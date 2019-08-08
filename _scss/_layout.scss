@@ -70,6 +70,17 @@ body {
 }
 .posts-wrap {
   padding: 0 0 3em;
+  .excerpt {
+    padding-top: 10px;
+  }
+  .post-img_preview {
+    img {
+      transition: ease all 0.3s;
+    }
+    img:hover {
+      opacity: 0.8;
+    }
+  }
   > .muted {
     margin-bottom: 0.5em;
   }

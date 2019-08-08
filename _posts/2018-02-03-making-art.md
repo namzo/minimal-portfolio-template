@@ -2,6 +2,7 @@
 layout: post
 title: Making Art
 date: '2018-02-03 12:49pm'
+image: art1-small.jpg
 ---
 I recently started painting, and I made my first canvas painting. I live-shared the process on twitter.
 
