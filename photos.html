@@ -10,7 +10,9 @@ pagination:
 <div class="wrap-page">
   <div class="row">
     <div class="three columns hidden-mobile">
+      <div class="photo-info-top">
       {% include photo_page_info.html %}
+      </div>
     </div>
     <div class="nine columns">
       <div class="posts-wrap">
@@ -36,14 +38,15 @@ pagination:
                         
                         loading="lazy">
                   </div>
-                  {% if photos.photo-count %}
-                    <span class="album-count"><h5>{{ photos.photo-count }} Photos</h5></span>
+                  {% if photos.photo-label %}
+                    <span class="album-count"><h5>{{ photos.photo-label }}</h5></span>
                   {% endif %}
               </a>
+
               <div class="sub-photo-title">
-                <small>{{ photos.title }}</small>
+                <h5>{{ photos.title }}</h5>
                 {% if photos.photo-count %}
-                  <small class="tiny-album-count"> &middot; {{ photos.photo-count }} Photos</small>
+                  <small class="tiny-album-count">{{ photos.photo-count }} Photos</small>
                 {% endif %}
               </div>
             </div>

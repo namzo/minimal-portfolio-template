@@ -1,3 +1,6 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js is-animating">
+
 <head>
   <meta charset="utf-8">
   <title>{% if page.nav == "home" %}{{ site.title }}{% elsif page.active == "post" %}{{ page.title }} by {{ site.title }}{% else %}{{ page.title }} &middot; {{ site.title }}{% endif %}</title>
@@ -35,4 +38,7 @@
 
   gtag('config', 'UA-130311233-1');
 </script>
+<noscript>
+  <link href="{{ site.baseurl }}/css/no-js.css" type="text/css" rel="stylesheet" />
+</noscript>
 </head>

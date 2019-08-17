@@ -6,11 +6,11 @@
 }
 @media (min-width: 400px) {
   .container {
-    max-width: 1100px;
+    max-width: 1180px;
     width: 100%;
   }
   .photos-body .page-wrap .container {
-    max-width: 1100px;
+    // max-width: 1100px;
   }
 }
 @media (min-width: 768px) {
@@ -22,9 +22,9 @@
     }
   }
   nav {
-    padding-top: 1.4em;
+    padding-top: 2em;
     .container {
-      max-width: 1100px;
+      // max-width: 1100px;
     }
     a {
       padding: 10px 0;
@@ -61,7 +61,7 @@
     height: 600px;
   }
   .home-box {
-    padding: 3em 0;
+    padding: 1.6em 0;
     p.name {
       color: #455A64;
     }
@@ -82,9 +82,32 @@
     padding-bottom: 6em;
   }
 }
+@media (min-width: 550px) {
+  .profile-page-wrap .seven.columns {
+    margin-left: 2%;
+  }
+}
 @media (max-width: 549px) {
   .home-box p.lead {
     font-size: 2rem !important;
+  }
+  .intro.casestudy-header {
+    padding: 2em 0 0 !important; 
+  }
+  ul.project-desc {
+    margin: 0;
+  }
+  .about-left {
+    margin-top: -16px;
+  }
+  .wrap-page {
+    padding: 1em 0 0;
+  }
+  .photos-body .wrap-page {
+    padding: 0;
+  }
+  .profile-page-wrap .wrap-page {
+    padding: 3em 0 0;
   }
   .row-flex {
     justify-content: space-between;

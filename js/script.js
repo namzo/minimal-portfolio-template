@@ -33,6 +33,12 @@ $(".anchor-text_close").on('click touch', function() {
   $(".trans-overlay").removeClass("show");
 });
 
+// Remove html class
+$(document).ready(function() {
+  $('html').removeClass('no-js');
+  $('html').removeClass('is-animating');
+});
+
 // Close popup when click on body
 $(document).click(function(event) {
   // Close modal if you click on anything except the panel

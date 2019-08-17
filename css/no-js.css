@@ -1,0 +1,5 @@
+html.is-animating .transition-fade, 
+html.is-animating .transition-drop-in, 
+html.is-animating .transition-fade-down {
+  opacity: 1 !important;
+}
