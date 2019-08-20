@@ -26,6 +26,8 @@ pagination:
                   <img
                         src="{{ site.baseurl }}/photos/{{photos.photo1}}?nf_resize=fit&w=2400" 
 
+                        loading="lazy"
+
                         srcset="{{ site.baseurl }}/photos/{{photos.photo1}}?nf_resize=fit&w=800 800w,
                                 {{ site.baseurl }}/photos/{{photos.photo1}}?nf_resize=fit&w=1200 1200w,
                                 {{ site.baseurl }}/photos/{{photos.photo1}}?nf_resize=fit&w=2400 2400w"
@@ -34,9 +36,7 @@ pagination:
                               (max-width: 767px) 1200px,
                               (min-width: 768px) 2400px"
 
-                        alt="{{ photos.title }}"
-                        
-                        loading="lazy">
+                        alt="{{ photos.title }}">
                   </div>
                   {% if photos.photo-label %}
                     <span class="album-count"><h5>{{ photos.photo-label }}</h5></span>
