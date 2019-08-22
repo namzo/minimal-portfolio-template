@@ -96,6 +96,18 @@
 <script src="{{ site.baseurl }}/js/SwupGaPlugin.min.js"></script>
 <script src="{{ site.baseurl }}/js/SwupFormsPlugin.min.js"></script>
 
+<script async src="{{ site.baseurl }}/js/lazyload.min.js"></script>
+
+<!-- Lazy loading -->
+<script>
+  window.lazyLoadOptions = {
+    elements_selector: "[loading=lazy]",
+    load_delay: 100,
+    use_native: false // ← enables hybrid lazy loading
+  };
+</script>
+
+<!-- Swup -->
 <script>
   const options = {
     containers: ["#swup"]

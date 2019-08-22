@@ -1654,15 +1654,62 @@ footer {
     }
   }
 }
+
+// Photo + Lazy loading
+
+@mixin aspect-ratio($width, $height) {
+  position: relative;
+  &:before {
+    display: block;
+    content: "";
+    width: 100%;
+    padding-top: ($height / $width) * 100%;
+  }
+  > img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+}
+
 .image-wrapper {
   background: #01070a;
   width: 100%;
-  overflow: hidden;
   position: relative;
+  height: 0;
+  padding-bottom: 60%; /* You define this doing height / width * 100% */
+  overflow: hidden;
+  @include aspect-ratio(16, 9);
+  border-radius: 6px;
+
   img {
-    display: block;
+    width: 100%;
+    /*height: auto;*/
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+  }
+
+  img:not(.initial) {
+    transition: opacity 1s;
+  }
+  img.initial,
+  img.loaded,
+  img.error {
+    opacity: 1;
+  }
+
+  /* Prevents img without src to appear */
+  img:not([src]) {
+      visibility: hidden;
   }
 }
+// End Photo + Lazy loading
+
 @keyframes fadeIn {
   from { opacity: 0; }
   to   { opacity: 1; }
