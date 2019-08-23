@@ -1,10 +1,10 @@
 /* Swup animation */
 
 html.is-animating {
-  .transition-fade, .transition-drop-in, .transition-fade-down {
+  .transition-fade, .transition-move-in, .transition-fade-down {
     opacity: 0;
   }
-  .transition-drop-in {
+  .transition-move-in {
     transform: translateX(-10px);
   }
   .transition-fade-down {
@@ -31,8 +31,8 @@ html.is-rendering {
   opacity: 1;
 }
 
-.transition-drop-in {
-  transition: 300ms;
+.transition-move-in {
+  transition: ease all 1400ms;
   transform: translateX(0);
   opacity: 1;
 }
@@ -45,7 +45,6 @@ html.is-rendering {
 
 @for $i from 1 through 4 {
   .links li:nth-child(#{$i}) {
-    -webkit-transition-delay:(#{$i*100ms}); 
-    transition-delay:(#{$i*100ms}); 
+    transition-delay:(#{$i*120ms}); 
   }
 }

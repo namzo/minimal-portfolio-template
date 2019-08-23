@@ -19,6 +19,11 @@ plugins:
   - jekyll-feed
   - jekyll-redirect-from
   - jekyll-paginate-v2
+  - jekyll-autoprefixer
+
+autoprefixer:
+  browsers:
+  - last 10 versions
 
 # permalink: /:title.html
 
