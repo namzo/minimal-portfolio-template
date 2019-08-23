@@ -1,11 +1,8 @@
 /* Swup animation */
 
 html.is-animating {
-  .transition-fade, .transition-move-in, .transition-fade-down {
+  .transition-fade, .transition-fade-down {
     opacity: 0;
-  }
-  .transition-move-in {
-    transform: translateX(-10px);
   }
   .transition-fade-down {
     transform: translateY(-20px);
@@ -27,13 +24,7 @@ html.is-rendering {
   }
 }
 .transition-fade {
-  transition: 200ms;
-  opacity: 1;
-}
-
-.transition-move-in {
-  transition: ease all 1400ms;
-  transform: translateX(0);
+  transition: 100ms;
   opacity: 1;
 }
 
