@@ -14,6 +14,7 @@ html.is-animating {
     opacity: 0;
   }
 }
+
 html.is-rendering {
   nav li.active a:after {
     width: 0;
@@ -23,6 +24,7 @@ html.is-rendering {
     opacity: 0;
   }
 }
+
 .transition-fade {
   transition: 100ms;
   opacity: 1;
@@ -32,10 +34,4 @@ html.is-rendering {
   transition: 400ms;
   transform: translateY(0);
   opacity: 1;
-}
-
-@for $i from 1 through 4 {
-  .links li:nth-child(#{$i}) {
-    transition-delay:(#{$i*120ms}); 
-  }
 }
