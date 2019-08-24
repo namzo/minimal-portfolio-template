@@ -460,6 +460,9 @@ section {
     .sub-photo-title {
       margin-bottom: 2em;
     }
+    .gallery-link {
+      position: initial !important;
+    }
   }
   .sub-photo-title {
       margin: 8px 0 0;
@@ -1684,6 +1687,10 @@ footer {
   @include aspect-ratio(16, 9);
   border-radius: 6px;
 
+  &:before {
+    border-radius: 6px;
+  }
+
   img {
     width: 100%;
     /*height: auto;*/
@@ -1863,4 +1870,17 @@ footer {
 .no-window-wrap img {
   width: 100%;
   display: block;
+}
+
+.fancybox-button {
+  width: 60px !important;
+  height: 60px !important;
+}
+.fancybox-button--arrow_right, .fancybox-button--arrow_left {
+  width: 80px !important;
+  height: 80px !important;
+}
+.fancybox-infobar {
+  padding: 16px 10px 0 26px !important;
+  font-size: 15px !important;
 }

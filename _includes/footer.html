@@ -98,6 +98,9 @@
 
 <script async src="{{ site.baseurl }}/js/lazyload.min.js"></script>
 
+<!-- Photo gallery -->
+<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+
 <!-- Lazy loading -->
 <script>
   window.lazyLoadOptions = {
@@ -110,7 +113,14 @@
 <!-- Swup -->
 <script>
   const options = {
-    containers: ["#swup"]
+    animateHistoryBrowsing: false,
+    animationSelector: '[class*="transition-"]',
+    containers: ["#swup"],
+    cache: true,
+    linkSelector:
+      'a[href^="' +
+      window.location.origin +
+      '"]:not([data-no-swup]), a[href^="/"]:not([data-no-swup]), a[href^="#"]:not([data-no-swup])'
   };
   const swup = new Swup({
     plugins: [

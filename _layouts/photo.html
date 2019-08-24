@@ -43,21 +43,23 @@
             {% for item in page.filename %}
             <div class="single-photo_wrap">
               <div class="image-wrapper">
-                <img 
-                
-                  data-src="{{ site.baseurl }}/photos/{{ item }}?nf_resize=fit&w=2400"
-
-                  data-srcset="{{ site.baseurl }}/photos/{{ item }}?nf_resize=fit&w=800 800w,
-                        {{ site.baseurl }}/photos/{{ item }}?nf_resize=fit&w=1200 1200w,
-                        {{ site.baseurl }}/photos/{{ item }}?nf_resize=fit&w=2400 2400w"
+                <a data-fancybox="gallery" href="{{ site.baseurl }}/photos/{{ item }}?nf_resize=fit&w=2400" class="gallery-link" data-no-swup>
+                  <img 
                   
-                  data-sizes="(max-width: 480px) 800px,
-                        (max-width: 767px) 1200px,
-                        (min-width: 768px) 2400px"
-                  
-                  loading="lazy"
+                    data-src="{{ site.baseurl }}/photos/{{ item }}?nf_resize=fit&w=2400"
 
-                  alt="{{ page.title }}">
+                    data-srcset="{{ site.baseurl }}/photos/{{ item }}?nf_resize=fit&w=800 800w,
+                          {{ site.baseurl }}/photos/{{ item }}?nf_resize=fit&w=1200 1200w,
+                          {{ site.baseurl }}/photos/{{ item }}?nf_resize=fit&w=2400 2400w"
+                    
+                    data-sizes="(max-width: 480px) 800px,
+                          (max-width: 767px) 1200px,
+                          (min-width: 768px) 2400px"
+                    
+                    loading="lazy"
+
+                    alt="{{ page.title }}">
+                  </a>
               </div>
             </div>
             {% endfor %}
