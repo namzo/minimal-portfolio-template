@@ -1692,6 +1692,7 @@ footer {
     top: 0;
     bottom: 0;
     margin: auto;
+    border-radius: 6px;
   }
 
   img:not(.initial) {
@@ -1702,6 +1703,11 @@ footer {
   img.error {
     opacity: 1;
   }
+  
+  // img.loading {
+  //   background: url("../img/loading.gif") no-repeat 50% 50%;
+  //   opacity: 1;
+  // }
 
   /* Prevents img without src to appear */
   img:not([src]) {

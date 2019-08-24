@@ -39,7 +39,29 @@
           {% endif %}
 
           <div class="photo-page-single-wrap">
-            {{ content }}
+
+            {% for item in page.filename %}
+            <div class="single-photo_wrap">
+              <div class="image-wrapper">
+                <img 
+                
+                  data-src="{{ site.baseurl }}/photos/{{ item }}?nf_resize=fit&w=2400"
+
+                  data-srcset="{{ site.baseurl }}/photos/{{ item }}?nf_resize=fit&w=800 800w,
+                        {{ site.baseurl }}/photos/{{ item }}?nf_resize=fit&w=1200 1200w,
+                        {{ site.baseurl }}/photos/{{ item }}?nf_resize=fit&w=2400 2400w"
+                  
+                  data-sizes="(max-width: 480px) 800px,
+                        (max-width: 767px) 1200px,
+                        (min-width: 768px) 2400px"
+                  
+                  loading="lazy"
+
+                  alt="{{ page.title }}">
+              </div>
+            </div>
+            {% endfor %}
+
 
             <div class="sub-photo-title">
               <h5>{{ page.title }}</h5>

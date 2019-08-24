@@ -17,39 +17,41 @@ pagination:
     <div class="nine columns">
       <div class="posts-wrap">
 
-      {% assign sorted-photos = site.photos | sort: 'date' | reverse %}
-      {% for photos in sorted-photos %}
+      {% assign sorted = site.photos | sort: 'date' | reverse %}
+      {% for photos in sorted %}
 
-            <div class="single-photo_wrap">
-              <a href="{{ photos.url }}">
-                <div class="image-wrapper">
-                  <img
-                        data-src="{{ site.baseurl }}/photos/{{photos.photo1}}?nf_resize=fit&w=2400" 
+        <div class="single-photo_wrap">
+          <a href="{{ photos.url }}">
+            <div class="image-wrapper">
 
-                        data-srcset="{{ site.baseurl }}/photos/{{photos.photo1}}?nf_resize=fit&w=800 800w,
-                                {{ site.baseurl }}/photos/{{photos.photo1}}?nf_resize=fit&w=1200 1200w,
-                                {{ site.baseurl }}/photos/{{photos.photo1}}?nf_resize=fit&w=2400 2400w"
+              <img
+                    data-src="{{ site.baseurl }}/photos/{{ photos.filename.first }}?nf_resize=fit&w=2400" 
 
-                        data-sizes="(max-width: 480px) 800px,
-                              (max-width: 767px) 1200px,
-                              (min-width: 768px) 2400px"
-                        
-                        loading="lazy"
+                    data-srcset="{{ site.baseurl }}/photos/{{ photos.filename.first }}?nf_resize=fit&w=800 800w,
+                            {{ site.baseurl }}/photos/{{ photos.filename.first }}?nf_resize=fit&w=1200 1200w,
+                            {{ site.baseurl }}/photos/{{ photos.filename.first }}?nf_resize=fit&w=2400 2400w"
 
-                        alt="{{ photos.title }}">
-                  </div>
-                  {% if photos.photo-label %}
-                    <span class="album-count"><h5>{{ photos.photo-label }}</h5></span>
-                  {% endif %}
-              </a>
+                    data-sizes="(max-width: 480px) 800px,
+                          (max-width: 767px) 1200px,
+                          (min-width: 768px) 2400px"
+                    
+                    loading="lazy"
 
-              <div class="sub-photo-title">
-                <h5>{{ photos.title }}</h5>
-                {% if photos.photo-count %}
-                  <small class="tiny-album-count">{{ photos.photo-count }} Photos</small>
-                {% endif %}
+                    alt="{{ photos.title }}">
+
               </div>
-            </div>
+              {% if photos.photo-label %}
+                <span class="album-count"><h5>{{ photos.photo-label }}</h5></span>
+              {% endif %}
+          </a>
+
+          <div class="sub-photo-title">
+            <h5>{{ photos.title }}</h5>
+            {% if photos.photo-count %}
+              <small class="tiny-album-count">{{ photos.photo-count }} Photos</small>
+            {% endif %}
+          </div>
+        </div>
 
       {% endfor %}
 
