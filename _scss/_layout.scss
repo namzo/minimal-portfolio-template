@@ -1710,11 +1710,11 @@ footer {
   img.error {
     opacity: 1;
   }
-  
-  // img.loading {
-  //   background: url("../img/loading.gif") no-repeat 50% 50%;
-  //   opacity: 1;
-  // }
+
+  img.loading {
+    // background: url("../img/loading.gif") no-repeat 50% 50%;
+    // opacity: 1;
+  }
 
   /* Prevents img without src to appear */
   img:not([src]) {
@@ -1873,12 +1873,12 @@ footer {
 }
 
 .fancybox-button {
-  width: 60px !important;
-  height: 60px !important;
+  width: 64px !important;
+  height: 64px !important;
 }
 .fancybox-button--arrow_right, .fancybox-button--arrow_left {
-  width: 80px !important;
-  height: 80px !important;
+  width: 84px !important;
+  height: 84px !important;
 }
 .fancybox-infobar {
   padding: 16px 10px 0 26px !important;

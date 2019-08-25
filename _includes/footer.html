@@ -93,26 +93,36 @@
 
   <!-- Photo gallery -->
   <script src="{{ site.baseurl }}/js/jquery.fancybox.min.js"></script>
+  <script>
+    $.fancybox.defaults.hash = false;
+      var defaults = {
+        clickOutside: "close"
+      };
+  </script>
 
   <!-- Lazy loading -->
   <script async src="{{ site.baseurl }}/js/lazyload.min.js"></script>
   <script>
     window.lazyLoadOptions = {
       elements_selector: "[loading=lazy]",
-      load_delay: 100,
-      use_native: false // ← enables hybrid lazy loading
+      load_delay: 40,
+      use_native: false // Enables hybrid lazy loading
     };
   </script>
 
   <!-- Swup -->
   <script src="{{ site.baseurl }}/js/swup.min.js"></script>
-  <script src="{{ site.baseurl }}/js/SwupPreloadPlugin.min.js"></script>
-  <script src="{{ site.baseurl }}/js/SwupBodyClassPlugin.min.js"></script>
-  <script src="{{ site.baseurl }}/js/SwupScrollPlugin.min.js"></script>
-  <script src="{{ site.baseurl }}/js/SwupScriptsPlugin.min.js"></script>
-  <script src="{{ site.baseurl }}/js/SwupGaPlugin.min.js"></script>
-  <script src="{{ site.baseurl }}/js/SwupFormsPlugin.min.js"></script>
   <script>
+    // Import
+    import Swup from 'swup';
+    import SwupPreloadPlugin from '@swup/preload-plugin';
+    import SwupBodyClassPlugin from '@swup/body-class-plugin';
+    import SwupScrollPlugin from '@swup/scroll-plugin';
+    import SwupScriptsPlugin from '@swup/scripts-plugin';
+    import SwupGaPlugin from '@swup/ga-plugin';
+    import SwupFormsPlugin from '@swup/forms-plugin';
+ 
+    // Options
     const options = {
       animateHistoryBrowsing: false,
       animationSelector: '[class*="transition-"]',
@@ -123,6 +133,8 @@
         window.location.origin +
         '"]:not([data-no-swup]), a[href^="/"]:not([data-no-swup]), a[href^="#"]:not([data-no-swup])'
     };
+
+    // Run plugins
     const swup = new Swup({
       plugins: [
         new SwupBodyClassPlugin(),
@@ -141,6 +153,7 @@
         })
       ],
     });
+
     document.addEventListener('swup:contentReplaced', event => {
       // 1. remove active class from all links
         $( "nav li" ).removeClass( "active" );
