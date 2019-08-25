@@ -82,91 +82,93 @@
 </div> <!-- /animate-wrap -->
 </div> <!-- /swup -->
 
-<script src="{{ site.baseurl }}/js/jquery-3.4.1.min.js"></script>
-<script src="{{ site.baseurl }}/js/script.js"></script>
-<script src="{{ site.baseurl }}/js/exif-js.js"></script>
+  <!-- Jquery -->
+  <script src="{{ site.baseurl }}/js/jquery-3.4.1.min.js"></script>
+  
+  <!-- Scripts -->
+  <script src="{{ site.baseurl }}/js/script.js"></script>
 
-<script type="module" src="{{ site.baseurl }}/js/script.js"></script>
+  <!-- Exif -->
+  <script src="{{ site.baseurl }}/js/exif-js.js"></script>
 
-<script src="{{ site.baseurl }}/js/swup.min.js"></script>
-<script src="{{ site.baseurl }}/js/SwupPreloadPlugin.min.js"></script>
-<script src="{{ site.baseurl }}/js/SwupBodyClassPlugin.min.js"></script>
-<script src="{{ site.baseurl }}/js/SwupScrollPlugin.min.js"></script>
-<script src="{{ site.baseurl }}/js/SwupScriptsPlugin.min.js"></script>
-<script src="{{ site.baseurl }}/js/SwupGaPlugin.min.js"></script>
-<script src="{{ site.baseurl }}/js/SwupFormsPlugin.min.js"></script>
+  <!-- Photo gallery -->
+  <script src="{{ site.baseurl }}/js/jquery.fancybox.min.js"></script>
 
-<script async src="{{ site.baseurl }}/js/lazyload.min.js"></script>
+  <!-- Lazy loading -->
+  <script async src="{{ site.baseurl }}/js/lazyload.min.js"></script>
+  <script>
+    window.lazyLoadOptions = {
+      elements_selector: "[loading=lazy]",
+      load_delay: 100,
+      use_native: false // ← enables hybrid lazy loading
+    };
+  </script>
 
-<!-- Photo gallery -->
-<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
-
-<!-- Lazy loading -->
-<script>
-  window.lazyLoadOptions = {
-    elements_selector: "[loading=lazy]",
-    load_delay: 100,
-    use_native: false // ← enables hybrid lazy loading
-  };
-</script>
-
-<!-- Swup -->
-<script>
-  const options = {
-    animateHistoryBrowsing: false,
-    animationSelector: '[class*="transition-"]',
-    containers: ["#swup"],
-    cache: true,
-    linkSelector:
-      'a[href^="' +
-      window.location.origin +
-      '"]:not([data-no-swup]), a[href^="/"]:not([data-no-swup]), a[href^="#"]:not([data-no-swup])'
-  };
-  const swup = new Swup({
-    plugins: [
-      new SwupBodyClassPlugin(),
-      new SwupPreloadPlugin(),
-      new SwupGaPlugin(),
-      new SwupFormsPlugin({formSelector: 'form[data-swup-form]'}),
-      new SwupScrollPlugin({
-        doScrollingRightAway: false,
-        animateScroll: false,
-        scrollFriction: 0.3,
-        scrollAcceleration: 0.04,
-      }),
-      new SwupScriptsPlugin({
-        head: true,
-        body: true
-      })
-    ],
-  });
-  document.addEventListener('swup:contentReplaced', event => {
-    // 1. remove active class from all links
-      $( "nav li" ).removeClass( "active" );
-
-    // 2. go through all links and add active class if href == current URL
-      $(function($) {
-        let url = window.location.href;
-        $('nav ul.links li a').each(function() {
-          if (this.href === url) {
-            $(this).closest('li').addClass('active');
-          }
-        });
-      });
-});
-</script>
-
-<script>
-  if (window.netlifyIdentity) {
-    window.netlifyIdentity.on("init", user => {
-      if (!user) {
-        window.netlifyIdentity.on("login", () => {
-          document.location.href = "/admin/";
-        });
-      }
+  <!-- Swup -->
+  <script src="{{ site.baseurl }}/js/swup.min.js"></script>
+  <script src="{{ site.baseurl }}/js/SwupPreloadPlugin.min.js"></script>
+  <script src="{{ site.baseurl }}/js/SwupBodyClassPlugin.min.js"></script>
+  <script src="{{ site.baseurl }}/js/SwupScrollPlugin.min.js"></script>
+  <script src="{{ site.baseurl }}/js/SwupScriptsPlugin.min.js"></script>
+  <script src="{{ site.baseurl }}/js/SwupGaPlugin.min.js"></script>
+  <script src="{{ site.baseurl }}/js/SwupFormsPlugin.min.js"></script>
+  <script>
+    const options = {
+      animateHistoryBrowsing: false,
+      animationSelector: '[class*="transition-"]',
+      containers: ["#swup"],
+      cache: true,
+      linkSelector:
+        'a[href^="' +
+        window.location.origin +
+        '"]:not([data-no-swup]), a[href^="/"]:not([data-no-swup]), a[href^="#"]:not([data-no-swup])'
+    };
+    const swup = new Swup({
+      plugins: [
+        new SwupBodyClassPlugin(),
+        new SwupPreloadPlugin(),
+        new SwupGaPlugin(),
+        new SwupFormsPlugin({formSelector: 'form[data-swup-form]'}),
+        new SwupScrollPlugin({
+          doScrollingRightAway: false,
+          animateScroll: false,
+          scrollFriction: 0.3,
+          scrollAcceleration: 0.04,
+        }),
+        new SwupScriptsPlugin({
+          head: true,
+          body: true
+        })
+      ],
     });
-  }
-</script>
+    document.addEventListener('swup:contentReplaced', event => {
+      // 1. remove active class from all links
+        $( "nav li" ).removeClass( "active" );
+
+      // 2. go through all links and add active class if href == current URL
+        $(function($) {
+          let url = window.location.href;
+          $('nav ul.links li a').each(function() {
+            if (this.href === url) {
+              $(this).closest('li').addClass('active');
+            }
+          });
+        });
+  });
+  </script>
+
+  <!-- Netlify -->
+  <script>
+    if (window.netlifyIdentity) {
+      window.netlifyIdentity.on("init", user => {
+        if (!user) {
+          window.netlifyIdentity.on("login", () => {
+            document.location.href = "/admin/";
+          });
+        }
+      });
+    }
+  </script>
 
 </body>
 
