@@ -47,7 +47,7 @@ body {
   background: $white;
   height: 100%;
   font-family: $font-acumin;
-  font-size: 1.8rem;
+  font-size: 1.7rem;
   line-height: 1.6;
   font-weight: 400;
   z-index: 2;
@@ -419,7 +419,7 @@ section {
 .photos-body {
   background: rgba(17, 18, 22, 1);
   background-image: linear-gradient(rgba(17, 18, 22, 1.000) 0%, rgba(65, 80, 96, 0.34) 100%);
-  color: #737c98;
+  color: #93a0c5;
   transition: background-color 300ms ease;
   ::-moz-selection { background: rgba(106, 128, 148, 0.9); color: $dark; }
   ::selection { background:rgba(106, 128, 148, 0.9); color: $dark; }
@@ -512,23 +512,23 @@ section {
     }
   }
   footer {
-    color: #737c98;
+    color: #93a0c5;
     a[href*="//"]:not([href*="ernestojeh.com"])::after {
       border-color: transparent rgba(92, 124, 140, 0.4) transparent transparent;
     }
     a, a:hover {
-      color: #737c98;
+      color: #93a0c5;
       text-decoration: none;
     }
     .foot-site a {
-      color: #a6adc1;
+      color: $white;
       &:hover {
         color: $white;
       }
     }
     li {
       small {
-        color: #a6adc1;
+        color: $white;
       }
     }
     .row:first-child {

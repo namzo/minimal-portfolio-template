@@ -1,0 +1,81 @@
+@media (prefers-color-scheme: dark) {
+
+  body, body.home-body, body.photos-body {
+    background: rgba(17, 18, 22, 1);
+    color: #93a0c5;
+    background-image: linear-gradient(rgba(17, 18, 22, 1.000) 0%, rgba(65, 80, 96, 0.34) 100%);
+  }
+  h1, h2, h3, h4, h5, h6,
+  .intro-profile h1 {
+    color: $white;
+  }
+  p.lead {
+    color: #93a0c5;
+  }
+  .date {
+  color: #4d5c86;
+  }
+  ::-moz-selection { background: rgba(106, 128, 148, 0.9); color: $dark; }
+  ::selection { background:rgba(106, 128, 148, 0.9); color: $dark; }
+  .article-title, .article-title a, a {
+    color: $white;
+  }
+  nav {
+    a {
+      color: $white;
+      text-decoration: none;
+      &:hover {
+        color: $white;
+      }
+    }
+    li.active a {
+      color: $white;
+      &:after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 1px;
+        display: block;
+        bottom: -1px;
+        background: $white;
+      }
+    }
+    .name-text {
+      color: $white;
+    }
+    .row:first-child {
+      border-color: rgba(118, 126, 165, 0.1);
+    }
+  }
+
+  footer {
+    color: #93a0c5;
+    a[href*="//"]:not([href*="ernestojeh.com"])::after {
+      border-color: transparent rgba(92, 124, 140, 0.4) transparent transparent;
+    }
+    a, a:hover {
+      color: #93a0c5;
+      text-decoration: none;
+    }
+    .foot-site a {
+      color: $white;
+      &:hover {
+        color: $white;
+      }
+    }
+    li {
+      small {
+        color: $white;
+      }
+    }
+    .row:first-child {
+      border-color: rgba(245, 245, 245, 0.1);
+      a:hover {
+        color: $white;
+      }
+    }
+  }
+
+
+
+}
