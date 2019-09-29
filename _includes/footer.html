@@ -96,7 +96,18 @@
   <script>
     $.fancybox.defaults.hash = false;
       var defaults = {
-        clickOutside: "close"
+        clickSlide: "close",
+        clickOutside: "close",
+        mobile: {
+          preventCaptionOverlap: false,
+          idleTime: false,
+          clickContent: function(current, event) {
+            return current.type === "image" ? "toggleControls" : false;
+          },
+          clickSlide: function(current, event) {
+            return current.type === "image" ? "toggleControls" : "close";
+          }
+        },
       };
   </script>
 

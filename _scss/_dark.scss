@@ -7,7 +7,7 @@
   }
   h1, h2, h3, h4, h5, h6,
   .intro-profile h1 {
-    color: $white;
+    color: #e2e8f0;
   }
   p.lead {
     color: #93a0c5;
@@ -21,21 +21,21 @@
   ::-moz-selection { background: rgba(106, 128, 148, 0.9); color: $dark; }
   ::selection { background:rgba(106, 128, 148, 0.9); color: $dark; }
   .article-title, .article-title a, a {
-    color: $white;
+    color: #e2e8f0;
   }
   nav {
     ul {
       margin-bottom: -2px;
     }
     a {
-      color: $white;
+      color: #e2e8f0;
       text-decoration: none;
       &:hover {
         color: $white;
       }
     }
     li.active a {
-      color: $white;
+      color: #e2e8f0;
       &:after {
         content: "";
         position: absolute;
@@ -43,11 +43,11 @@
         height: 1px;
         display: block;
         bottom: -1px;
-        background: $white;
+        background: #e2e8f0;
       }
     }
     .name-text {
-      color: $white;
+      color: #e2e8f0;
     }
     .row:first-child {
       border-color: rgba(118, 126, 165, 0.1);
@@ -64,24 +64,38 @@
       text-decoration: none;
     }
     .foot-site a {
-      color: $white;
+      color: #e2e8f0;
       &:hover {
-        color: $white;
+        color: #e2e8f0;
       }
     }
     li {
       small {
-        color: $white;
+        color: #e2e8f0;
       }
     }
     .row:first-child {
       border-color: rgba(245, 245, 245, 0.1);
       a:hover {
-        color: $white;
+        color: #e2e8f0;
       }
     }
   }
 
+  .avatar-img {
+    box-shadow: 8px 8px rgba(26, 69, 86, 0.35), 0 4px 8px rgba(17,35,56,.04), 0 0 8px rgba(17,35,56,.04), 0 18px 27px rgba(17,35,56,.11);
+    &:hover {
+      transform: translate(-2px, -2px);
+      box-shadow: 12px 15px rgba(26, 69, 86, 0.35), 0px 8px 8px rgba(17,35,56,0.04), 0 0 8px rgba(17,35,56,0.04), -3px 9px 27px rgba(17,35,56,0.11);
+    }
+  }
 
+  .home-box p.lead a {
+    color: #4299e1;
+  }
 
-}
+  ul.social li svg {
+    fill: #718096;
+  }
+
+} // end prefers-color-scheme
