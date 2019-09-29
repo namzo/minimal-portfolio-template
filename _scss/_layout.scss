@@ -969,6 +969,13 @@ hr {
 .about-left h5 {
   margin-bottom: 0;
 }
+.about-sign__wrap {
+  svg {
+    path {
+      fill: $black;
+    }
+  }
+}
 .no-margin {
   margin: 0 !important;
 }
