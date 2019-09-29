@@ -1516,6 +1516,9 @@ pre>code {
   clear: both;
   border: 1px solid #8fa1b3;
   margin: 0.6em 0;
+  p {
+    margin-bottom: 8px;
+  }
   &.pull-right {
     border-radius: 20px 0 20px 20px;
     background: $blue;
