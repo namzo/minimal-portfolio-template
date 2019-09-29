@@ -13,7 +13,10 @@
     color: #93a0c5;
   }
   .date {
-  color: #4d5c86;
+    color: #4d5c86;
+  }
+  .muted {
+    color: #ed8936;
   }
   ::-moz-selection { background: rgba(106, 128, 148, 0.9); color: $dark; }
   ::selection { background:rgba(106, 128, 148, 0.9); color: $dark; }
@@ -21,6 +24,9 @@
     color: $white;
   }
   nav {
+    ul {
+      margin-bottom: -2px;
+    }
     a {
       color: $white;
       text-decoration: none;
