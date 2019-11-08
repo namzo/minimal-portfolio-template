@@ -6,7 +6,7 @@
 }
 @media (min-width: 400px) {
   .container {
-    max-width: 1180px;
+    max-width: 1200px;
     width: 100%;
   }
   .photos-body .page-wrap .container {
@@ -22,12 +22,12 @@
     }
   }
   nav {
-    padding-top: 2em;
+    padding-top: 1em;
     .container {
       // max-width: 1100px;
     }
     a {
-      padding: 10px 0;
+      padding: 10px 0 4px;
     }
     .pull-right {
       text-align: right;
@@ -97,9 +97,6 @@
   ul.project-desc {
     margin: 0;
   }
-  .about-left {
-    margin-top: -16px;
-  }
   .wrap-page {
     padding: 1em 0 0;
   }
@@ -107,7 +104,7 @@
     padding: 0;
   }
   .profile-page-wrap .wrap-page {
-    padding: 3em 0 0;
+    padding: 2em 0 0;
   }
   .row-flex {
     justify-content: space-between;
@@ -135,9 +132,6 @@
 @media (max-width: 767px) {
   html {
     font-size: 64%;
-  }
-  .about-left {
-    padding: 0 0 1.5em;
   }
   .intro.casestudy-header+section {
     padding-top: 1.2em;

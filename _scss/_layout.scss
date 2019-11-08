@@ -47,8 +47,8 @@ body {
   background: $white;
   height: 100%;
   font-family: $font-acumin;
-  font-size: 1.6rem;
-  line-height: 1.6;
+  font-size: 1.7rem;
+  line-height: 1.7;
   font-weight: 400;
   z-index: 2;
   color: $black;
@@ -112,7 +112,7 @@ h5 {
   font-size: 1.6rem;
 }
 h4 {
-  font-size: 2.2rem;
+  font-size: 2.4rem;
 }
 a {
   color: $blue;
@@ -301,9 +301,6 @@ nav {
     width: auto;
     padding: 0;
   }
-  .row:first-child {
-    border-bottom: 1px solid rgba( $gray, .5 );
-  }
   ul {
     list-style-type: none;
     margin: 0;
@@ -327,7 +324,7 @@ nav {
         content: "";
         position: absolute;
         width: 100%;
-        height: 1px;
+        height: 2px;
         display: block;
         bottom: -2px;
         background: $black;
@@ -346,7 +343,7 @@ nav {
     color: $black;
     position: relative;
     display: inline-block;
-    padding: 10px 0;
+    padding: 10px 0 4px;
     border: none;
     font-weight: 700;
     transition: .3s all ease;
@@ -441,7 +438,7 @@ section {
         content: "";
         position: absolute;
         width: 100%;
-        height: 1px;
+        height: 2px;
         display: block;
         bottom: -2px;
         background: $white;
@@ -449,9 +446,6 @@ section {
     }
     .name-text {
       color: $white;
-    }
-    .row:first-child {
-      border-color: rgba(118, 126, 165, 0.1);
     }
   }
   .photo-page-single-wrap {
@@ -624,8 +618,8 @@ p.lead {
     color: $black;
     margin-bottom: 1rem;
     margin-top: 3rem;
-    font-size: 3.8rem;
-    font-weight: 700;
+    font-size: 4.4rem;
+    font-weight: 800;
     letter-spacing: -1px;
     line-height: 1.2;
     span {
@@ -1114,14 +1108,11 @@ img {
   margin: 0;
   transition: ease all 0.3s;
   opacity: 1;
-  box-shadow: 8px 8px rgba(220, 230, 234, 1), 0 4px 8px rgba(17,35,56,.04), 0 0 8px rgba(17,35,56,.04), 0 18px 27px rgba(17,35,56,.11);
-  transform: translate3d(calc(10% - 10px),calc(30% - 100px),0) rotate(-1deg);
-  -webkit-backface-visibility: hidden;
-	-webkit-perspective: 1000;
-  &:hover {
-    transform: translate(-2px, -2px);
-    box-shadow: 12px 15px #dce6ea, 0px 8px 8px rgba(17,35,56,0.04), 0 0 8px rgba(17,35,56,0.04), -3px 9px 27px rgba(17,35,56,0.11);
-  }
+  box-shadow: 8px 8px rgba(220, 230, 234, 1), 0 4px 8px rgba(17,35,56,.04),
+              0 0 8px rgba(17,35,56,.04), 0 18px 27px rgba(17,35,56,.11);
+}
+.about-left {
+    margin-top: 24px;
 }
 .talks {
   padding: 4em 0 2em;
