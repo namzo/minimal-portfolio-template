@@ -10,15 +10,15 @@ exclude_rss: true
 <section class="intro home" id="home">
   <div class="container">
     <div class="row row-flex">
+      <div class="two columns flex-column-2">
+        <div class="b-down"></div>
+      </div>
       <div class="seven columns intro-profile flex-column-1">
-        <div class="home-box">
-          <h1>I'm a designer, developer, photographer, and artist based in Amsterdam</h1>
+        <div class="home-box transition-fade-down">
+          <h1>I'm a designer<span>, developer, photographer, and artist based in Amsterdam</span></h1>
           <p class="lead">Currently working as a UX Designer at <a href="http://booking.com" target="_blank">Booking.com</a></p>
         </div>
       </div>
-      <!-- <div class="five columns intro-profile flex-column-2">
-        <img src="{{ base.url }}/img/index-sketch.jpg">
-      </div> -->
     </div>
   </div>
 </section>
@@ -34,14 +34,14 @@ exclude_rss: true
         <div class="row">
           <div class="three columns">
             <div class="proj-img">
-              <a href="http://staash.co" target="_blank"><img src="{{ base.url }}/img/staash.png"></a>
+              <a href="/staash"><img src="{{ base.url }}/img/staash.png"></a>
             </div>
           </div>
           <div class="nine columns">
             <div class="ind-projects">
               <ul class="list-unstyled">
                 <li class="">
-                  <h5 class="article-title"><a href="http://staash.co" target="_blank">Staash</a></h5>
+                  <h5 class="article-title"><a href="/staash">Staash</a></h5>
                   <p>Collect and track your favorite products from hundreds of shopping websites.</p>
                 </li>
               </ul>
@@ -109,6 +109,7 @@ exclude_rss: true
       </div>
       
     </div>
+
     <!--div class="row">
       <div class="five columns">
         <div class="row">
@@ -149,28 +150,40 @@ exclude_rss: true
         </div>
       </div>
     </div-->
+
     <div class="row">
-      <div class="eight columns">
-        <div class="talks">
-          <h6 class="muted">SPEAKING</h6>
-          <ul class="list-unstyled">
-            <li>
-              <h4>Usable UX Meetup — November 2016</h4>
-              <p>I gave a talk on the process of building payment solutions for Nigeria. <a href="http://techcabal.com/2016/11/22/usable-meetup-at-cchub-on-thursday/" target="_blank" class="superscript">#</a></p>
-            </li>
-            <li>
-              <h4>KongaPay Developer Conference - July 2016</h4>
-              <p>My team organized a conference for developers using our platform. I gave a talk on the process of building the KongaPay product, and how to use the web payment interface and SDKs. <a href="https://attending.io/events/k-con16" target="_blank" class="superscript">#</a></p>
-            </li>
-            <li>
-              <h4>UX Lagos Meetup — March  2016</h4>
-              <p>I was part of a panel that gave a talk on the state of design in Nigeria, user experience, design process, problem-solving and introduction for new designers. <a href="http://attending.io/events/uxlagos-meetup-march-2016" target="_blank" class="superscript">#</a></p>
-            </li>
-          </ul>
+        <div class="twelve columns">
+            <a href="/work">View all work &xrarr;</a>
         </div>
-      </div>
     </div>
+
   </div>
+</section>
+
+<section class="index-latest photo-landing">
+    <div class="container">
+        <div class="row">
+            <div class="eight columns">
+                <div class="talks">
+                    <h6 class="muted">PHOTOGRAPHY</h6>
+                </div>
+            </div>
+        </div>
+        <div class="row photo-row">
+            <div class="nine columns">
+                <img src="{{ base.url }}/photos/golden-rays.jpg">
+            </div>
+            <div class="three columns photo-overlay__index hidden-mobile">
+              <!-- <p>Photo description</p> -->
+                <img src="{{ base.url }}/photos/clean-blue.jpg">
+            </div>
+        </div>
+        <div class="row">
+            <div class="twelve columns">
+                <a href="/photos" class="photo-overlay__index-link">View all photos &xrarr;</a>
+            </div>
+        </div>
+    </div>
 </section>
 
 {% include footer.html %}

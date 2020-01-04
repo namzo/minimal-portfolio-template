@@ -11,9 +11,10 @@ $fb: #48649f;
 $gplus: #db4437;
 $dark: #202124;
 
-$font-system: BlinkMacSystemFont,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
 $font-acumin: "Acumin Pro", BlinkMacSystemFont,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
-$font-inter: "Inter", BlinkMacSystemFont,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+$font-plex: "IBM Plex Sans", BlinkMacSystemFont,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+$font-pln: "Pln", BlinkMacSystemFont,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+// $font-system: BlinkMacSystemFont,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
 
 @mixin rounded-corners {
   $rounded-corner-radius: 4px;
@@ -77,7 +78,6 @@ body {
   .post-img_preview {
     img {
       transition: ease all 300ms;
-      border-radius: 6px;
     }
     img:hover {
       opacity: 0.8;
@@ -85,6 +85,7 @@ body {
   }
   > .muted {
     margin-bottom: 0.5em;
+    border-bottom: 1px solid #e2e8f0;
   }
 }
 .post-row {
@@ -103,7 +104,7 @@ img {
   max-width: 100%;
 }
 h1, h2, h3, h4, h5, h6 {
-  font-family: $font-system;
+  font-family: $font-pln;
   color: $black;
   font-weight: 700;
   letter-spacing: 0;
@@ -117,13 +118,9 @@ h4 {
 a {
   color: $blue;
   text-decoration: none;
-  // outline: none;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   &:hover {
     text-decoration: underline;
-  }
-  &:focus {
-    // outline: #003580
   }
   &:hover, &:focus, a:active {
     transition: ease all .3s;
@@ -225,7 +222,7 @@ abbr, abbr[title] {
   transition: all .15s ease;
   display: inline-block;
   line-height: 28px;
-  font-family: $font-system;
+  font-family: $font-acumin;
   text-decoration: none;
   font-weight: 800;
   border: 1px solid rgba(12, 81, 181, 0.34);
@@ -295,7 +292,7 @@ abbr, abbr[title] {
 }
 nav {
   position: relative;
-  font-family: $font-system;
+  font-family: $font-acumin;
   &.bgnav {
     background: $gray;
     width: auto;
@@ -318,19 +315,7 @@ nav {
       padding-left: 3px;
     }
     &.active a {
-      font-weight: 700;
       color: $black;
-     &:after {
-        content: "";
-        position: absolute;
-        width: 100%;
-        height: 2px;
-        display: block;
-        bottom: -2px;
-        background: $black;
-        transition: ease all 1200ms;
-        transition-delay: 800ms;
-      }
     }
   }
   .links li {
@@ -345,7 +330,7 @@ nav {
     display: inline-block;
     padding: 10px 0 4px;
     border: none;
-    font-weight: 700;
+    font-weight: 600;
     transition: .3s all ease;
     &:hover, &:active {
       color: $black;
@@ -409,14 +394,88 @@ section {
   margin-bottom: 2em;
 }
 .home-body {
-  background: $white;
-  color: $text-color;
+  nav, .intro.home {
+      background: #f3f1ec;
+  }
+  .index-proj {
+      padding: 4em 0 5em;
+      background: #3c6255;
+      a {
+          color: $white;;
+      }
+        .muted {
+          color: #92d4d8;
+        }
+  }
+  .index-latest {
+      background: #2e2f33;
+      color: #afa99e;
+      padding: 4em 0;
+      .talks h4 {
+        color: $white;
+      }
+      &.photo-landing {
+          padding: 6em 0;
+          a {
+              color: $white;
+          }
+      }
+      &.photo-landing .container > .row.photo-row {
+        margin-bottom: 0;
+      }
+  }
+  footer {
+      background: #edf2f7;
+      .row:first-child {
+        border-top: none;
+        padding-top: 4em;
+      }
+  }
+}
+.flex-bottom {
+    align-self: flex-end;
+}
+
+.bio-wrap {
+    strong.underline {
+        text-decoration: underline;
+    }
+}
+
+.about-body {
+    background: #f4f3f3;
+    // color: #6d6d6d;
+    h3 {
+        color: #333;
+    }
+    footer {
+        background: #f4f3f3;
+    .row:first-child {
+        border-top: 1px solid #e7e8e8;
+      }
+  }
+}
+
+.ind-projects {
+  .article-title {
+    margin: 0;
+    a, a:hover {
+      color: $white;
+    }
+  }
+  p {
+    font-size: 1.6rem;
+    line-height: 1.6;
+    color: #92d4d8;
+  }
 }
 
 /* Photos page - dark */
 .photos-body {
-  background: rgba(17, 18, 22, 1);
+  background: #111;
+  /*background: rgba(17, 18, 22, 1);
   background-image: linear-gradient(rgba(17, 18, 22, 1.000) 0%, rgba(65, 80, 96, 0.34) 100%);
+  background-attachment: fixed;*/
   color: #93a0c5;
   transition: background-color 300ms ease;
   ::-moz-selection { background: rgba(106, 128, 148, 0.9); color: $dark; }
@@ -427,6 +486,10 @@ section {
   .article-title, .article-title a, a {
     color: $white;
   }
+  .link-ext h5 {
+      margin-bottom: 0;
+      color: #93a0c5;
+  }
   nav {
     a {
       color: $white;
@@ -434,15 +497,6 @@ section {
     }
     li.active a {
       color: $white;
-      &:after {
-        content: "";
-        position: absolute;
-        width: 100%;
-        height: 2px;
-        display: block;
-        bottom: -2px;
-        background: $white;
-      }
     }
     .name-text {
       color: $white;
@@ -468,7 +522,7 @@ section {
       }
     }
   .single-photo_wrap {
-      margin-bottom: 2em;
+      margin-bottom: 8em;
     a, a:hover {
       position: relative;
       display: block;
@@ -539,7 +593,7 @@ section {
 .intro {
   padding: 3em 0 6em;
   &.home {
-    padding: 1.2em 0 0;
+    padding: 6em 0 10em;
     text-align: left;
     position: relative;
     box-sizing: border-box;
@@ -581,10 +635,13 @@ section {
 }
 .casestudy-body {
   padding-top: 0;
-  nav a.button.hollow:hover, nav a.button.hollow:hover:hover {
-    color: $white;
-    border-color: $white;
-  }
+    hr {
+        margin-bottom: 1.4em;
+    }
+    nav a.button.hollow:hover, nav a.button.hollow:hover:hover {
+        color: $white;
+        border-color: $white;
+    }
 }
 .unit.unit-case {
   padding-top: 0;
@@ -610,30 +667,28 @@ p.lead {
     }
   }
 }
+.row-flex .flex-column-2 {
+    border-bottom: 6px solid $black;
+}
 .intro-profile {
   position: relative;
   z-index: 20;
   h1 {
+    font-family: $font-pln;
+    font-size: 4.6rem;
+    font-weight: 700;
+    letter-spacing: -1px;
+    line-height: 1.3;
     position: relative;
     color: $black;
     margin-bottom: 1rem;
     margin-top: 3rem;
-    font-size: 4.4rem;
-    font-weight: 800;
-    letter-spacing: -1px;
-    line-height: 1.2;
     span {
-      color: lighten($text-color, 25%);
+      color: #847c67;
     }
     em {
       font-style: normal;
     }
-  }
-}
-
-.profile-page-wrap {
-  .profile-photo-wrap img {
-    border-radius: 6px;
   }
 }
 
@@ -787,15 +842,6 @@ a.single-project {
     }
   }
 }
-.ind-projects {
-  .article-title {
-    margin: 0;
-  }
-  p {
-    font-size: 1.6rem;
-    line-height: 1.6;
-  }
-}
 .superscript {
   vertical-align: super;
 }
@@ -936,7 +982,7 @@ hr {
   background-color: $blue;
   border: none;
   color: $white;
-  font-family: $font-system;
+  font-family: $font-acumin;
   font-size: inherit;
   text-transform: inherit;
   padding: 0 20px;
@@ -986,7 +1032,7 @@ hr {
   a {
     text-decoration: none;
     border-bottom: none;
-    color: $black;
+    color: #2d3748;
     &:hover {
       color: $blue;
     }
@@ -1054,68 +1100,98 @@ hr {
     font-size: 2.8rem;
   }
 }
+.work-title {
+    padding: 4em 0;
+}
+.work-list {
+    margin: 4em 0;
+    z-index: 10;
+    position: relative;
+    li {
+        margin-bottom: 8px;
+        a {
+            font-family: $font-pln;
+            font-size: 3.6rem;
+            font-weight: 700;
+            color: $black;
+            letter-spacing: -1px;
+            border-bottom: 1px solid #edf2f7;
+            transition: ease all 300ms;
+            &:hover, &:focus {
+                text-decoration: none;
+                border-bottom: 1px solid $black;
+            }
+        }
+    }
+}
+.work-preview {
+    background: #f5f5f5;
+    padding: 3em;
+    margin-left: -13em;
+    margin-top: 2em;
+    z-index: 1;
+}
 .post-body {
-  padding-top: 2em;
-  h4 {
-    margin-top: 1.8em;
-  }
-  p {
-    line-height: 2;
-  }
-  li {
-    margin: 0 0 10px;
-  }
+    padding-top: 2em;
+    h4 {
+        margin-top: 1.8em;
+    }
+    p {
+        line-height: 2;
+    }
+    li {
+        margin: 0 0 10px;
+    }
 }
 .intro-avatar {
-  img {
-    margin: 25px 0 0;
-  }
+    img {
+        margin: 25px 0 0;
+    }
 }
 img {
-  -webkit-user-drag: none;
-  -khtml-user-drag: none;
-  -moz-user-drag: none;
-  -o-user-drag: none;
-  user-drag: none;
+    -webkit-user-drag: none;
+    -khtml-user-drag: none;
+    -moz-user-drag: none;
+    -o-user-drag: none;
+    user-drag: none;
 }
 .working-on {
-  border-left: 1px solid #ccc;
-  height: 100%;
-  padding: 10px;
-  h4 {
-    margin-bottom: 0;
-  }
+    border-left: 1px solid #ccc;
+    height: 100%;
+    padding: 10px;
+    h4 {
+        margin-bottom: 0;
+    }
 }
 .w-unit {
-  border: 1px solid #ccc;
-  padding: 10px;
-  border-radius: 3px;
-  margin-top: 15px;
-  h4 {
-    margin: 0 0 5px;
-  }
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 3px;
+    margin-top: 15px;
+    h4 {
+        margin: 0 0 5px;
+    }
 }
 .intro .w-unit p {
-  margin-bottom: 0;
-  font-size: 15px;
-  line-height: 1.5;
+    margin-bottom: 0;
+    font-size: 15px;
+    line-height: 1.5;
 }
 .muted {
-  color: $orange-text;
+    color: $orange-text;
 }
 .avatar-img {
-  width: 80%;
-  margin: 0;
-  transition: ease all 0.3s;
-  opacity: 1;
-  box-shadow: 8px 8px rgba(220, 230, 234, 1), 0 4px 8px rgba(17,35,56,.04),
-              0 0 8px rgba(17,35,56,.04), 0 18px 27px rgba(17,35,56,.11);
+    width: 80%;
+    margin: 0;
+    transition: ease all 0.3s;
+    opacity: 1;
+    box-shadow: 8px 8px #ccc, 0 4px 8px rgba(17,35,56,.04),
+                0 0 8px rgba(17,35,56,.04), 0 18px 27px rgba(17,35,56,.11);
 }
 .about-left {
     margin-top: 24px;
 }
 .talks {
-  padding: 4em 0 2em;
   h4 {
     font-weight: 700;
     letter-spacing: -1px;
@@ -1165,37 +1241,29 @@ strong, .strong {
   }
 }
 time {
-  color: #838994;
+    color: #838994;
 }
 .pull-right {
-  float: right;
+    float: right;
 }
 .nt-wrap {
-  padding: 0;
+    padding: 0;
 }
 strong.name-text {
-  color: $black;
-  margin-right: 0;
-  margin-top: 8px;
-  position: relative;
-  display: inline-block;
-  font-family: $font-system;
-  font-weight: 900;
-  text-transform: uppercase;
-  font-size: 22px;
-  letter-spacing: -1px;
-  &:after {
-    content: "";
-    display: block;
-    height: 6px;
-    background: $blue;
-    width: 108%;
-    transform: translateY(calc(-21px)) translateX(calc(-6px));
-  }
+    color: $black;
+    margin-right: 0;
+    margin-top: 8px;
+    position: relative;
+    display: inline-block;
+    font-family: $font-acumin;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 22px;
+    letter-spacing: -1px;
 }
 
 .back-link-wrap {
-  margin: 0 0 40px;
+    margin: 0 0 40px;
 }
 .back-link {
   border: 1px solid rgba(127, 146, 156, 0.51);
@@ -1530,14 +1598,10 @@ pre>code {
   display: none !important;
 }
 .proj-img {
-  margin-bottom: 24px;
-  
-  img {
-    border-radius: 6px;
-  }
-  > a, img {
-    display: block;
-  }
+    margin-bottom: 24px;
+    > a, img {
+        display: block;
+    }
 }
 footer {
   color: #78909C;
@@ -1580,15 +1644,13 @@ footer {
   }
 }
 .project-desc {
-  font-size: 1.8rem;
-  margin-top: 1.2em;
-  font-weight: 500;
+    font-family: $font-pln;
+    font-size: 1.8rem;
+    margin-top: 1.2em;
 }
 .pagination {
-  box-shadow: 0 0px 2px #71828a inset;
   margin: 1em 0 0;
   display: inline-block;
-  border-radius: 6px;
   a {
     font-weight: 600;
     &:hover, &:focus {
@@ -1596,15 +1658,16 @@ footer {
     }
   }
   .next {
-    border-radius: 0 6px 6px 0;
     border-left: 1px solid $gray;
+    padding-left: 24px;
   }
   .previous {
-    border-radius: 6px 0 0 6px;
+    border-radius: 6px 0;
+    padding-right: 24px;
   }
   a, span {
     display: inline-block;
-    padding: 10px 20px;
+    padding: 10px 2;
   }
   .page_number {
     padding-left: 20px;
@@ -1687,11 +1750,6 @@ footer {
   padding-bottom: 60%; /* You define this doing height / width * 100% */
   overflow: hidden;
   @include aspect-ratio(16, 9);
-  border-radius: 6px;
-
-  &:before {
-    border-radius: 6px;
-  }
 
   img {
     width: 100%;
@@ -1701,7 +1759,6 @@ footer {
     top: 0;
     bottom: 0;
     margin: auto;
-    border-radius: 6px;
   }
 
   img:not(.initial) {

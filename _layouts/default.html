@@ -1,6 +1,9 @@
 {% include head.html %}
 
-<body{% if page.nav=='home' %} class="home-body"{% endif %}>
+<body
+  {% if page.nav=='home' %} class="home-body"{% endif %}
+  {% if page.nav=='about' %} class="about-body"{% endif %}
+>
 
 {% include nav.html %}
 
