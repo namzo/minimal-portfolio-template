@@ -1,34 +1,32 @@
 <nav class="clearfix transition-fade" id="sitenav">
-  <div class="container">
-    <div class="row">
-      <ul class="pull-left transition-fade">
-        <li>
-          <a href="/" class="nt-wrap">
-            <strong class="name-text
-              {% if page.layout=='photos' %}photo-name-text{% endif %}
-            ">
-              Ernest Ojeh 
-              <!-- {% if page.layout=='photos' %}<span> - Photos</span>{% endif %} -->
-            </strong>
-          </a>
-        </li>
-      </ul>
-      <ul class="pull-right links">
-        <li class="{% if page.nav=='home' %}active{% endif %}">
-          <a href="/">Home</a>
-        </li>
-        <li class="{% if page.nav=='about' %}active{% endif %}">
-          <a href="/about/">About</a>
-        </li>
-        <li class="{% if page.nav=='posts' %}active{% endif %}{% if page.layout=='post' %}active{% endif %}">
-          <a href="/posts/">Posts</a>
-        </li>
-        <li class="{% if page.nav=='photos' or page.layout=='photo' %}active{% endif %}">
-          <a href="/photos/">Photos</a>
-        </li>
-      </ul>
+    <div class="container">
+        <div class="row">
+            <ul class="pull-left transition-fade">
+                <li>
+                    <a href="/" class="nt-wrap">
+                        <strong class="name-text {% if page.layout=='photos' %}photo-name-text{% endif %}">
+                            Ernest Ojeh
+                            <!-- {% if page.layout=='photos' %}<span> - Photos</span>{% endif %} -->
+                        </strong>
+                    </a>
+                </li>
+            </ul>
+            <ul class="pull-right links">
+                <li class="{% if page.nav!='home' %}active{% endif %}">
+                    <a href="/">Home</a>
+                </li>
+                <li class="{% if page.nav=='about' %}active{% endif %}">
+                    <a href="/about/">About</a>
+                </li>
+                <li class="{% if page.nav=='posts' %}active{% endif %}{% if page.layout=='post' %}active{% endif %}">
+                    <a href="/posts/">Posts</a>
+                </li>
+                <li class="{% if page.nav=='photos' or page.layout=='photo' %}active{% endif %}">
+                    <a href="/photos/">Photos</a>
+                </li>
+            </ul>
+        </div>
     </div>
-  </div>
 </nav>
 
 <div id="swup" class="transition-fade">

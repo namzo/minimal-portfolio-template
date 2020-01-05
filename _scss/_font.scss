@@ -1,17 +1,4 @@
-$font-path-pln: "../fonts/pln/";
 $font-path-acumin: "../fonts/acumin-pro/";
-
-// Plain
-@font-face {
-	font-family: 'Pln';
-	src: url($font-path-pln + "Plain-Medium.eot");
-	src: url($font-path-pln + "Plain-Medium.eot?#iefix") format('embedded-opentype'),
-		url($font-path-pln + "Plain-Medium.woff") format('woff'),
-		url($font-path-pln + "Plain-Medium.ttf") format('truetype'),
-		url($font-path-pln + "Plain-Medium.svg#Plain-Medium") format('svg');
-	font-weight: 500;
-	font-style: normal;
-}
 
 // Start Acumen
 @font-face {
