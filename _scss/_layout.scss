@@ -396,7 +396,6 @@ nav {
     ul {
         list-style-type: none;
         margin: 0;
-        margin-bottom: -2px;
     }
 
     li {
@@ -412,8 +411,11 @@ nav {
             padding-left: 3px;
         }
 
-        &.active a {
-            color: $black;
+        &.active {
+            border-bottom: 2px solid $black;
+            a {
+                color: $black;
+            }
         }
     }
 
@@ -1090,7 +1092,6 @@ blockquote {
 
     &:before {
         content: " ";
-
         position: absolute;
         width: 4px;
         height: 100%;
@@ -1274,10 +1275,6 @@ hr {
     }
 }
 
-.about-left h5 {
-    margin-bottom: 0;
-}
-
 .about-sign__wrap {
     svg {
         path {
@@ -1327,9 +1324,15 @@ hr {
     }
 }
 
+.profile-feat__photo {
+    .flex-bottom h4 {
+        margin-bottom: 4px;
+    }
+}
+
 .container {
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 16px;
+    padding-right: 16px;
 }
 
 .full-container {
@@ -1469,6 +1472,9 @@ img {
 
 .about-left {
     margin-top: 24px;
+    h5, p {
+        margin-bottom: 0;
+    }
 }
 
 .talks {
