@@ -72,7 +72,6 @@ body {
         overflow: hidden;
         -webkit-touch-callout: none; /* iOS Safari */
         -webkit-user-select: none; /* Safari */
-        -khtml-user-select: none; /* Konqueror HTML */
         -moz-user-select: none; /* Old versions of Firefox */
         -ms-user-select: none; /* Internet Explorer/Edge */
         user-select: none; 
@@ -610,21 +609,8 @@ a.menu-btn {
 /* Photos page - dark */
 .photos-body {
     background: #111;
-    /*background: rgba(17, 18, 22, 1);
-  background-image: linear-gradient(rgba(17, 18, 22, 1.000) 0%, rgba(65, 80, 96, 0.34) 100%);
-  background-attachment: fixed;*/
     color: #93a0c5;
     transition: background-color 300ms ease;
-
-    ::-moz-selection {
-        background: rgba(106, 128, 148, 0.9);
-        color: $dark;
-    }
-
-    ::selection {
-        background: rgba(106, 128, 148, 0.9);
-        color: $dark;
-    }
 
     .unit.page-top {
         padding-top: 1.2em;
@@ -647,8 +633,12 @@ a.menu-btn {
             text-decoration: none;
         }
 
-        li.active a {
-            color: $white;
+        li.active {
+            border-bottom: 2px solid $white;
+            
+            a {
+                color: $white;
+            }
         }
 
         .name-text {
@@ -671,12 +661,23 @@ a.menu-btn {
     }
 
     .sub-photo-title {
-        margin: 8px 0 0;
+        margin: 16px 0 0;
         color: $white;
 
         h5 {
-            color: $white;
+            color: #8fa1b3;
+            font-weight: 500;
             margin: 0;
+            line-height: 1;
+        }
+
+        .tiny-album-count {
+            color: #97bde4;
+            display: inline-block;
+            transform: translateY(0);
+            visibility: visible;
+            opacity: 0.6;
+            transition: all cubic-bezier(0.455, 0.03, 0.515, 0.955) 0.3s;
         }
     }
 
@@ -714,14 +715,6 @@ a.menu-btn {
                 font-weight: 700;
                 text-transform: uppercase;
             }
-        }
-
-        .tiny-album-count {
-            display: inline-block;
-            transform: translateY(0);
-            visibility: visible;
-            opacity: 0.6;
-            transition: all cubic-bezier(0.455, 0.03, 0.515, 0.955) 0.3s;
         }
     }
 
@@ -895,7 +888,7 @@ p.lead {
     }
 }
 
-/* external links */
+/* External links */
 nav a[href*="//"]:not([href*="ernestojeh.com"]),
 footer a[href*="//"]:not([href*="ernestojeh.com"]) {
     &::after {
@@ -2223,6 +2216,9 @@ footer {
     }
 }
 
+.link-ext {
+    margin-bottom: 16px;
+}
 .about-photos_link {
     position: fixed;
     float: left;
