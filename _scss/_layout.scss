@@ -1454,6 +1454,10 @@ img {
     font-weight: 600;
 }
 
+.faded {
+    color: $gray;
+}
+
 .avatar-img {
     width: 80%;
     margin: 0;
@@ -1503,6 +1507,10 @@ img {
 strong,
 .strong {
     font-weight: 600;
+}
+
+.mini {
+    font-size: 1.5rem;
 }
 
 .text-right {
@@ -1676,7 +1684,8 @@ strong.name-text {
 }
 
 .gray-text {
-    color: #819AA7;
+    // color: #819AA7;
+    color: #48626f;
 }
 
 .case-logo {
