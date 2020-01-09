@@ -171,11 +171,29 @@ exclude_rss: true
             </div>
             <div class="row photo-row">
                 <div class="nine columns">
-                    <img src="{{ base.url }}/photos/golden-rays.jpg">
+                    <img 
+                    data-src="{{ site.baseurl }}/photos/golden-rays.jpg?nf_resize=fit&w=2400"
+                    data-srcset="{{ site.baseurl }}/photos/golden-rays.jpg?nf_resize=fit&w=800 800w,
+                          {{ site.baseurl }}/photos/golden-rays.jpg?nf_resize=fit&w=1200 1200w,
+                          {{ site.baseurl }}/photos/golden-rays.jpg?nf_resize=fit&w=2400 2400w"
+                    data-sizes="(max-width: 480px) 800px,
+                          (max-width: 767px) 1200px,
+                          (min-width: 768px) 2400px"
+                    loading="lazy"
+                    alt="Golden rays">
                 </div>
                 <div class="three columns photo-overlay__index hidden-mobile">
-                <!-- <p>Photo description</p> -->
-                    <img src="{{ base.url }}/photos/clean-blue.jpg">
+                <!-- <p>Latest photos</p> -->
+                    <img 
+                    data-src="{{ site.baseurl }}/photos/clean-blue.jpg?nf_resize=fit&w=2400"
+                    data-srcset="{{ site.baseurl }}/photos/clean-blue.jpg?nf_resize=fit&w=800 800w,
+                          {{ site.baseurl }}/photos/clean-blue.jpg?nf_resize=fit&w=1200 1200w,
+                          {{ site.baseurl }}/photos/clean-blue.jpg?nf_resize=fit&w=2400 2400w"
+                    data-sizes="(max-width: 480px) 800px,
+                          (max-width: 767px) 1200px,
+                          (min-width: 768px) 2400px"
+                    loading="lazy"
+                    alt="Clean blue">
                 </div>
             </div>
             <div class="row">
