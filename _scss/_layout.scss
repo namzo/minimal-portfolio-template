@@ -1684,7 +1684,6 @@ strong.name-text {
 }
 
 .gray-text {
-    // color: #819AA7;
     color: #48626f;
 }
 
@@ -2343,11 +2342,10 @@ footer {
     bottom: 0;
     left: 0;
     z-index: 888;
-    background: rgba(255, 255, 255, 0.24);
+    background: rgba(255, 255, 255, 0.30);
     visibility: hidden;
     display: block;
     opacity: 0;
-    pointer-events: none;
     transition: ease all 500ms;
     transition-delay: 500ms;
 
@@ -2355,6 +2353,10 @@ footer {
         visibility: visible !important;
         opacity: 1;
     }
+}
+
+.photos-body .trans-overlay {
+    background:rgba(0, 0, 0, 0.68);
 }
 
 .sucess-sent-icon {
