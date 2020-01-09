@@ -173,11 +173,11 @@ screen and (min-resolution: 2dppx) {
     }
 
     .flex-column-1 {
-        order: 2;
+        order: 1;
     }
 
     .flex-column-2 {
-        order: 1;
+        order: 2;
     }
 
     footer .two.columns {
@@ -208,8 +208,8 @@ screen and (min-resolution: 2dppx) {
     }
 
     .work-menu__overlay {
-        width: 90%;
-        left: -90%;
+        width: 90vw;
+        transform: translateX(-90vw);
     }
     
     .work-title {
@@ -395,21 +395,6 @@ screen and (min-resolution: 2dppx) {
         display: none;
     }
 
-    .intro.home .home-box {
-        padding-top: 2em;
-    }
-
-    .intro.home .lead {
-        margin-bottom: 20px;
-    }
-
-    .intro.home::before {
-        display: none;
-        height: 100%;
-        top: 100px;
-        height: 600px;
-    }
-
     .unit.value .container {
         padding-top: 1em;
         padding-bottom: 2em;
@@ -468,8 +453,24 @@ screen and (min-resolution: 2dppx) {
         padding-bottom: 2em;
         padding-top: 1.8em;
 
+        .flex-column-2 {
+            margin: 24px 0;
+        }
+        
+        .home-box {
+            padding-top: 2em;
+        }
+
+        .intro.home::before {
+            display: none;
+            height: 100%;
+            top: 100px;
+            height: 600px;
+        }
+
         .lead {
             margin-bottom: 10px;
+            margin-bottom: 20px;
         }
     }
 

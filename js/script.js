@@ -31,14 +31,16 @@ $(document).ready(function () {
 
 // Work slideout on index
 $(".work-slideout__link").on('click touch', function () {
-    $(".work-menu__overlay").addClass("show");
     $("body").addClass("no-scroll");
+    $("body").addClass("work-overlay_open");
+    $(".work-menu__overlay").addClass("show");
     $(".work-menu__trans-overlay").addClass("show");
 });
 $(document).click(function (event) {
     if (!$(event.target).closest(".work-slideout__link").length) {
-        $(".work-menu__overlay").removeClass("show");
         $("body").removeClass("no-scroll");
+        $("body").removeClass("work-overlay_open");
+        $(".work-menu__overlay").removeClass("show");
         $(".work-menu__trans-overlay").removeClass("show");
    }
 });
@@ -83,4 +85,14 @@ $(window).scroll(function () {
         $(".about-photos_link").removeClass("clicked");
         $(".trans-overlay").removeClass("show");
     }
+});
+
+// resize-animation-stopper
+let resizeTimer;
+window.addEventListener("resize", () => {
+  document.body.classList.add("resize-animation-stopper");
+  clearTimeout(resizeTimer);
+  resizeTimer = setTimeout(() => {
+    document.body.classList.remove("resize-animation-stopper");
+  }, 400);
 });
