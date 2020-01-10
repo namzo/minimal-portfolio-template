@@ -44,6 +44,14 @@ $(document).click(function (event) {
         $(".work-menu__trans-overlay").removeClass("show");
    }
 });
+$(document).keyup(function(event){
+    if(event.which=='27'){
+        $("body").removeClass("no-scroll");
+        $("body").removeClass("work-overlay_open");
+        $(".work-menu__overlay").removeClass("show");
+        $(".work-menu__trans-overlay").removeClass("show");
+    }
+});
 
 // No scroll when work slideout - for body
 function handleTouchMove(e) {

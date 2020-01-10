@@ -545,8 +545,11 @@ a.menu-btn {
             a {
                 color: $white;
             }
+            
+            .index-photo-desc {
+                font-size: 1.6rem;
+            }
         }
-
         &.photo-landing .container>.row.photo-row {
             margin-bottom: 0;
         }
@@ -1282,6 +1285,10 @@ hr {
 
 .no-margin-top {
     margin-top: 0 !important;
+}
+
+.no-margin-bottom {
+    margin-bottom: 0 !important;
 }
 
 .no-padding-top {
@@ -2227,6 +2234,9 @@ footer {
 .link-ext {
     margin-bottom: 16px;
 }
+.photo-page-info {
+    font-size: 1.5rem;
+}
 .about-photos_link {
     position: fixed;
     float: left;
@@ -2433,7 +2443,7 @@ footer {
     height: 100%;
     z-index: 1000;
     top: 0;
-    transform: translateX(-50vw);
+    transform: translateX(-52vw);
     overflow-y: auto;
     transition: transform .8s cubic-bezier(.78,0,.174,1);
     -webkit-transition: transform .8s cubic-bezier(.78,0,.174,1);

@@ -127,6 +127,13 @@ screen and (min-resolution: 2dppx) {
     }
 
     .index-latest.photo-landing {
+        .index-photo-desc {
+            position: absolute;
+            width: 280px;
+            top: 220px;
+            right: 0;
+            font-size: 1.6rem;
+        }
         .one-third.column {
             width: 32.666667%;
         }
@@ -209,7 +216,7 @@ screen and (min-resolution: 2dppx) {
 
     .work-menu__overlay {
         width: 90vw;
-        transform: translateX(-90vw);
+        transform: translateX(-92vw);
     }
     
     .work-title {
