@@ -92,8 +92,6 @@ $(window).scroll(function () {
     if ($(window).scrollTop() > 50 && $(".about-photos_link").hasClass("clicked")) {
         $(".about-photos_link").removeClass("clicked");
         $(".trans-overlay").removeClass("show");
-    } else if ($(window).scrollTop() > 600 && $(".about-photos_link")) {
-        $(".about-photos_link").addClass("hide");
     }
 });
 
@@ -102,9 +100,9 @@ var position = $(window).scrollTop() > 50 && $(".about-photos_link").hasClass("c
 $(window).scroll(function() {
     var scroll = $(window).scrollTop();
     if(scroll > position) {
-        // $('div').text('Scrolling Down Scripts');
+       $(".about-photos_link").addClass("hide");
     } else {
-         $(".about-photos_link").removeClass("hide");
+        $(".about-photos_link").removeClass("hide");
     }
     position = scroll;
 });
