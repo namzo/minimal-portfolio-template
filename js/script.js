@@ -95,18 +95,6 @@ $(window).scroll(function () {
     }
 });
 
-// Show/hide photo info button on scroll up & down
-var position = $(window).scrollTop() > 50 && $(".about-photos_link").hasClass("clicked"); 
-$(window).scroll(function() {
-    var scroll = $(window).scrollTop();
-    if(scroll > position) {
-       $(".about-photos_link").addClass("hide");
-    } else {
-        $(".about-photos_link").removeClass("hide");
-    }
-    position = scroll;
-});
-
 // resize-animation-stopper
 let resizeTimer;
 window.addEventListener("resize", () => {
