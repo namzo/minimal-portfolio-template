@@ -23,16 +23,19 @@ screen and (min-resolution: 2dppx) {
     }
 
     .index-latest {
-        .photo-overlay__index img {
+        .photo-overlay__index .image-wrapper {
             margin-left: -12em;
-            margin-top: 17em;
+            margin-top: 11em;
             width: 200%;
+            height: fit-content;
             max-width: unset;
+            background: transparent;
         }
 
         .photo-overlay__index-link {
-            margin-top: -2em;
+            margin-top: -5em;
             position: absolute;
+            display: inline-block;
         }
 
         .photo-page-info {

@@ -84,16 +84,18 @@ redirect_from:
     <div class="container">
       <div class="row">
         <div class="eight columns offset-by-two">
-          <img 
-            data-src="{{ site.baseurl }}/photos/amsterdam-canal.jpg?nf_resize=fit&w=2400"
-            data-srcset="{{ site.baseurl }}/photos/amsterdam-canal.jpg?nf_resize=fit&w=800 800w,
-                    {{ site.baseurl }}/photos/amsterdam-canal.jpg?nf_resize=fit&w=1200 1200w,
-                    {{ site.baseurl }}/photos/amsterdam-canal.jpg?nf_resize=fit&w=2400 2400w"
-            data-sizes="(max-width: 480px) 800px,
-                    (max-width: 767px) 1200px,
-                    (min-width: 768px) 2400px"
-            loading="lazy"
-            alt="Amsterdam canal">
+            <div class="image-wrapper">
+                <img 
+                    data-src="{{ site.baseurl }}/photos/amsterdam-canal.jpg?nf_resize=fit&w=2400"
+                    data-srcset="{{ site.baseurl }}/photos/amsterdam-canal.jpg?nf_resize=fit&w=800 800w,
+                            {{ site.baseurl }}/photos/amsterdam-canal.jpg?nf_resize=fit&w=1200 1200w,
+                            {{ site.baseurl }}/photos/amsterdam-canal.jpg?nf_resize=fit&w=2400 2400w"
+                    data-sizes="(max-width: 480px) 800px,
+                            (max-width: 767px) 1200px,
+                            (min-width: 768px) 2400px"
+                    loading="lazy"
+                    alt="Amsterdam canal">
+            </div>
         </div>
         <div class="two columns">
             <div class="flex-bottom">
