@@ -2253,7 +2253,7 @@ footer {
     border-radius: 8px 8px 0;
     z-index: 999;
     box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.3);
-    transition: all .3s ease;
+    transition: all .6s cubic-bezier(0.19, 1, 0.22, 1);
     opacity: 1;
     -webkit-transform: translate3d(0, 0, 0);
     -webkit-backface-visibility: hidden;
@@ -2294,8 +2294,6 @@ footer {
 
         svg {
             vertical-align: middle;
-            // margin-top: -2px;
-            // margin-right: 8px;
             float: left;
             opacity: 0.6;
             transition: ease all 0.3s;
