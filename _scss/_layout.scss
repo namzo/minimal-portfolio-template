@@ -2448,7 +2448,7 @@ footer {
 }
 
 .work-menu__overlay {
-    background: #212121;
+    background: #191818;
     color: $white;
     position: fixed;
     width: 50vw;
@@ -2460,6 +2460,17 @@ footer {
     transition: transform .8s cubic-bezier(.78, 0, .174, 1);
     -webkit-transition: transform .8s cubic-bezier(.78, 0, .174, 1);
     -webkit-overflow-scrolling: touch;
+
+    .work-menu__close {
+        position: absolute;
+        display: block;
+        right: 0;
+        top: 36px;
+        text-transform: uppercase;
+        color: #919395;
+        transform: rotate(-90deg);
+        font-size: 1.5rem;
+    }
 
     &.show {
         transform: translateX(0);
@@ -2487,18 +2498,37 @@ footer {
     .work-list {
         transform: translateX(-40px);
         opacity: 0;
-        transition: all .85s ease;
+        transition: all .85s cubic-bezier(0.165, 0.84, 0.44, 1);
         transition-delay: 420ms;
 
         li {
             a {
                 color: #919395;
-                border-bottom: 1px solid #919395;
-            }
+                border-bottom: none;
+                position: relative;
 
-            a:hover {
-                color: $white;
-                border-bottom: 1px solid $white;
+                &:after {
+                    content: "";
+                    position: absolute;
+                    transform: scaleX(0);
+                    transform-origin: left top;
+                    bottom: 0;
+                    left: 0;
+                    background: $white;
+                    transition: ease all 300ms;
+                    height: 1px;
+                    width: 100%;
+                    opacity: 0;
+                }
+
+                &:hover {
+                    color: $white;
+                    border-bottom: 0;
+                        &:after {
+                        transform: scaleX(1);
+                        opacity: 1;
+                    }
+                }
             }
         }
     }
