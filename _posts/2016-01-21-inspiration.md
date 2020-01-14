@@ -2,7 +2,7 @@
 layout: post
 title: Inspiration
 date: '2016-01-21 12:00pm'
-description: Sites I visit for insipiration
+description: Sites I visit for inspiration
 ---
 
 I got a question on twitter asking where I go to for inspiration. Just thought I'd write quick list addressing that — might be useful to someone.

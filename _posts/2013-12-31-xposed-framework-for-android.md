@@ -2,6 +2,7 @@
 layout: post	
 title: Xposed Framework for Android
 date: '2013-12-31 12:00pm'
+description: Setting up xposed framework on my phone
 ---
 
 I just love Android. I recently rooted my phone &amp; installed Xposed. Xposed is a framework of modules that install functionalities you would normally get by flashing a ROM. So, for instance you can change the color of the icons in your status bar, or disable the annoying unsafe volume warning, or add a reboot option to the power menu, without flashing a ROM.

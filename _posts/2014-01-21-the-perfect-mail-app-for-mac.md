@@ -2,6 +2,7 @@
 layout: post	
 title: The perfect mail app for mac
 date: '2014-01-21 12:00pm'
+description: The mail app I use everyday
 ---
 
 Ever since [Google acquired and ceased development of Sparrow](http://sparrowmailapp.com/), I've been looking for that mail app that would take it's place on my dock.
