@@ -82,6 +82,10 @@ body {
     }
 }
 
+html, body {
+    overflow-x: hidden;
+}
+
 .preload * {
     transition: none !important;
 }
