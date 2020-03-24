@@ -54,6 +54,14 @@ body {
   color: $black;
   text-rendering: optimizeLegibility;
 }
+.redesign-update {
+    background: #fffaf0;
+    border: 1px solid #ed8937;
+    color: #ed8937;
+    border-radius: 4px;
+    padding: 10px 16px 6px;
+    margin-top: 8px;
+}
 .preload * {
   transition: none !important;
 }
