@@ -1,6 +1,6 @@
 # Hello
 
-Preview: [minimal-portfolio-template.netlify.app/](https://minimal-portfolio-template.netlify.app/)
+Preview: [minimal-portfolio-template.netlify.app](https://minimal-portfolio-template.netlify.app/)
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/d529299a-9167-4542-8f97-3d7865414510/deploy-status)](https://app.netlify.com/sites/namzo/deploys)
 
