@@ -76,6 +76,3 @@ DEPENDENCIES
   jekyll-paginate-v2
   jekyll-redirect-from
   kramdown-parser-gfm
-
-BUNDLED WITH
-   2.1.4
